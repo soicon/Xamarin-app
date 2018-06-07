@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:htmlLabel="clr-namespace:Mobile;assembly=Mobile"
+             x:Class="Mobile.Views.WarningDetail" BackgroundColor="#ccc">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Sửa"
+                     Icon="ic_edit.png"
+                     x:Name="btnEdit" />
+
+        <ToolbarItem Text="Xóa"
+                     Icon="ic_delete.png" x:Name="btnDelete"
+                    />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <Grid BackgroundColor="#FFFFFF" Padding="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="200"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <htmlLabel:HtmlLabel x:Name="lblTitle"
+                               Grid.Row="0" Grid.Column="0"
+                               FontSize="Default" />
+            <Label  x:Name="lblCreatedTime"
+                               Grid.Row="0" Grid.Column="1"
+                               FontSize="Default" />
+            <!--<Label x:Name="lblContent" Grid.ColumnSpan="2"
+                               Grid.Row="1" Grid.Column="0"
+                               FontSize="Default" />-->
+            <WebView Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" HorizontalOptions="Fill" 
+                     VerticalOptions="FillAndExpand" x:Name="articleweb" />
+            <!--<htmlLabel:HtmlLabel Grid.Column="0" Grid.ColumnSpan="2"
+                                    Grid.Row="2" TextColor="Black" Text="{Binding Content}"></htmlLabel:HtmlLabel>-->
+        </Grid>
+        <!--</ListView>-->
+    </ContentPage.Content>
+</ContentPage>

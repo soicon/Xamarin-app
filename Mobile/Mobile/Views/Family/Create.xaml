@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:customControls="clr-namespace:Mobile;assembly=Mobile"
+             x:Class="Mobile.Views.Family.Create">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Lưu" Clicked="Save_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+       
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Orientation="Vertical" Padding="10" Spacing="40">
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Orientation="Vertical" BackgroundColor="#FFFFFF">
+                <!--<Label  FontAttributes="Bold" FontSize="32" FontFamily="Arial Bold,Arial"
+                    TextColor="Black" HorizontalTextAlignment="Center">Thêm mới hộ gia đình</Label>-->
+                <ActivityIndicator x:Name="Loading" Color="Red" IsRunning="False" />
+                <Label FontAttributes="Bold" FontSize="Medium" Text="Tên hộ gia đình" />
+                <Entry x:Name="txtName" Text="" Placeholder="Tên hộ gia đình"   
+                           PlaceholderColor="#ccc" HeightRequest="40"   
+                           TextColor="Black"/>
+                <Label FontAttributes="Bold" FontSize="Medium" Text="Risk" />
+                <Editor x:Name="txtRisk" Text="" HeightRequest="100" TextColor="Black" />
+                <Label FontAttributes="Bold" FontSize="Medium" Text="Vị trí" />
+                <customControls:CustomPicker HorizontalOptions="FillAndExpand" x:Name="picLocation">
+                </customControls:CustomPicker>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

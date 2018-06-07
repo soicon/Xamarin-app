@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:i18n="clr-namespace:Naxam.I18n.Forms;assembly=Naxam.I18n.Forms"
+	xmlns:converters="clr-namespace:Naxam.I18n.Forms.Converters;assembly=Naxam.I18n.Forms"
+             x:Class="Mobile.Views.Language">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:TimeAgoConverter x:Key="TimeAgoConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="{i18n:Translate Vietnamese}" x:Name="btnVietnamese" Image="Vietnam.png" />
+            <Button Text="{i18n:Translate English}" x:Name="btnEnglish" Image="England.png" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

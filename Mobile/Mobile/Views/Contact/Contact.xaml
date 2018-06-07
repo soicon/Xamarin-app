@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:i18n="clr-namespace:Naxam.I18n.Forms;assembly=Naxam.I18n.Forms"
+	xmlns:converters="clr-namespace:Naxam.I18n.Forms.Converters;assembly=Naxam.I18n.Forms"
+             x:Class="Mobile.Views.Contact" BackgroundColor="#797979">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:TimeAgoConverter x:Key="TimeAgoConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout>
+        <Grid RowSpacing="0" ColumnSpacing="0" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Clicked="OnButtonClicked" x:Name="btnFilter" Grid.Row="0" Grid.Column="0"
+				FontAttributes="Bold" FontSize="Default"  BackgroundColor="#d8192f" TextColor="White" Text="Lọc theo vùng"/>
+            <Button Clicked="OnUnAprovalClicked" x:Name="btnUnApproval" Grid.Row="0" Grid.Column="1" FontAttributes="Bold" FontSize="Default" 
+                    BackgroundColor="#979392" TextColor="White" Text="Danh sách chưa duyệt"/>
+            <SearchBar Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Placeholder="{i18n:Translate String162}" BackgroundColor="#FFFFFF" x:Name="SearchWords" TextChanged="Handle_TextChanged" />
+        </Grid>
+        <ActivityIndicator x:Name="Loading" Color="Red" IsRunning="False" />
+        <ListView BackgroundColor="#FFFFFF" x:Name="ItemsListView"
+                  HasUnevenRows="True" RowHeight="10"
+                  CachingStrategy="RecycleElement"
+                 ItemSelected="OnItemSelected"
+          IsGroupingEnabled="true">
+            <ListView.GroupHeaderTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label FontSize="Large" FontFamily="Arial" FontAttributes="Bold" VerticalOptions="End" Margin="20,4,6,4" Text="{Binding Heading}" />
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.GroupHeaderTemplate>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Margin="6,4,6,4">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="80"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="30"></ColumnDefinition>
+                                <ColumnDefinition Width="30"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Image Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Row="1" Grid.Column="0" Source="img_u1_u694.png"></Image>
+                            <Label LineBreakMode="NoWrap" 
+                       Style="{DynamicResource ListItemTextStyle}" VerticalOptions="CenterAndExpand" Margin="5" FontFamily="Arial" Grid.Row="1" Grid.Column="1" Text="{Binding Name}" FontSize="Medium"  TextColor="Black" />
+                            <Image Aspect="AspectFit" WidthRequest="20" HeightRequest="20" Grid.Row="1" Grid.Column="2" VerticalOptions="CenterAndExpand" Source="u690.png"></Image>
+                            <Image Aspect="AspectFit" WidthRequest="20" HeightRequest="20" Grid.Row="1" Grid.Column="3" VerticalOptions="CenterAndExpand" Source="u692.png"></Image>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

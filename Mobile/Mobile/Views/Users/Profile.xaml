@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:customControls="clr-namespace:Mobile;assembly=Mobile"
+             x:Class="Mobile.Views.Users.Profile">
+    <ContentPage.ToolbarItems>
+        <!--<ToolbarItem Text="Sửa"
+                     Icon="ic_edit.png"
+                     x:Name="btnEdit" />-->
+        <!--<ToolbarItem Text="Xóa"
+                     Icon="ic_delete.png" x:Name="btnDelete"
+                    />-->
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <ActivityIndicator x:Name="Loading" Color="Red" IsRunning="False" />
+            <Grid Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="50"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Grid.Column="0" Grid.Row="0" Text="Họ tên" />
+                <Entry x:Name="txtFullname" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" />
+
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Grid.Column="0" Grid.Row="1" Text="Giới tính" />
+                <Picker Grid.Column="1" Grid.Row="1" Title="Chọn giới tính" x:Name="picGender" >
+                    <Picker.Items>
+                        <x:String>Nam</x:String>
+                        <x:String>Nữ</x:String>
+                        <x:String>Khác</x:String>
+                    </Picker.Items>
+                    <Picker.SelectedIndex>
+                        0
+                    </Picker.SelectedIndex>
+                </Picker>
+
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Text="Chức vụ/Đơn vị" Grid.Row="2" Grid.Column="0" />
+                <Entry x:Name="txtPosition" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" />
+
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Text="Tỉnh" Grid.Row="3" Grid.Column="0" />
+                <customControls:CustomPicker Grid.Column="1" Grid.Row="3" Title="Chọn tỉnh" HorizontalOptions="FillAndExpand" x:Name="picProvince">
+                </customControls:CustomPicker>
+
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Text="Xã" Grid.Row="3" Grid.Column="2" />
+                <customControls:CustomPicker Grid.Column="3" Grid.Row="3" Title="Chọn Xã" HorizontalOptions="FillAndExpand" x:Name="picWard">
+                </customControls:CustomPicker>
+
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Text="Vị trí mong muốn" Grid.Row="4" Grid.Column="0" />
+                <!--<Entry x:Name="txtPosition" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3" />-->
+                <customControls:CustomPicker Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3" Title="Chọn vị trí" HorizontalOptions="FillAndExpand" x:Name="picRole">
+                    <Picker.Items>
+                        <x:String>Tình nguyện viên</x:String>
+                        <x:String>Đội trưởng</x:String>
+                        <x:String>Chủ tịch hội CTĐ</x:String>
+                    </Picker.Items>
+                    <Picker.SelectedIndex>
+                        0
+                    </Picker.SelectedIndex>
+                </customControls:CustomPicker>
+
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Text="Ngày sinh" Grid.Row="5" Grid.Column="0" />
+                <customControls:NullableDatePicker Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3" NullableDate="{Binding MyDate}" x:Name="txtBirthdate" />
+
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Text="Nhóm máu" Grid.Row="6" Grid.Column="0" />
+                <Entry x:Name="txtBlood" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="3" />
+
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Text="Điện thoại di động" Grid.Row="7" Grid.Column="0" />
+                <Entry Keyboard="Numeric" x:Name="txtPhone" Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="3" />
+
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Text="Điện thoại cố định" Grid.Row="8" Grid.Column="0" />
+                <Entry Keyboard="Numeric" x:Name="txtTelephone" Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="3" />
+
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Text="Email" Grid.Row="9" Grid.Column="0" />
+                <Entry x:Name="txtEmail" Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="3" />
+
+                <Button x:Name="btnSave" TextColor="#FFFFFF" BackgroundColor="#da251c" Text="Lưu lại" Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="End" />
+                <Button x:Name="btnClose" TextColor="#FFFFFF" BackgroundColor="#169bd5" Text="Hủy bỏ" Grid.Row="10" Grid.Column="3" HorizontalOptions="End" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,2183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AfterDisater" xml:space="preserve">
+    <value>After the disaster reporting</value>
+  </data>
+  <data name="AlertPage" xml:space="preserve">
+    <value>Alert</value>
+  </data>
+  <data name="answer44c" xml:space="preserve">
+    <value>Yes (If yes, answer question 44c)</value>
+    <comment>Có (Nếu có, trả lời câu 44c)</comment>
+  </data>
+  <data name="BeforeDisater" xml:space="preserve">
+    <value>Pre-disaster report</value>
+  </data>
+  <data name="ByWhomDo" xml:space="preserve">
+    <value>By whom do?</value>
+    <comment>Do ai thực hiện?</comment>
+  </data>
+  <data name="ContactPage" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="FamilyPage" xml:space="preserve">
+    <value>Family</value>
+  </data>
+  <data name="food1" xml:space="preserve">
+    <value>1. After the catastrophe, is food production of the community affected?</value>
+    <comment>1.   Sau thảm họa, việc sản xuất lương thực của cộng đồng có bị ảnh hưởng gì không?</comment>
+  </data>
+  <data name="food10" xml:space="preserve">
+    <value>10. Assuming customer demand doubles, do you have enough goods to sell?</value>
+    <comment>10.    Giả sử nhu cầu của khách hàng tăng gấp đôi, anh/chị có đủ hàng để bán không?</comment>
+  </data>
+  <data name="food11" xml:space="preserve">
+    <value>11. Have you ever had enough goods to sell?</value>
+    <comment>11.     Đã bao giờ anh/chị không có đủ hàng để bán chưa?</comment>
+  </data>
+  <data name="food2" xml:space="preserve">
+    <value>2. Are the people's food reserves damaged?</value>
+    <comment>2.   Lương thực dự trữ của người dân có bị thiệt hại không?</comment>
+  </data>
+  <data name="food3" xml:space="preserve">
+    <value>3. What have affected people done to cope with this damage?</value>
+    <comment>3.  Người dân bị ảnh hưởng đã làm gì để ứng phó với thiệt hại này?</comment>
+  </data>
+  <data name="food4" xml:space="preserve">
+    <value>4. Has there been food intervention?</value>
+    <comment>4.     Đã hoặc sẽ có can thiệp về lương thực chưa?</comment>
+  </data>
+  <data name="food5" xml:space="preserve">
+    <value>5. What are the impacts of affected people's income?</value>
+    <comment>5.     Thu nhập của người dân bị ảnh hưởng có bị tác động gì không?</comment>
+  </data>
+  <data name="food6" xml:space="preserve">
+    <value>6. Do people now have access to food markets / shops?</value>
+    <comment>6.     Hiện tại, người dân có tiếp cận được chợ/cửa hàng bán lương thực hay không?</comment>
+  </data>
+  <data name="food7" xml:space="preserve">
+    <value>7. On average, how long does it take people (in minutes) to reach the market / store?</value>
+    <comment>7.    Trung bình, người dân đi mất bao lâu (tính bằng phút) để đến được chợ/cửa hàng?</comment>
+  </data>
+  <data name="food8" xml:space="preserve">
+    <value>8. After the storm, the price of food staples (rice) fluctuate?
+                         (number 48 - 50 used to interview traders in the nearest area)</value>
+    <comment>8.     Sau bão, giá mặt hàng lương thực chính (gạo) có biến động không?
+                        (câu số 48 - 50 dùng để phỏng vấn người buôn bán ở địa bàn gần nhất)</comment>
+  </data>
+  <data name="food9" xml:space="preserve">
+    <value>9. Currently, rice is available in the local market? (mark 'v' in the appropriate box)</value>
+    <comment>9.    Hiện tại, gạo có sẵn trên thị trường địa phương không? (đánh dấu 'v' vào ô phù hợp)</comment>
+  </data>
+  <data name="health1" xml:space="preserve">
+    <value>1. After the disaster, is the affected community affected by health?</value>
+    <comment>1.     Sau thảm họa, cộng đồng bị ảnh hưởng có bị tác động về sức khỏe không?</comment>
+  </data>
+  <data name="health2" xml:space="preserve">
+    <value>2. Are there any communicable diseases that result from the disaster?</value>
+    <comment>2.     Có bệnh truyền nhiễm nào phát sinh do hậu quả của thảm họa hay không?</comment>
+  </data>
+  <data name="health3" xml:space="preserve">
+    <value>3. Do people have to pay for medicine / hospital fees?</value>
+    <comment>3.     Người dân có phải trả tiền thuốc/viện phí không?</comment>
+  </data>
+  <data name="home1" xml:space="preserve">
+    <value>1. What are the types of local housing?</value>
+    <comment>1.     Các loại hình nhà ở địa phương là gì?</comment>
+  </data>
+  <data name="home10" xml:space="preserve">
+    <value>10. Who is affected household utensils to use?</value>
+    <comment>10.     Những người bị ảnh hưởng hiện có đồ dùng gia đình để sử dụng không?</comment>
+  </data>
+  <data name="home11" xml:space="preserve">
+    <value>11. Has there been or will there be any interference with household tools / utensils?</value>
+    <comment>11.     Đã hoặc sẽ có can thiệp gì về dụng cụ/đồ dùng gia đình chưa?</comment>
+  </data>
+  <data name="home2" xml:space="preserve">
+    <value>2. What is the structure of the house popular in the community?</value>
+    <comment>2.     Kết cấu nhà phổ biến ở cộng đồng như thế nào?</comment>
+  </data>
+  <data name="home3" xml:space="preserve">
+    <value>3. Damage to the house after the storm (only damage to the main house).</value>
+    <comment>3.    Thiệt hại về nhà sau bão (chỉ tính thiệt hại nhà ở chính).</comment>
+  </data>
+  <data name="home3des" xml:space="preserve">
+    <value>The home must have been occupied for at least the last 6 months and during a disaster. House speed: 50% of the main roof</value>
+    <comment>Nhà phải đang có người ở ít nhất trong vòng 6 tháng gần đây và trong thời gian xảy ra thảm họa. Nhà tốc mái: tốc/hỏng từ 50% mái nhà chính trở lên</comment>
+  </data>
+  <data name="home4" xml:space="preserve">
+    <value>4. How did people respond to house damage (tick 'v' in the appropriate boxes)</value>
+    <comment>4.    Người dân đã ứng phó thế nào với thiệt hại về nhà (đánh dấu 'v' vào các ô phù hợp)</comment>
+  </data>
+  <data name="home5" xml:space="preserve">
+    <value>5. Are construction materials (including tarpaulins ...) available locally? (mark 'X' in the appropriate box)</value>
+    <comment>5.    Các mặt hàng vật liệu xây dựng (bao gồm cả tấm bạt nhựa…) có bán sẵn ở địa phương hay không? (đánh dấu 'X' vào ô phù  hợp)</comment>
+  </data>
+  <data name="home6" xml:space="preserve">
+    <value>6. After the storm, prices of building materials increased?</value>
+    <comment>6.   Sau bão, giá các mặt hàng vật liệu xây dựng có tăng không?</comment>
+  </data>
+  <data name="home7" xml:space="preserve">
+    <value>7. Has there been or will be housing related interventions?</value>
+    <comment>7.    Đã hoặc sẽ có can thiệp liên quan đến nhà ở chưa?</comment>
+  </data>
+  <data name="home8" xml:space="preserve">
+    <value>8. Are people affected by household items (blankets, curtains, cooking utensils)?</value>
+    <comment>8.    Người dân có bị ảnh hưởng về đồ dùng gia đình (chăn, màn, dụng cụ nấu ăn)?</comment>
+  </data>
+  <data name="home9" xml:space="preserve">
+    <value>9. How have affected people responded?</value>
+    <comment>9.    Những người bị ảnh hưởng đã ứng phó như thế nào?</comment>
+  </data>
+  <data name="HomePage" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="info1" xml:space="preserve">
+    <value>1. Total number of villages in the commune</value>
+    <comment>1. Tổng số thôn trong xã</comment>
+  </data>
+  <data name="info11" xml:space="preserve">
+    <value>11. Total number of deaths due to disaster</value>
+    <comment>11.Tổng số người chết do thảm họa</comment>
+  </data>
+  <data name="info12" xml:space="preserve">
+    <value>12. Total number of people injured by disaster</value>
+    <comment>12.Tổng số người bị thương do thảm họa</comment>
+  </data>
+  <data name="info13" xml:space="preserve">
+    <value>13. Among the poor and near poor households affected by the disaster, how many households have the following objects:</value>
+    <comment>13. Trong số các hộ nghèo và cận nghèo bị thiệt hại bởi thảm họa nêu trên, có bao nhiêu hộ có các đối tượng sau:</comment>
+  </data>
+  <data name="info13a" xml:space="preserve">
+    <value>a. Women who are pregnant or breastfeeding</value>
+    <comment>a. Phụ nữ có thai hoặc cho con bú</comment>
+  </data>
+  <data name="info13b" xml:space="preserve">
+    <value>b. Children under 5 years old</value>
+    <comment>b. Trẻ em dưới 5 tuổi</comment>
+  </data>
+  <data name="info13c" xml:space="preserve">
+    <value>c. Important is the main labor in the household (the person who feeds the family)</value>
+    <comment>c. Nữ là lao động chính trong gia đình  hộ (là người nuôi sống gia đình)</comment>
+  </data>
+  <data name="info13d" xml:space="preserve">
+    <value>d. People with disabilities and people with chronic diseases</value>
+    <comment>d.Người khuyết tật và người có bệnh mãn tính</comment>
+  </data>
+  <data name="info14" xml:space="preserve">
+    <value>14. Socio-cultural characteristics of the locality:</value>
+    <comment>14. Đặc điểm văn hóa xã hội của địa phương:</comment>
+  </data>
+  <data name="info14a" xml:space="preserve">
+    <value>1. Percentage of ethnic minority people</value>
+    <comment>1.Tỷ lệ % người dân tộc thiểu số</comment>
+  </data>
+  <data name="info14b" xml:space="preserve">
+    <value>2. Percentage of people who can read and write</value>
+    <comment>2. Tỷ lệ % người biết đọc, biết viết</comment>
+  </data>
+  <data name="info15" xml:space="preserve">
+    <value>15. What are the vulnerabilities (pre-disaster)?</value>
+    <comment>15.    Các tình trạng dễ bị tổn thương (trước thảm họa) là gì?</comment>
+  </data>
+  <data name="info16" xml:space="preserve">
+    <value>16. The main types of livelihoods in the locality (tick the appropriate box):</value>
+    <comment>16.    Các loại hình sinh kế chủ yếu ở địa phương (đánh dấu vào ô thích hợp):</comment>
+  </data>
+  <data name="info16a" xml:space="preserve">
+    <value>a. Agriculture (rice, crops)</value>
+    <comment>a. Nông nghiệp (lúa, hoa màu)</comment>
+  </data>
+  <data name="info2" xml:space="preserve">
+    <value>2. Total number of households in the commune</value>
+    <comment>2. Tổng số hộ trong xã</comment>
+  </data>
+  <data name="info3" xml:space="preserve">
+    <value>3. Total population</value>
+    <comment>3. Tổng số dân</comment>
+  </data>
+  <data name="info4" xml:space="preserve">
+    <value>4. Of which the total number of women</value>
+    <comment>4. Trong đó tổng số nữ</comment>
+  </data>
+  <data name="info5" xml:space="preserve">
+    <value>5. Total poor households</value>
+    <comment>5. Tổng số hộ nghèo</comment>
+  </data>
+  <data name="info6" xml:space="preserve">
+    <value>6. Total near poor households</value>
+    <comment>6. Tổng số hộ cận nghèo</comment>
+  </data>
+  <data name="info7" xml:space="preserve">
+    <value>7. Total number of villages damaged</value>
+    <comment>7. Tổng số thôn bị thiệt hại</comment>
+  </data>
+  <data name="info8" xml:space="preserve">
+    <value>8. Total number of damaged households in general</value>
+    <comment>8. Tổng số hộ gia đình bị thiệt hại nói chung</comment>
+  </data>
+  <data name="info9" xml:space="preserve">
+    <value>9. Total poor households damaged</value>
+    <comment>9. Tổng số hộ nghèo bị thiệt hại</comment>
+  </data>
+  <data name="LanguagePage" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="LoginPage" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginSuccess" xml:space="preserve">
+    <value>You have successfully logged</value>
+  </data>
+  <data name="LoginTitle" xml:space="preserve">
+    <value>You are not logged in</value>
+  </data>
+  <data name="LogoutPage" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="LogoutSuccess" xml:space="preserve">
+    <value>Log out successfully</value>
+  </data>
+  <data name="NewsPage" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="No1" xml:space="preserve">
+    <value>No</value>
+    <comment>Không</comment>
+  </data>
+  <data name="Notification" xml:space="preserve">
+    <value>Notification</value>
+  </data>
+  <data name="ProfilePage" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="RegisterPage" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="ReportPage" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="SpecifyInterventions" xml:space="preserve">
+    <value>Specify interventions?</value>
+    <comment>Nêu rõ các can thiệp?</comment>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>d. Aquaculture (including fishing)</value>
+    <comment>d. Nuôi trồng thủy sản (bao gồm cả đánh bắt hải sản)</comment>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>18. Response activities have been or will take place in the locality?</value>
+    <comment>18.    Các hoạt động ứng phó đã hoặc sẽ diễn ra tại địa phương?</comment>
+  </data>
+  <data name="String100" xml:space="preserve">
+    <value>Blood group</value>
+    <comment>Nhóm máu</comment>
+  </data>
+  <data name="String101" xml:space="preserve">
+    <value>Mobile</value>
+    <comment>Điện thoại di động</comment>
+  </data>
+  <data name="String102" xml:space="preserve">
+    <value>Landline phone</value>
+    <comment>Điện thoại cố định</comment>
+  </data>
+  <data name="String103" xml:space="preserve">
+    <value>Submit</value>
+    <comment>Gửi đơn đăng ký</comment>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>What is the activity?</value>
+    <comment>Hoạt động là gì</comment>
+  </data>
+  <data name="String12" xml:space="preserve">
+    <value>By whom?</value>
+    <comment>Do ai tiến hành</comment>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>19. What is the security situation of the locality, is there anything to worry about?</value>
+    <comment>19.    Tình hình an ninh của địa phương như thế nào, có gì đáng lo ngại không?</comment>
+  </data>
+  <data name="String14" xml:space="preserve">
+    <value>1. After the disaster, do people have enough clean water (food and drink)?</value>
+    <comment>1.    Sau thảm họa, người dân hiện có đủ nước sạch (ăn uống, sinh hoạt) không?</comment>
+  </data>
+  <data name="String15" xml:space="preserve">
+    <value>2. How many people use water per day?</value>
+    <comment>2.    Hiện nay, mỗi người dân sử dụng bao nhiêu lít nước/ngày?</comment>
+  </data>
+  <data name="String16" xml:space="preserve">
+    <value>3. At what time do people's water come from? (Mark 'v' in the appropriate boxes)</value>
+    <comment>3.    Hiện tại, nước sinh hoạt của người dân lấy từ đâu?(đánh dấu 'v' vào các ô phù hợp)</comment>
+  </data>
+  <data name="String17" xml:space="preserve">
+    <value>Well with cover, wells</value>
+    <comment>Giếng có nắp che, giếng khoan</comment>
+  </data>
+  <data name="String18" xml:space="preserve">
+    <value>Machine water</value>
+    <comment>Nước máy</comment>
+  </data>
+  <data name="String19" xml:space="preserve">
+    <value>Rain water</value>
+    <comment>Nước mưa</comment>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>b. forestry</value>
+    <comment>b. Lâm nghiệp</comment>
+  </data>
+  <data name="String20" xml:space="preserve">
+    <value>Other (specify)</value>
+    <comment>Khác (nêu rõ)</comment>
+  </data>
+  <data name="String21" xml:space="preserve">
+    <value>Water in rivers, lakes, ponds, dams</value>
+    <comment>Nước ở sông, hồ, ao, đập</comment>
+  </data>
+  <data name="String22" xml:space="preserve">
+    <value>4. Is the water at risk of microbial or chemical contamination?</value>
+    <comment>4.    Nguồn nước này có nguy cơ bị nhiễm vi sinh vật hoặc hóa chất không?</comment>
+  </data>
+  <data name="String23" xml:space="preserve">
+    <value>If yes, indicate the risk</value>
+    <comment>Nếu có, ghi rõ  nguy cơ</comment>
+  </data>
+  <data name="String24" xml:space="preserve">
+    <value>5. What water source can be used to provide enough for affected people?</value>
+    <comment>5.    Có thể sử dụng nguồn nước nào để đủ cung cấp cho người bị ảnh hưởng?</comment>
+  </data>
+  <data name="String25" xml:space="preserve">
+    <value>a. Clear water source</value>
+    <comment>a. Nếu rõ nguồn nước</comment>
+  </data>
+  <data name="String26" xml:space="preserve">
+    <value>b. Specify the measures needed to treat the water source</value>
+    <comment>b. Nêu rõ biện pháp cần thiết để xử lý nguồn nước</comment>
+  </data>
+  <data name="String27" xml:space="preserve">
+    <value>6. Do people have safe water containers?</value>
+    <comment>6.     Người dân có dụng cụ chứa nước an toàn không?</comment>
+  </data>
+  <data name="String28" xml:space="preserve">
+    <value>7. How far do people have to go in meters to get water?</value>
+    <comment>7.     Hiện tại, người dân phải đi bao xa (tính theo mét) để lấy nước?</comment>
+  </data>
+  <data name="String29" xml:space="preserve">
+    <value>9. Was there any water support available?</value>
+    <comment>9.     Đã hoặc sẽ có hỗ trợ nào về nước sạch chưa?</comment>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>e. Renting</value>
+    <comment>e. Làm thuê</comment>
+  </data>
+  <data name="String30" xml:space="preserve">
+    <value>What support / supported objects</value>
+    <comment>Hỗ trợ gì/Đối tượng được hỗ trợ</comment>
+  </data>
+  <data name="String31" xml:space="preserve">
+    <value>Supporting units</value>
+    <comment>Đơn vị hỗ trợ</comment>
+  </data>
+  <data name="String32" xml:space="preserve">
+    <value>Yes (If yes, specify)</value>
+    <comment>Có (Nếu có, ghi rõ)</comment>
+  </data>
+  <data name="String33" xml:space="preserve">
+    <value>10. After the disaster, where are people defecating? (mark 'v' in the appropriate boxes)</value>
+    <comment>10.    Sau thảm họa, người dân đại tiện ở đâu? (đánh dấu 'v' vào các ô phù hợp)</comment>
+  </data>
+  <data name="String34" xml:space="preserve">
+    <value>Two toilet compartment / toilet of the household</value>
+    <comment>Hố xí 2 ngăn/nhà cầu của hộ gia đình</comment>
+  </data>
+  <data name="String35" xml:space="preserve">
+    <value>Fish ponds, rivers and streams</value>
+    <comment>Ao cá, sông suối</comment>
+  </data>
+  <data name="String36" xml:space="preserve">
+    <value>Toilet of the village / hamlet</value>
+    <comment>Nhà vệ sinh/nhà cầu tập thẻ của thôn/ấp</comment>
+  </data>
+  <data name="String37" xml:space="preserve">
+    <value>Fields, garden / shrubs</value>
+    <comment>Ruộng, vườn/bụi cây</comment>
+  </data>
+  <data name="String38" xml:space="preserve">
+    <value>Septic taps / household toilets</value>
+    <comment>Hố xí tự hoại/nhà cầu của hộ gia đình</comment>
+  </data>
+  <data name="String39" xml:space="preserve">
+    <value>11. Do people have clean water and soap to wash their hands after using the toilet?</value>
+    <comment>11.     Người dân có nước sạch và xà phòng để rửa tay sau khi đi vệ sinh không?</comment>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>c. Raising cattle and poultry</value>
+    <comment>c. Chăn nuôi gia súc, gia cầm</comment>
+  </data>
+  <data name="String40" xml:space="preserve">
+    <value>12. What is the local toilet / toilet type?</value>
+    <comment>12.    Loại nhà vệ sinh/nhà cầu thông dụng ở địa phương là gì?</comment>
+  </data>
+  <data name="String41" xml:space="preserve">
+    <value>13. What are the common types of materials for local toilets / toilets?</value>
+    <comment>13.     Loại vật liệu thông dụng để xây nhà vệ sinh/nhà cầu ở địa phương là gì?</comment>
+  </data>
+  <data name="String42" xml:space="preserve">
+    <value>14. What support / toilets have been or will be available?</value>
+    <comment>14.     Đã hoặc sẽ có hỗ trợ nào về nhà vệ sinh/nhà cầu chưa?</comment>
+  </data>
+  <data name="String43" xml:space="preserve">
+    <value>15. How do households treat waste? (mark 'v' in the appropriate boxes)</value>
+    <comment>15.   Các hộ dân xử lý rác thải như thế nào? (đánh dấu 'v' vào các ô phù hợp)</comment>
+  </data>
+  <data name="String44" xml:space="preserve">
+    <value>Burning</value>
+    <comment>Đốt</comment>
+  </data>
+  <data name="String45" xml:space="preserve">
+    <value>Collect garbage concentrate</value>
+    <comment>Thu rác tập trung</comment>
+  </data>
+  <data name="String46" xml:space="preserve">
+    <value>Bury</value>
+    <comment>Chôn</comment>
+  </data>
+  <data name="String47" xml:space="preserve">
+    <value>Other (specify)</value>
+    <comment>Hình thức khác (ghi rõ)</comment>
+  </data>
+  <data name="String48" xml:space="preserve">
+    <value>Yes (if yes, determine which type of market / store people can buy food) (mark 'v' in the appropriate boxes)</value>
+    <comment>Có (nếu có, xác định loại chợ/cửa hàng người dân có thể mua lương thực) (đánh dấu 'v' vào các ô phù hợp)</comment>
+  </data>
+  <data name="String49" xml:space="preserve">
+    <value>Happened. If it happened, how long did it take you to sell it back?</value>
+    <comment>Đã xảy ra. Nếu đã xảy ra, mất bao lâu anh/chị có hàng để bán trở lại:</comment>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>f. Business</value>
+    <comment>f. Kinh doanh, buôn bán</comment>
+  </data>
+  <data name="String50" xml:space="preserve">
+    <value>Retailer in small quantity</value>
+    <comment>Người bán lẻ số lượng ít</comment>
+  </data>
+  <data name="String51" xml:space="preserve">
+    <value>Retailers in bulk</value>
+    <comment>Người bán lẻ số lượng lớn</comment>
+  </data>
+  <data name="String52" xml:space="preserve">
+    <value>Yes (if yes, specify percentage of change and reason):</value>
+    <comment>Có (nếu có, ghi rõ tỉ lệ % biến động và lý do):</comment>
+  </data>
+  <data name="String53" xml:space="preserve">
+    <value>In stock for at least 1 week</value>
+    <comment>đủ hàng cho ít nhất 1 tuần</comment>
+  </data>
+  <data name="String54" xml:space="preserve">
+    <value>limited quantity only for 1-2 days</value>
+    <comment>số lượng hạn chế chỉ đủ cho 1-2 ngày</comment>
+  </data>
+  <data name="String55" xml:space="preserve">
+    <value>In less than 1 week (3-5 days)</value>
+    <comment>đủ hàng cho ít hơn 1 tuần (từ 3-5 ngày)</comment>
+  </data>
+  <data name="String56" xml:space="preserve">
+    <value>no reserve 0-1 days</value>
+    <comment>không có hàng dự trữ 0-1 ngày</comment>
+  </data>
+  <data name="String57" xml:space="preserve">
+    <value>Never</value>
+    <comment>Chưa bao giờ</comment>
+  </data>
+  <data name="String58" xml:space="preserve">
+    <value>a.No (If not, go to question 22)</value>
+    <comment>a.Không (Nếu không ,tiếp câu 22)</comment>
+  </data>
+  <data name="String59" xml:space="preserve">
+    <value>b. Yes (If yes, answer the questions)</value>
+    <comment>b.Có (Nếu có trả lời các câu)</comment>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>17. The following functional systems are operating (marking 'v' in the appropriate boxes).</value>
+    <comment>17. Các hệ thống chức năng sau đây có vận hành không(dấu 'v' vào các ô phù hợp)</comment>
+  </data>
+  <data name="String60" xml:space="preserve">
+    <value>c. What specific effects and the number of cases is higher than normal?</value>
+    <comment>c.Nêu cụ thể ảnh hưởng gì và số ca mắc cao hơn bình thường là bao nhiêu?</comment>
+  </data>
+  <data name="String61" xml:space="preserve">
+    <value>What interventions have been or will be implemented?</value>
+    <comment>Các can thiệp nào đã hoặc sẽ thực hiện?</comment>
+  </data>
+  <data name="String62" xml:space="preserve">
+    <value>Who is supported?</value>
+    <comment>Đối tượng nào được hỗ trợ?</comment>
+  </data>
+  <data name="String63" xml:space="preserve">
+    <value>a. No (If not, go to question 23)</value>
+    <comment>a. Không (Nếu không ,tiếp câu 23)</comment>
+  </data>
+  <data name="String64" xml:space="preserve">
+    <value>b. Yes (If yes, go to question 22c)</value>
+    <comment>b. Có (Nếu có trả lời tiếp câu 22c)</comment>
+  </data>
+  <data name="String65" xml:space="preserve">
+    <value>What specific disease?</value>
+    <comment>Nêu cụ thể bệnh gì?</comment>
+  </data>
+  <data name="String66" xml:space="preserve">
+    <value>What interventions have been or will be implemented?</value>
+    <comment>Các can thiệp nào đã hoặc sẽ thực hiện?</comment>
+  </data>
+  <data name="String67" xml:space="preserve">
+    <value>If yes, write more information</value>
+    <comment>Nếu có, ghi thêm thông tin</comment>
+  </data>
+  <data name="String68" xml:space="preserve">
+    <value>Quantily</value>
+    <comment>Số lượng</comment>
+  </data>
+  <data name="String69" xml:space="preserve">
+    <value>Reason</value>
+    <comment>Nguyên nhân</comment>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>a. Health facilities (hospitals, clinics, health stations, stations, first aid points)</value>
+    <comment>a. Cơ sở y tế (bệnh viện, phòng khám, trạm y tế, trạm, điểm sơ cấp cứu)</comment>
+  </data>
+  <data name="String70" xml:space="preserve">
+    <value>Houses collapsed completely</value>
+    <comment>Nhà sập đổ hoàn toàn</comment>
+  </data>
+  <data name="String71" xml:space="preserve">
+    <value>The house was washed away</value>
+    <comment>Nhà bị cuốn trôi</comment>
+  </data>
+  <data name="String72" xml:space="preserve">
+    <value>Severely damaged home can not be repaired</value>
+    <comment>Nhà bị hư hỏng nặng không thể sửa chữa</comment>
+  </data>
+  <data name="String73" xml:space="preserve">
+    <value>House roof speed</value>
+    <comment>Nhà bị tốc mái</comment>
+  </data>
+  <data name="String74" xml:space="preserve">
+    <value>At the house of acquaintance</value>
+    <comment>Ở nhờ nhà người quen</comment>
+  </data>
+  <data name="String75" xml:space="preserve">
+    <value>At the evacuation site</value>
+    <comment>Ở nơi sơ tán</comment>
+  </data>
+  <data name="String76" xml:space="preserve">
+    <value>Temporary house for living</value>
+    <comment>Dựng tạm nhà để ở</comment>
+  </data>
+  <data name="String77" xml:space="preserve">
+    <value>Not yet</value>
+    <comment>Chưa</comment>
+  </data>
+  <data name="String78" xml:space="preserve">
+    <value>Yes (If yes, answer question 59c)</value>
+    <comment>Có (Nếu có trả lời câu 59c)</comment>
+  </data>
+  <data name="String79" xml:space="preserve">
+    <value>Specify what intervention ?</value>
+    <comment>Nêu cụ thể can thiệp gì ?</comment>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>b. Transport</value>
+    <comment>b. Phương tiện giao thông</comment>
+  </data>
+  <data name="String80" xml:space="preserve">
+    <value>Yes (If answered in v. 63c)</value>
+    <comment>Có (Nếu có trả lời câu 63c)</comment>
+  </data>
+  <data name="String81" xml:space="preserve">
+    <value>g. Other (specify)</value>
+    <comment>g. Khác (Nêu rõ)</comment>
+  </data>
+  <data name="String82" xml:space="preserve">
+    <value>If yes, specify type</value>
+    <comment>If yes, specify type</comment>
+  </data>
+  <data name="String83" xml:space="preserve">
+    <value>Unknown</value>
+    <comment>Unknown</comment>
+  </data>
+  <data name="String84" xml:space="preserve">
+    <value>Other comments</value>
+    <comment>Other comments</comment>
+  </data>
+  <data name="String85" xml:space="preserve">
+    <value>Fullname</value>
+    <comment>Họ tên</comment>
+  </data>
+  <data name="String86" xml:space="preserve">
+    <value>Gender</value>
+    <comment>Giới tính</comment>
+  </data>
+  <data name="String87" xml:space="preserve">
+    <value>Chọn giới tính</value>
+    <comment>Chọn giới tính</comment>
+  </data>
+  <data name="String88" xml:space="preserve">
+    <value>Male</value>
+    <comment>Nam</comment>
+  </data>
+  <data name="String89" xml:space="preserve">
+    <value>Female</value>
+    <comment>Nữ</comment>
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value>c. Roads (accessibility of affected sites)</value>
+    <comment>c. Đường xá (khả năng tiếp cận địa bàn bị ảnh hưởng)</comment>
+  </data>
+  <data name="String90" xml:space="preserve">
+    <value>Other</value>
+    <comment>Khác</comment>
+  </data>
+  <data name="String91" xml:space="preserve">
+    <value>Position / Unit</value>
+    <comment>Chức vụ/Đơn vị</comment>
+  </data>
+  <data name="String92" xml:space="preserve">
+    <value>Address</value>
+    <comment>Địa chỉ</comment>
+  </data>
+  <data name="String93" xml:space="preserve">
+    <value>Select Address</value>
+    <comment>Chọn địa chỉ</comment>
+  </data>
+  <data name="String94" xml:space="preserve">
+    <value>Position wanted</value>
+    <comment>Vị trí mong muốn</comment>
+  </data>
+  <data name="String95" xml:space="preserve">
+    <value>Central level management</value>
+    <comment>Quản lý cấp trung ương</comment>
+  </data>
+  <data name="String96" xml:space="preserve">
+    <value>Provincial management</value>
+    <comment>Quản lý cấp tỉnh</comment>
+  </data>
+  <data name="String97" xml:space="preserve">
+    <value>Commune level management</value>
+    <comment>Quản lý cấp xã</comment>
+  </data>
+  <data name="String98" xml:space="preserve">
+    <value>Member</value>
+    <comment>Hội viên</comment>
+  </data>
+  <data name="String99" xml:space="preserve">
+    <value>Birthday</value>
+    <comment>Ngày sinh</comment>
+  </data>
+  <data name="Table1" xml:space="preserve">
+    <value>Additional observations / findings:</value>
+    <comment>Ghi thêm quan sát/phát hiện:</comment>
+  </data>
+  <data name="Table2" xml:space="preserve">
+    <value>Additional information needed:</value>
+    <comment>Các thông tin cần kiểm chứng thêm:</comment>
+  </data>
+  <data name="Table3" xml:space="preserve">
+    <value>Other Notes:</value>
+    <comment>Ghi chú khác:</comment>
+  </data>
+  <data name="Vietnamese" xml:space="preserve">
+    <value>Vietnamese</value>
+  </data>
+  <data name="VNRC" xml:space="preserve">
+    <value>Viet Nam Red Cross Society</value>
+  </data>
+  <data name="Yes1" xml:space="preserve">
+    <value>Yes</value>
+    <comment>Có</comment>
+  </data>
+  <data name="String104" xml:space="preserve">
+    <value>Reporter information</value>
+    <comment>Thông tin người báo cáo</comment>
+  </data>
+  <data name="String105" xml:space="preserve">
+    <value>General information</value>
+    <comment>Thông tin chung</comment>
+  </data>
+  <data name="String106" xml:space="preserve">
+    <value>Health status</value>
+    <comment>Tình trạng sức khỏe</comment>
+  </data>
+  <data name="String107" xml:space="preserve">
+    <value>Clean water and sanitation</value>
+    <comment>Nước sạch và vệ sinh</comment>
+  </data>
+  <data name="String108" xml:space="preserve">
+    <value>Food and nutrition</value>
+    <comment>Lương thực và dinh dưỡng</comment>
+  </data>
+  <data name="String109" xml:space="preserve">
+    <value>Accommodation and non-food items</value>
+    <comment>Chỗ ở và mặt hàng phi lương thực</comment>
+  </data>
+  <data name="String110" xml:space="preserve">
+    <value>Next</value>
+    <comment>Tiếp</comment>
+  </data>
+  <data name="String111" xml:space="preserve">
+    <value>Previous</value>
+    <comment>Quay lại</comment>
+  </data>
+  <data name="String112" xml:space="preserve">
+    <value>Save</value>
+    <comment>Lưu lại</comment>
+  </data>
+  <data name="String113" xml:space="preserve">
+    <value>Send report</value>
+    <comment>Gửi báo cáo</comment>
+  </data>
+  <data name="String114" xml:space="preserve">
+    <value>Function</value>
+    <comment>Chức năng</comment>
+  </data>
+  <data name="String115" xml:space="preserve">
+    <value>Select language</value>
+    <comment>Lựa chọn ngôn ngữ</comment>
+  </data>
+  <data name="String116" xml:space="preserve">
+    <value>Other functions</value>
+    <comment>Chức năng khác</comment>
+  </data>
+  <data name="String117" xml:space="preserve">
+    <value>Check out the new version</value>
+    <comment>Kiểm tra phiên bản mới</comment>
+  </data>
+  <data name="String118" xml:space="preserve">
+    <value>Terms of use</value>
+    <comment>Điều khoản sử dụng</comment>
+  </data>
+  <data name="String119" xml:space="preserve">
+    <value>Log out</value>
+    <comment>Đăng xuất</comment>
+  </data>
+  <data name="String120" xml:space="preserve">
+    <value>Show notification</value>
+    <comment>Hiển thị thông báo</comment>
+  </data>
+  <data name="String121" xml:space="preserve">
+    <value>District</value>
+    <comment>Huyện</comment>
+  </data>
+  <data name="String122" xml:space="preserve">
+    <value>Select the district</value>
+    <comment>Chọn huyện</comment>
+  </data>
+  <data name="String123" xml:space="preserve">
+    <value>Information provider</value>
+    <comment>Người cung cấp thông tin</comment>
+  </data>
+  <data name="String124" xml:space="preserve">
+    <value>Information provider</value>
+    <comment>Người cung cấp thông tin</comment>
+  </data>
+  <data name="String125" xml:space="preserve">
+    <value>1. Total number of communes in the district</value>
+    <comment>1. Tổng số xã trong huyện</comment>
+  </data>
+  <data name="String126" xml:space="preserve">
+    <value>5. Total number of affected communes</value>
+    <comment>5. Tổng số xã bị ảnh hưởng</comment>
+  </data>
+  <data name="String127" xml:space="preserve">
+    <value>2. Total number of households</value>
+    <comment>2. Tổng số hộ gia đình</comment>
+  </data>
+  <data name="String128" xml:space="preserve">
+    <value>6. Total number of affected communes</value>
+    <comment>6. Tổng số xã bị ảnh hưởng</comment>
+  </data>
+  <data name="String129" xml:space="preserve">
+    <value>3. Total population</value>
+    <comment>3. Tổng số dân</comment>
+  </data>
+  <data name="String130" xml:space="preserve">
+    <value>6. Total near poor households</value>
+    <comment>6. Tổng số hộ cận nghèo</comment>
+  </data>
+  <data name="String131" xml:space="preserve">
+    <value>4. Total points evacuated</value>
+    <comment>4. Tổng số điểm sơ tán</comment>
+  </data>
+  <data name="String132" xml:space="preserve">
+    <value>8. Total early warning system (loudspeaker)</value>
+    <comment>8. Tổng số hệ thống cảnh báo sớm (loa)</comment>
+  </data>
+  <data name="String133" xml:space="preserve">
+    <value>9. Other information</value>
+    <comment>9. Thông tin khác</comment>
+  </data>
+  <data name="String134" xml:space="preserve">
+    <value>FACTOR INFORMATION AND ACTIVITY RESPONSE</value>
+    <comment>THÔNG TIN LỰC LƯỢNG VÀ HOẠT ĐỘNG ỨNG PHÓ</comment>
+  </data>
+  <data name="String135" xml:space="preserve">
+    <value>Are preparedness actions already or will take place locally?</value>
+    <comment>Các hoạt động chuẩn bị ứng phó đã hoặc sẽ diễn ra tại địa phương?</comment>
+  </data>
+  <data name="String136" xml:space="preserve">
+    <value>What activities?</value>
+    <comment>Hoạt động gì?</comment>
+  </data>
+  <data name="String137" xml:space="preserve">
+    <value>By whom?</value>
+    <comment>Do ai tiến hành?</comment>
+  </data>
+  <data name="String138" xml:space="preserve">
+    <value>1. Total number of PDRT team members activated / announced</value>
+    <comment>1. Tổng số thành viên Đội PDRT được kích hoạt/thông báo</comment>
+  </data>
+  <data name="String139" xml:space="preserve">
+    <value>3. Number of PDRT team members ready to respond</value>
+    <comment>3. Số thành viên Đội PDRT sẵn sàng tham gia ứng phó</comment>
+  </data>
+  <data name="String140" xml:space="preserve">
+    <value>2. Total number of volunteers</value>
+    <comment>2. Tổng số tình nguyện viên</comment>
+  </data>
+  <data name="String141" xml:space="preserve">
+    <value>4. Total number of volunteers mobilized to respond</value>
+    <comment>4. Tổng số tình nguyện viên được huy động ứng phó</comment>
+  </data>
+  <data name="String142" xml:space="preserve">
+    <value>5. Other information</value>
+    <comment>5. Thông tin khác</comment>
+  </data>
+  <data name="String143" xml:space="preserve">
+    <value>RESEARCH RESPONSE TO RESPONSE</value>
+    <comment>NGUỒN LỰC PHỤC VỤ CÔNG TÁC ỨNG PHÓ</comment>
+  </data>
+  <data name="String144" xml:space="preserve">
+    <value>1. Total amount</value>
+    <comment>1. Tổng số tiền</comment>
+  </data>
+  <data name="String145" xml:space="preserve">
+    <value>7. Total number of tents / canvas</value>
+    <comment>7. Tổng số lều/nhà bạt</comment>
+  </data>
+  <data name="String146" xml:space="preserve">
+    <value>2. Number of kilograms of rice</value>
+    <comment>2. Tổng số kilôgam gạo</comment>
+  </data>
+  <data name="String147" xml:space="preserve">
+    <value>8. Total number of mobile toilets</value>
+    <comment>8. Tổng số nhà vệ sinh di động</comment>
+  </data>
+  <data name="String148" xml:space="preserve">
+    <value>3. Total noodle shrimp</value>
+    <comment>3. Tổng số mỳ tôm</comment>
+  </data>
+  <data name="String149" xml:space="preserve">
+    <value>9. Total disinfectant / water purifier</value>
+    <comment>9. Tổng số viên khử khuẩn/viên lọc nước</comment>
+  </data>
+  <data name="String150" xml:space="preserve">
+    <value>4. Total number of domestic boxes</value>
+    <comment>4. Tổng số thùng hàng gia đình</comment>
+  </data>
+  <data name="String151" xml:space="preserve">
+    <value>10. Total number of water filters / ceramic filter</value>
+    <comment>10. Tổng số bình lọc nước/bình lọc gốm</comment>
+  </data>
+  <data name="String152" xml:space="preserve">
+    <value>5. Total home repair kit</value>
+    <comment>5. Tổng số bộ dụng cụ sửa nhà</comment>
+  </data>
+  <data name="String153" xml:space="preserve">
+    <value>11. Total number of water filters</value>
+    <comment>11. Tổng số máy lọc nước</comment>
+  </data>
+  <data name="String154" xml:space="preserve">
+    <value>6. The total number of canvas</value>
+    <comment>6. Tổng số tấm bạt</comment>
+  </data>
+  <data name="String155" xml:space="preserve">
+    <value>12. Total number of toilets</value>
+    <comment>12. Tổng số nhà vệ sinh</comment>
+  </data>
+  <data name="String156" xml:space="preserve">
+    <value>13. Other information</value>
+    <comment>13. Thông tin khác</comment>
+  </data>
+  <data name="String157" xml:space="preserve">
+    <value>Submit the report successfully</value>
+    <comment>Gửi báo cáo thành công</comment>
+  </data>
+  <data name="String158" xml:space="preserve">
+    <value>This report can not be submitted</value>
+    <comment>Không thể gửi báo cáo này</comment>
+  </data>
+  <data name="String159" xml:space="preserve">
+    <value>You need to sign in to submit this report</value>
+    <comment>Bạn cần đăng nhập để gửi báo cáo này</comment>
+  </data>
+  <data name="String160" xml:space="preserve">
+    <value>Confirm submitting report</value>
+    <comment>Xác nhận gửi báo cáo</comment>
+  </data>
+  <data name="String161" xml:space="preserve">
+    <value>Are you sure you want to send this report?</value>
+    <comment>Bạn có chắc chắn muốn gửi báo cáo này?</comment>
+  </data>
+  <data name="String162" xml:space="preserve">
+    <value>Fullname...</value>
+    <comment>Họ và tên...</comment>
+  </data>
+  <data name="AfterDisater1" xml:space="preserve">
+    <value>Main Report</value>
+  </data>
+  <data name="AlertPage1" xml:space="preserve">
+    <value>Alert</value>
+  </data>
+  <data name="answer44c1" xml:space="preserve">
+    <value>Yes (If yes, answer question 44c)</value>
+    <comment>Có (Nếu có, trả lời câu 44c)</comment>
+  </data>
+  <data name="BeforeDisater1" xml:space="preserve">
+    <value>Rapid Assessment</value>
+  </data>
+  <data name="ByWhomDo1" xml:space="preserve">
+    <value>By whom do?</value>
+    <comment>Do ai thực hiện?</comment>
+  </data>
+  <data name="ContactPage1" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="English1" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="FamilyPage1" xml:space="preserve">
+    <value>Family</value>
+  </data>
+  <data name="food101" xml:space="preserve">
+    <value>10. Assuming customer demand doubles, do you have enough goods to sell?</value>
+    <comment>10.    Giả sử nhu cầu của khách hàng tăng gấp đôi, anh/chị có đủ hàng để bán không?</comment>
+  </data>
+  <data name="food111" xml:space="preserve">
+    <value>11. Have you ever had enough goods to sell?</value>
+    <comment>11.     Đã bao giờ anh/chị không có đủ hàng để bán chưa?</comment>
+  </data>
+  <data name="food12" xml:space="preserve">
+    <value>1. After the catastrophe, is food production of the community affected?</value>
+    <comment>1.   Sau thảm họa, việc sản xuất lương thực của cộng đồng có bị ảnh hưởng gì không?</comment>
+  </data>
+  <data name="food21" xml:space="preserve">
+    <value>2. Are the people's food reserves damaged?</value>
+    <comment>2.   Lương thực dự trữ của người dân có bị thiệt hại không?</comment>
+  </data>
+  <data name="food31" xml:space="preserve">
+    <value>3. What have affected people done to cope with this damage?</value>
+    <comment>3.  Người dân bị ảnh hưởng đã làm gì để ứng phó với thiệt hại này?</comment>
+  </data>
+  <data name="food41" xml:space="preserve">
+    <value>4. Has there been food intervention?</value>
+    <comment>4.     Đã hoặc sẽ có can thiệp về lương thực chưa?</comment>
+  </data>
+  <data name="food51" xml:space="preserve">
+    <value>5. What are the impacts of affected people's income?</value>
+    <comment>5.     Thu nhập của người dân bị ảnh hưởng có bị tác động gì không?</comment>
+  </data>
+  <data name="food61" xml:space="preserve">
+    <value>6. Do people now have access to food markets / shops?</value>
+    <comment>6.     Hiện tại, người dân có tiếp cận được chợ/cửa hàng bán lương thực hay không?</comment>
+  </data>
+  <data name="food71" xml:space="preserve">
+    <value>7. On average, how long does it take people (in minutes) to reach the market / store?</value>
+    <comment>7.    Trung bình, người dân đi mất bao lâu (tính bằng phút) để đến được chợ/cửa hàng?</comment>
+  </data>
+  <data name="food81" xml:space="preserve">
+    <value>8. After the storm, the price of food staples (rice) fluctuate?
+                         (number 48 - 50 used to interview traders in the nearest area)</value>
+    <comment>8.     Sau bão, giá mặt hàng lương thực chính (gạo) có biến động không?
+                        (câu số 48 - 50 dùng để phỏng vấn người buôn bán ở địa bàn gần nhất)</comment>
+  </data>
+  <data name="food91" xml:space="preserve">
+    <value>9. Currently, rice is available in the local market? (mark 'v' in the appropriate box)</value>
+    <comment>9.    Hiện tại, gạo có sẵn trên thị trường địa phương không? (đánh dấu 'v' vào ô phù hợp)</comment>
+  </data>
+  <data name="health11" xml:space="preserve">
+    <value>1. After the disaster, is the affected community affected by health?</value>
+    <comment>1.     Sau thảm họa, cộng đồng bị ảnh hưởng có bị tác động về sức khỏe không?</comment>
+  </data>
+  <data name="health21" xml:space="preserve">
+    <value>2. Are there any communicable diseases that result from the disaster?</value>
+    <comment>2.     Có bệnh truyền nhiễm nào phát sinh do hậu quả của thảm họa hay không?</comment>
+  </data>
+  <data name="health31" xml:space="preserve">
+    <value>3. Do people have to pay for medicine / hospital fees?</value>
+    <comment>3.     Người dân có phải trả tiền thuốc/viện phí không?</comment>
+  </data>
+  <data name="home101" xml:space="preserve">
+    <value>10. Who is affected household utensils to use?</value>
+    <comment>10.     Những người bị ảnh hưởng hiện có đồ dùng gia đình để sử dụng không?</comment>
+  </data>
+  <data name="home111" xml:space="preserve">
+    <value>11. Has there been or will there be any interference with household tools / utensils?</value>
+    <comment>11.     Đã hoặc sẽ có can thiệp gì về dụng cụ/đồ dùng gia đình chưa?</comment>
+  </data>
+  <data name="home12" xml:space="preserve">
+    <value>1. What are the types of local housing?</value>
+    <comment>1.     Các loại hình nhà ở địa phương là gì?</comment>
+  </data>
+  <data name="home21" xml:space="preserve">
+    <value>2. What is the structure of the house popular in the community?</value>
+    <comment>2.     Kết cấu nhà phổ biến ở cộng đồng như thế nào?</comment>
+  </data>
+  <data name="home31" xml:space="preserve">
+    <value>3. Damage to the house after the storm (only damage to the main house).</value>
+    <comment>3.    Thiệt hại về nhà sau bão (chỉ tính thiệt hại nhà ở chính).</comment>
+  </data>
+  <data name="home3des1" xml:space="preserve">
+    <value>The home must have been occupied for at least the last 6 months and during a disaster. House speed: 50% of the main roof</value>
+    <comment>Nhà phải đang có người ở ít nhất trong vòng 6 tháng gần đây và trong thời gian xảy ra thảm họa. Nhà tốc mái: tốc/hỏng từ 50% mái nhà chính trở lên</comment>
+  </data>
+  <data name="home41" xml:space="preserve">
+    <value>4. How did people respond to house damage (tick 'v' in the appropriate boxes)</value>
+    <comment>4.    Người dân đã ứng phó thế nào với thiệt hại về nhà (đánh dấu 'v' vào các ô phù hợp)</comment>
+  </data>
+  <data name="home51" xml:space="preserve">
+    <value>5. Are construction materials (including tarpaulins ...) available locally? (mark 'X' in the appropriate box)</value>
+    <comment>5.    Các mặt hàng vật liệu xây dựng (bao gồm cả tấm bạt nhựa…) có bán sẵn ở địa phương hay không? (đánh dấu 'X' vào ô phù  hợp)</comment>
+  </data>
+  <data name="home61" xml:space="preserve">
+    <value>6. After the storm, prices of building materials increased?</value>
+    <comment>6.   Sau bão, giá các mặt hàng vật liệu xây dựng có tăng không?</comment>
+  </data>
+  <data name="home71" xml:space="preserve">
+    <value>7. Has there been or will be housing related interventions?</value>
+    <comment>7.    Đã hoặc sẽ có can thiệp liên quan đến nhà ở chưa?</comment>
+  </data>
+  <data name="home81" xml:space="preserve">
+    <value>8. Are people affected by household items (blankets, curtains, cooking utensils)?</value>
+    <comment>8.    Người dân có bị ảnh hưởng về đồ dùng gia đình (chăn, màn, dụng cụ nấu ăn)?</comment>
+  </data>
+  <data name="home91" xml:space="preserve">
+    <value>9. How have affected people responded?</value>
+    <comment>9.    Những người bị ảnh hưởng đã ứng phó như thế nào?</comment>
+  </data>
+  <data name="HomePage1" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="info111" xml:space="preserve">
+    <value>11. Total number of deaths due to disaster</value>
+    <comment>11.Tổng số người chết do thảm họa</comment>
+  </data>
+  <data name="info121" xml:space="preserve">
+    <value>12. Total number of people injured by disaster</value>
+    <comment>12.Tổng số người bị thương do thảm họa</comment>
+  </data>
+  <data name="info131" xml:space="preserve">
+    <value>13. Among the poor and near poor households affected by the disaster, how many households have the following objects:</value>
+    <comment>13. Trong số các hộ nghèo và cận nghèo bị thiệt hại bởi thảm họa nêu trên, có bao nhiêu hộ có các đối tượng sau:</comment>
+  </data>
+  <data name="info13a1" xml:space="preserve">
+    <value>a. Women who are pregnant or breastfeeding</value>
+    <comment>a. Phụ nữ có thai hoặc cho con bú</comment>
+  </data>
+  <data name="info13b1" xml:space="preserve">
+    <value>b. Children under 5 years old</value>
+    <comment>b. Trẻ em dưới 5 tuổi</comment>
+  </data>
+  <data name="info13c1" xml:space="preserve">
+    <value>c. Important is the main labor in the household (the person who feeds the family)</value>
+    <comment>c. Nữ là lao động chính trong gia đình  hộ (là người nuôi sống gia đình)</comment>
+  </data>
+  <data name="info13d1" xml:space="preserve">
+    <value>d. People with disabilities and people with chronic diseases</value>
+    <comment>d.Người khuyết tật và người có bệnh mãn tính</comment>
+  </data>
+  <data name="info141" xml:space="preserve">
+    <value>14. Socio-cultural characteristics of the locality:</value>
+    <comment>14. Đặc điểm văn hóa xã hội của địa phương:</comment>
+  </data>
+  <data name="info14a1" xml:space="preserve">
+    <value>1. Percentage of ethnic minority people</value>
+    <comment>1.Tỷ lệ % người dân tộc thiểu số</comment>
+  </data>
+  <data name="info14b1" xml:space="preserve">
+    <value>2. Percentage of people who can read and write</value>
+    <comment>2. Tỷ lệ % người biết đọc, biết viết</comment>
+  </data>
+  <data name="info151" xml:space="preserve">
+    <value>15. What are the vulnerabilities (pre-disaster)?</value>
+    <comment>15.    Các tình trạng dễ bị tổn thương (trước thảm họa) là gì?</comment>
+  </data>
+  <data name="info161" xml:space="preserve">
+    <value>16. The main types of livelihoods in the locality (tick the appropriate box):</value>
+    <comment>16.    Các loại hình sinh kế chủ yếu ở địa phương (đánh dấu vào ô thích hợp):</comment>
+  </data>
+  <data name="info16a1" xml:space="preserve">
+    <value>a. Agriculture (rice, crops)</value>
+    <comment>a. Nông nghiệp (lúa, hoa màu)</comment>
+  </data>
+  <data name="info17" xml:space="preserve">
+    <value>1. Total number of villages in the commune</value>
+    <comment>1. Tổng số thôn trong xã</comment>
+  </data>
+  <data name="info21" xml:space="preserve">
+    <value>2. Total number of households in the commune</value>
+    <comment>2. Tổng số hộ trong xã</comment>
+  </data>
+  <data name="info31" xml:space="preserve">
+    <value>3. Total population</value>
+    <comment>3. Tổng số dân</comment>
+  </data>
+  <data name="info41" xml:space="preserve">
+    <value>4. Of which the total number of women</value>
+    <comment>4. Trong đó tổng số nữ</comment>
+  </data>
+  <data name="info51" xml:space="preserve">
+    <value>5. Total poor households</value>
+    <comment>5. Tổng số hộ nghèo</comment>
+  </data>
+  <data name="info61" xml:space="preserve">
+    <value>6. Total near poor households</value>
+    <comment>6. Tổng số hộ cận nghèo</comment>
+  </data>
+  <data name="info71" xml:space="preserve">
+    <value>7. Total number of villages damaged</value>
+    <comment>7. Tổng số thôn bị thiệt hại</comment>
+  </data>
+  <data name="info81" xml:space="preserve">
+    <value>8. Total number of damaged households in general</value>
+    <comment>8. Tổng số hộ gia đình bị thiệt hại nói chung</comment>
+  </data>
+  <data name="info91" xml:space="preserve">
+    <value>9. Total poor households damaged</value>
+    <comment>9. Tổng số hộ nghèo bị thiệt hại</comment>
+  </data>
+  <data name="LanguagePage1" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="LoginPage1" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginSuccess1" xml:space="preserve">
+    <value>You have successfully logged</value>
+  </data>
+  <data name="LoginTitle1" xml:space="preserve">
+    <value>You are not logged in</value>
+  </data>
+  <data name="LogoutPage1" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="LogoutSuccess1" xml:space="preserve">
+    <value>Log out successfully</value>
+  </data>
+  <data name="NewsPage1" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="No11" xml:space="preserve">
+    <value>No</value>
+    <comment>Không</comment>
+  </data>
+  <data name="Notification1" xml:space="preserve">
+    <value>Notification</value>
+  </data>
+  <data name="ProfilePage1" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="RegisterPage1" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="ReportPage1" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="Settings1" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="SpecifyInterventions1" xml:space="preserve">
+    <value>Specify interventions?</value>
+    <comment>Nêu rõ các can thiệp?</comment>
+  </data>
+  <data name="String1001" xml:space="preserve">
+    <value>Blood group</value>
+    <comment>Nhóm máu</comment>
+  </data>
+  <data name="String1010" xml:space="preserve">
+    <value>18. Response activities have been or will take place in the locality?</value>
+    <comment>18.    Các hoạt động ứng phó đã hoặc sẽ diễn ra tại địa phương?</comment>
+  </data>
+  <data name="String1011" xml:space="preserve">
+    <value>Mobile</value>
+    <comment>Điện thoại di động</comment>
+  </data>
+  <data name="String1021" xml:space="preserve">
+    <value>Landline phone</value>
+    <comment>Điện thoại cố định</comment>
+  </data>
+  <data name="String1031" xml:space="preserve">
+    <value>Submit</value>
+    <comment>Gửi đơn đăng ký</comment>
+  </data>
+  <data name="String1041" xml:space="preserve">
+    <value>Reporter information</value>
+    <comment>Thông tin người báo cáo</comment>
+  </data>
+  <data name="String1051" xml:space="preserve">
+    <value>General information</value>
+    <comment>Thông tin chung</comment>
+  </data>
+  <data name="String1061" xml:space="preserve">
+    <value>Health status</value>
+    <comment>Tình trạng sức khỏe</comment>
+  </data>
+  <data name="String1071" xml:space="preserve">
+    <value>Clean water and sanitation</value>
+    <comment>Nước sạch và vệ sinh</comment>
+  </data>
+  <data name="String1081" xml:space="preserve">
+    <value>Food and nutrition</value>
+    <comment>Lương thực và dinh dưỡng</comment>
+  </data>
+  <data name="String1091" xml:space="preserve">
+    <value>Accommodation and non-food items</value>
+    <comment>Chỗ ở và mặt hàng phi lương thực</comment>
+  </data>
+  <data name="String1101" xml:space="preserve">
+    <value>Next</value>
+    <comment>Tiếp</comment>
+  </data>
+  <data name="String1110" xml:space="preserve">
+    <value>What is the activity?</value>
+    <comment>Hoạt động là gì</comment>
+  </data>
+  <data name="String1111" xml:space="preserve">
+    <value>Previous</value>
+    <comment>Quay lại</comment>
+  </data>
+  <data name="String1121" xml:space="preserve">
+    <value>Save</value>
+    <comment>Lưu lại</comment>
+  </data>
+  <data name="String1131" xml:space="preserve">
+    <value>Send report</value>
+    <comment>Gửi báo cáo</comment>
+  </data>
+  <data name="String1141" xml:space="preserve">
+    <value>Function</value>
+    <comment>Chức năng</comment>
+  </data>
+  <data name="String1151" xml:space="preserve">
+    <value>Select language</value>
+    <comment>Lựa chọn ngôn ngữ</comment>
+  </data>
+  <data name="String1161" xml:space="preserve">
+    <value>Other functions</value>
+    <comment>Chức năng khác</comment>
+  </data>
+  <data name="String1171" xml:space="preserve">
+    <value>Check out the new version</value>
+    <comment>Kiểm tra phiên bản mới</comment>
+  </data>
+  <data name="String1181" xml:space="preserve">
+    <value>Terms of use</value>
+    <comment>Điều khoản sử dụng</comment>
+  </data>
+  <data name="String1191" xml:space="preserve">
+    <value>Log out</value>
+    <comment>Đăng xuất</comment>
+  </data>
+  <data name="String1201" xml:space="preserve">
+    <value>Show notification</value>
+    <comment>Hiển thị thông báo</comment>
+  </data>
+  <data name="String1210" xml:space="preserve">
+    <value>By whom?</value>
+    <comment>Do ai tiến hành</comment>
+  </data>
+  <data name="String1211" xml:space="preserve">
+    <value>District</value>
+    <comment>Huyện</comment>
+  </data>
+  <data name="String1221" xml:space="preserve">
+    <value>Select the district</value>
+    <comment>Chọn huyện</comment>
+  </data>
+  <data name="String1231" xml:space="preserve">
+    <value>Information provider</value>
+    <comment>Người cung cấp thông tin</comment>
+  </data>
+  <data name="String1241" xml:space="preserve">
+    <value>Information provider</value>
+    <comment>Người cung cấp thông tin</comment>
+  </data>
+  <data name="String1251" xml:space="preserve">
+    <value>1. Total number of communes in the district</value>
+    <comment>1. Tổng số xã trong huyện</comment>
+  </data>
+  <data name="String1261" xml:space="preserve">
+    <value>5. Total number of affected communes</value>
+    <comment>5. Tổng số xã bị ảnh hưởng</comment>
+  </data>
+  <data name="String1271" xml:space="preserve">
+    <value>2. Total number of households</value>
+    <comment>2. Tổng số hộ gia đình</comment>
+  </data>
+  <data name="String1281" xml:space="preserve">
+    <value>6. Total number of affected communes</value>
+    <comment>6. Tổng số xã bị ảnh hưởng</comment>
+  </data>
+  <data name="String1291" xml:space="preserve">
+    <value>3. Total population</value>
+    <comment>3. Tổng số dân</comment>
+  </data>
+  <data name="String1301" xml:space="preserve">
+    <value>6. Total near poor households</value>
+    <comment>6. Tổng số hộ cận nghèo</comment>
+  </data>
+  <data name="String1310" xml:space="preserve">
+    <value>19. What is the security situation of the locality, is there anything to worry about?</value>
+    <comment>19.    Tình hình an ninh của địa phương như thế nào, có gì đáng lo ngại không?</comment>
+  </data>
+  <data name="String1311" xml:space="preserve">
+    <value>4. Total points evacuated</value>
+    <comment>4. Tổng số điểm sơ tán</comment>
+  </data>
+  <data name="String1321" xml:space="preserve">
+    <value>8. Total early warning system (loudspeaker)</value>
+    <comment>8. Tổng số hệ thống cảnh báo sớm (loa)</comment>
+  </data>
+  <data name="String1331" xml:space="preserve">
+    <value>9. Other information</value>
+    <comment>9. Thông tin khác</comment>
+  </data>
+  <data name="String1341" xml:space="preserve">
+    <value>FACTOR INFORMATION AND ACTIVITY RESPONSE</value>
+    <comment>THÔNG TIN LỰC LƯỢNG VÀ HOẠT ĐỘNG ỨNG PHÓ</comment>
+  </data>
+  <data name="String1351" xml:space="preserve">
+    <value>Are preparedness actions already or will take place locally?</value>
+    <comment>Các hoạt động chuẩn bị ứng phó đã hoặc sẽ diễn ra tại địa phương?</comment>
+  </data>
+  <data name="String1361" xml:space="preserve">
+    <value>What activities?</value>
+    <comment>Hoạt động gì?</comment>
+  </data>
+  <data name="String1371" xml:space="preserve">
+    <value>By whom?</value>
+    <comment>Do ai tiến hành?</comment>
+  </data>
+  <data name="String1381" xml:space="preserve">
+    <value>1. Total number of PDRT team members activated / announced</value>
+    <comment>1. Tổng số thành viên Đội PDRT được kích hoạt/thông báo</comment>
+  </data>
+  <data name="String1391" xml:space="preserve">
+    <value>3. Number of PDRT team members ready to respond</value>
+    <comment>3. Số thành viên Đội PDRT sẵn sàng tham gia ứng phó</comment>
+  </data>
+  <data name="String1401" xml:space="preserve">
+    <value>2. Total number of volunteers</value>
+    <comment>2. Tổng số tình nguyện viên</comment>
+  </data>
+  <data name="String1410" xml:space="preserve">
+    <value>1. After the disaster, do people have enough clean water (food and drink)?</value>
+    <comment>1.    Sau thảm họa, người dân hiện có đủ nước sạch (ăn uống, sinh hoạt) không?</comment>
+  </data>
+  <data name="String1411" xml:space="preserve">
+    <value>4. Total number of volunteers mobilized to respond</value>
+    <comment>4. Tổng số tình nguyện viên được huy động ứng phó</comment>
+  </data>
+  <data name="String1421" xml:space="preserve">
+    <value>5. Other information</value>
+    <comment>5. Thông tin khác</comment>
+  </data>
+  <data name="String1431" xml:space="preserve">
+    <value>RESEARCH RESPONSE TO RESPONSE</value>
+    <comment>NGUỒN LỰC PHỤC VỤ CÔNG TÁC ỨNG PHÓ</comment>
+  </data>
+  <data name="String1441" xml:space="preserve">
+    <value>1. Total amount</value>
+    <comment>1. Tổng số tiền</comment>
+  </data>
+  <data name="String1451" xml:space="preserve">
+    <value>7. Total number of tents / canvas</value>
+    <comment>7. Tổng số lều/nhà bạt</comment>
+  </data>
+  <data name="String1461" xml:space="preserve">
+    <value>2. Number of kilograms of rice</value>
+    <comment>2. Tổng số kilôgam gạo</comment>
+  </data>
+  <data name="String1471" xml:space="preserve">
+    <value>8. Total number of mobile toilets</value>
+    <comment>8. Tổng số nhà vệ sinh di động</comment>
+  </data>
+  <data name="String1481" xml:space="preserve">
+    <value>3. Total noodle shrimp</value>
+    <comment>3. Tổng số mỳ tôm</comment>
+  </data>
+  <data name="String1491" xml:space="preserve">
+    <value>9. Total disinfectant / water purifier</value>
+    <comment>9. Tổng số viên khử khuẩn/viên lọc nước</comment>
+  </data>
+  <data name="String1501" xml:space="preserve">
+    <value>4. Total number of domestic boxes</value>
+    <comment>4. Tổng số thùng hàng gia đình</comment>
+  </data>
+  <data name="String1510" xml:space="preserve">
+    <value>2. How many people use water per day?</value>
+    <comment>2.    Hiện nay, mỗi người dân sử dụng bao nhiêu lít nước/ngày?</comment>
+  </data>
+  <data name="String1511" xml:space="preserve">
+    <value>10. Total number of water filters / ceramic filter</value>
+    <comment>10. Tổng số bình lọc nước/bình lọc gốm</comment>
+  </data>
+  <data name="String1521" xml:space="preserve">
+    <value>5. Total home repair kit</value>
+    <comment>5. Tổng số bộ dụng cụ sửa nhà</comment>
+  </data>
+  <data name="String1531" xml:space="preserve">
+    <value>11. Total number of water filters</value>
+    <comment>11. Tổng số máy lọc nước</comment>
+  </data>
+  <data name="String1541" xml:space="preserve">
+    <value>6. The total number of canvas</value>
+    <comment>6. Tổng số tấm bạt</comment>
+  </data>
+  <data name="String1551" xml:space="preserve">
+    <value>12. Total number of toilets</value>
+    <comment>12. Tổng số nhà vệ sinh</comment>
+  </data>
+  <data name="String1561" xml:space="preserve">
+    <value>13. Other information</value>
+    <comment>13. Thông tin khác</comment>
+  </data>
+  <data name="String1571" xml:space="preserve">
+    <value>Gửi báo cáo thành công</value>
+    <comment>Gửi báo cáo thành công</comment>
+  </data>
+  <data name="String1581" xml:space="preserve">
+    <value>Không thể gửi báo cáo này</value>
+    <comment>Không thể gửi báo cáo này</comment>
+  </data>
+  <data name="String1591" xml:space="preserve">
+    <value>Bạn cần đăng nhập để gửi báo cáo này</value>
+    <comment>Bạn cần đăng nhập để gửi báo cáo này</comment>
+  </data>
+  <data name="String1601" xml:space="preserve">
+    <value>Xác nhận gửi báo cáo</value>
+    <comment>Xác nhận gửi báo cáo</comment>
+  </data>
+  <data name="String1611" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn gửi báo cáo này?</value>
+    <comment>Bạn có chắc chắn muốn gửi báo cáo này?</comment>
+  </data>
+  <data name="String1621" xml:space="preserve">
+    <value>Fullname...</value>
+    <comment>Họ và tên...</comment>
+  </data>
+  <data name="String163" xml:space="preserve">
+    <value>d. Aquaculture (including fishing)</value>
+    <comment>d. Nuôi trồng thủy sản (bao gồm cả đánh bắt hải sản)</comment>
+  </data>
+  <data name="String1631" xml:space="preserve">
+    <value>Alert...</value>
+    <comment>Tin cảnh báo</comment>
+  </data>
+  <data name="String164" xml:space="preserve">
+    <value>3. At what time do people's water come from? (Mark 'v' in the appropriate boxes)</value>
+    <comment>3.    Hiện tại, nước sinh hoạt của người dân lấy từ đâu?(đánh dấu 'v' vào các ô phù hợp)</comment>
+  </data>
+  <data name="String1641" xml:space="preserve">
+    <value>News...</value>
+    <comment>Tin tức...</comment>
+  </data>
+  <data name="String165" xml:space="preserve">
+    <value>Province</value>
+    <comment>Tỉnh</comment>
+  </data>
+  <data name="String166" xml:space="preserve">
+    <value>Events</value>
+    <comment>Sự kiện</comment>
+  </data>
+  <data name="String167" xml:space="preserve">
+    <value>Select Events</value>
+  </data>
+  <data name="String168" xml:space="preserve">
+    <value>Province</value>
+    <comment>Tỉnh/thành</comment>
+  </data>
+  <data name="String169" xml:space="preserve">
+    <value>Select province</value>
+    <comment>Chọn tỉnh</comment>
+  </data>
+  <data name="String170" xml:space="preserve">
+    <value>Sign out?</value>
+    <comment>Xác nhận đăng xuất</comment>
+  </data>
+  <data name="String171" xml:space="preserve">
+    <value>Well with cover, wells</value>
+    <comment>Giếng có nắp che, giếng khoan</comment>
+  </data>
+  <data name="String1711" xml:space="preserve">
+    <value>Are you sure you want to sign out?</value>
+    <comment>Bạn có chắc chắn muốn đăng xuất?</comment>
+  </data>
+  <data name="String172" xml:space="preserve">
+    <value>Add new user successfully</value>
+    <comment>Thêm mới người dùng thành công thành công</comment>
+  </data>
+  <data name="String173" xml:space="preserve">
+    <value>Successfully updated user successfully</value>
+    <comment>Cập nhật người dùng thành công thành công</comment>
+  </data>
+  <data name="String174" xml:space="preserve">
+    <value>Can not add new user</value>
+    <comment>Không thể thêm mới người dùng</comment>
+  </data>
+  <data name="String175" xml:space="preserve">
+    <value>There was an error inviting retry</value>
+    <comment>Đã có lỗi xảy ra mời thử lại</comment>
+  </data>
+  <data name="String176" xml:space="preserve">
+    <value>Are you sure you want to delete this user?</value>
+    <comment>Bạn có chắc chắn muốn xóa người dùng này?</comment>
+  </data>
+  <data name="String177" xml:space="preserve">
+    <value>Confirm delete</value>
+  </data>
+  <data name="String178" xml:space="preserve">
+    <value>Delete user successfully</value>
+    <comment>Xóa người dùng thành công</comment>
+  </data>
+  <data name="String179" xml:space="preserve">
+    <value>This operation can not be performed</value>
+    <comment>Không thể thực hiện được thao tác này</comment>
+  </data>
+  <data name="String180" xml:space="preserve">
+    <value>Do you want to activate this user?</value>
+    <comment>Bạn có muốn kích hoạt người dùng này?</comment>
+  </data>
+  <data name="String181" xml:space="preserve">
+    <value>Machine water</value>
+    <comment>Nước máy</comment>
+  </data>
+  <data name="String1811" xml:space="preserve">
+    <value>Activate user successfully</value>
+    <comment>Kích hoạt người dùng thành công</comment>
+  </data>
+  <data name="String182" xml:space="preserve">
+    <value>Would you like to disable this user?</value>
+    <comment>Bạn có muốn disable người dùng này?</comment>
+  </data>
+  <data name="String183" xml:space="preserve">
+    <value>Disable the user successfully</value>
+    <comment>Disable người dùng thành công</comment>
+  </data>
+  <data name="String184" xml:space="preserve">
+    <value>Add new family</value>
+    <comment>Thêm mới hộ gia đình</comment>
+  </data>
+  <data name="String185" xml:space="preserve">
+    <value>Update family</value>
+  </data>
+  <data name="String186" xml:space="preserve">
+    <value>You do not have permission to perform this function</value>
+    <comment>Bạn đã không có quyền thực hiện chức năng này</comment>
+  </data>
+  <data name="String187" xml:space="preserve">
+    <value>Add new family successfully</value>
+    <comment>Thêm mới hộ gia đình thành công</comment>
+  </data>
+  <data name="String188" xml:space="preserve">
+    <value>Can not add new family</value>
+    <comment>Không thể thêm mới hộ gia đình</comment>
+  </data>
+  <data name="String189" xml:space="preserve">
+    <value>Family Update Successful</value>
+    <comment>Cập nhật hộ gia đình thành công</comment>
+  </data>
+  <data name="String190" xml:space="preserve">
+    <value>Failed to update family</value>
+    <comment>Không thể cập nhật hộ gia đình</comment>
+  </data>
+  <data name="String191" xml:space="preserve">
+    <value>Rain water</value>
+    <comment>Nước mưa</comment>
+  </data>
+  <data name="String1911" xml:space="preserve">
+    <value>Family not found to update</value>
+    <comment>Không tìm thấy gia đình cần cập nhật</comment>
+  </data>
+  <data name="String192" xml:space="preserve">
+    <value>Family details</value>
+    <comment>Chi tiết hộ gia đình</comment>
+  </data>
+  <data name="String193" xml:space="preserve">
+    <value>Are you sure you want to delete this family?</value>
+    <comment>Bạn có chắc chắn muốn xóa hộ gia đình này?</comment>
+  </data>
+  <data name="String194" xml:space="preserve">
+    <value>Clear successful family</value>
+    <comment>Xóa hộ gia đình thành công</comment>
+  </data>
+  <data name="String195" xml:space="preserve">
+    <value>Successful news updates</value>
+    <comment>Cập nhật tin tức thành công</comment>
+  </data>
+  <data name="String196" xml:space="preserve">
+    <value>Add new news successfully</value>
+    <comment>Thêm mới tin tức thành công</comment>
+  </data>
+  <data name="String197" xml:space="preserve">
+    <value>Delete news successfully</value>
+    <comment>Xóa tin tức thành công</comment>
+  </data>
+  <data name="String198" xml:space="preserve">
+    <value>Are you sure you want to delete this news?</value>
+    <comment>Bạn có chắc chắn muốn xóa tin tức này?</comment>
+  </data>
+  <data name="String199" xml:space="preserve">
+    <value>Update personal information</value>
+    <comment>Cập nhật thông tin cá nhân</comment>
+  </data>
+  <data name="String200" xml:space="preserve">
+    <value>Add new user successfully</value>
+    <comment>Thêm mới người dùng thành công thành công</comment>
+  </data>
+  <data name="String201" xml:space="preserve">
+    <value>Other (specify)</value>
+    <comment>Khác (nêu rõ)</comment>
+  </data>
+  <data name="String2011" xml:space="preserve">
+    <value>Can not add new user</value>
+    <comment>Không thể thêm mới người dùng</comment>
+  </data>
+  <data name="String202" xml:space="preserve">
+    <value>Add new alert successfully</value>
+    <comment>Thêm mới cảnh báo thành công</comment>
+  </data>
+  <data name="String203" xml:space="preserve">
+    <value>Could not add new alert</value>
+    <comment>Không thể thêm mới cảnh báo</comment>
+  </data>
+  <data name="String204" xml:space="preserve">
+    <value>Update successful alerts</value>
+    <comment>Cập nhật cảnh báo thành công</comment>
+  </data>
+  <data name="String205" xml:space="preserve">
+    <value>Failed to update the alert</value>
+    <comment>Không thể cập nhật cảnh báo</comment>
+  </data>
+  <data name="String206" xml:space="preserve">
+    <value>Are you sure you want to delete this warning?</value>
+    <comment>Bạn có chắc chắn muốn xóa cảnh báo này?</comment>
+  </data>
+  <data name="String207" xml:space="preserve">
+    <value>Successfully cleared alerts</value>
+    <comment>Xóa cảnh báo thành công</comment>
+  </data>
+  <data name="String210" xml:space="preserve">
+    <value>b. forestry</value>
+    <comment>b. Lâm nghiệp</comment>
+  </data>
+  <data name="String211" xml:space="preserve">
+    <value>Water in rivers, lakes, ponds, dams</value>
+    <comment>Nước ở sông, hồ, ao, đập</comment>
+  </data>
+  <data name="String221" xml:space="preserve">
+    <value>4. Is the water at risk of microbial or chemical contamination?</value>
+    <comment>4.    Nguồn nước này có nguy cơ bị nhiễm vi sinh vật hoặc hóa chất không?</comment>
+  </data>
+  <data name="String231" xml:space="preserve">
+    <value>If yes, indicate the risk</value>
+    <comment>Nếu có, ghi rõ  nguy cơ</comment>
+  </data>
+  <data name="String241" xml:space="preserve">
+    <value>5. What water source can be used to provide enough for affected people?</value>
+    <comment>5.    Có thể sử dụng nguồn nước nào để đủ cung cấp cho người bị ảnh hưởng?</comment>
+  </data>
+  <data name="String251" xml:space="preserve">
+    <value>a. Clear water source</value>
+    <comment>a. Nếu rõ nguồn nước</comment>
+  </data>
+  <data name="String261" xml:space="preserve">
+    <value>b. Specify the measures needed to treat the water source</value>
+    <comment>b. Nêu rõ biện pháp cần thiết để xử lý nguồn nước</comment>
+  </data>
+  <data name="String271" xml:space="preserve">
+    <value>6. Do people have safe water containers?</value>
+    <comment>6.     Người dân có dụng cụ chứa nước an toàn không?</comment>
+  </data>
+  <data name="String281" xml:space="preserve">
+    <value>7. How far do people have to go in meters to get water?</value>
+    <comment>7.     Hiện tại, người dân phải đi bao xa (tính theo mét) để lấy nước?</comment>
+  </data>
+  <data name="String291" xml:space="preserve">
+    <value>9. Was there any water support available?</value>
+    <comment>9.     Đã hoặc sẽ có hỗ trợ nào về nước sạch chưa?</comment>
+  </data>
+  <data name="String301" xml:space="preserve">
+    <value>What support / supported objects</value>
+    <comment>Hỗ trợ gì/Đối tượng được hỗ trợ</comment>
+  </data>
+  <data name="String310" xml:space="preserve">
+    <value>e. Renting</value>
+    <comment>e. Làm thuê</comment>
+  </data>
+  <data name="String311" xml:space="preserve">
+    <value>Supporting units</value>
+    <comment>Đơn vị hỗ trợ</comment>
+  </data>
+  <data name="String321" xml:space="preserve">
+    <value>Yes (If yes, specify)</value>
+    <comment>Có (Nếu có, ghi rõ)</comment>
+  </data>
+  <data name="String331" xml:space="preserve">
+    <value>10. After the disaster, where are people defecating? (mark 'v' in the appropriate boxes)</value>
+    <comment>10.    Sau thảm họa, người dân đại tiện ở đâu? (đánh dấu 'v' vào các ô phù hợp)</comment>
+  </data>
+  <data name="String341" xml:space="preserve">
+    <value>Two toilet compartment / toilet of the household</value>
+    <comment>Hố xí 2 ngăn/nhà cầu của hộ gia đình</comment>
+  </data>
+  <data name="String351" xml:space="preserve">
+    <value>Fish ponds, rivers and streams</value>
+    <comment>Ao cá, sông suối</comment>
+  </data>
+  <data name="String361" xml:space="preserve">
+    <value>Toilet of the village / hamlet</value>
+    <comment>Nhà vệ sinh/nhà cầu tập thẻ của thôn/ấp</comment>
+  </data>
+  <data name="String371" xml:space="preserve">
+    <value>Fields, garden / shrubs</value>
+    <comment>Ruộng, vườn/bụi cây</comment>
+  </data>
+  <data name="String381" xml:space="preserve">
+    <value>Septic taps / household toilets</value>
+    <comment>Hố xí tự hoại/nhà cầu của hộ gia đình</comment>
+  </data>
+  <data name="String391" xml:space="preserve">
+    <value>11. Do people have clean water and soap to wash their hands after using the toilet?</value>
+    <comment>11.     Người dân có nước sạch và xà phòng để rửa tay sau khi đi vệ sinh không?</comment>
+  </data>
+  <data name="String401" xml:space="preserve">
+    <value>12. What is the local toilet / toilet type?</value>
+    <comment>12.    Loại nhà vệ sinh/nhà cầu thông dụng ở địa phương là gì?</comment>
+  </data>
+  <data name="String410" xml:space="preserve">
+    <value>c. Raising cattle and poultry</value>
+    <comment>c. Chăn nuôi gia súc, gia cầm</comment>
+  </data>
+  <data name="String411" xml:space="preserve">
+    <value>13. What are the common types of materials for local toilets / toilets?</value>
+    <comment>13.     Loại vật liệu thông dụng để xây nhà vệ sinh/nhà cầu ở địa phương là gì?</comment>
+  </data>
+  <data name="String421" xml:space="preserve">
+    <value>14. What support / toilets have been or will be available?</value>
+    <comment>14.     Đã hoặc sẽ có hỗ trợ nào về nhà vệ sinh/nhà cầu chưa?</comment>
+  </data>
+  <data name="String431" xml:space="preserve">
+    <value>15. How do households treat waste? (mark 'v' in the appropriate boxes)</value>
+    <comment>15.   Các hộ dân xử lý rác thải như thế nào? (đánh dấu 'v' vào các ô phù hợp)</comment>
+  </data>
+  <data name="String441" xml:space="preserve">
+    <value>Burning</value>
+    <comment>Đốt</comment>
+  </data>
+  <data name="String451" xml:space="preserve">
+    <value>Collect garbage concentrate</value>
+    <comment>Thu rác tập trung</comment>
+  </data>
+  <data name="String461" xml:space="preserve">
+    <value>Bury</value>
+    <comment>Chôn</comment>
+  </data>
+  <data name="String471" xml:space="preserve">
+    <value>Other (specify)</value>
+    <comment>Hình thức khác (ghi rõ)</comment>
+  </data>
+  <data name="String481" xml:space="preserve">
+    <value>Yes (if yes, determine which type of market / store people can buy food) (mark 'v' in the appropriate boxes)</value>
+    <comment>Có (nếu có, xác định loại chợ/cửa hàng người dân có thể mua lương thực) (đánh dấu 'v' vào các ô phù hợp)</comment>
+  </data>
+  <data name="String491" xml:space="preserve">
+    <value>Happened. If it happened, how long did it take you to sell it back?</value>
+    <comment>Đã xảy ra. Nếu đã xảy ra, mất bao lâu anh/chị có hàng để bán trở lại:</comment>
+  </data>
+  <data name="String501" xml:space="preserve">
+    <value>Retailer in small quantity</value>
+    <comment>Người bán lẻ số lượng ít</comment>
+  </data>
+  <data name="String510" xml:space="preserve">
+    <value>f. Business</value>
+    <comment>f. Kinh doanh, buôn bán</comment>
+  </data>
+  <data name="String511" xml:space="preserve">
+    <value>Retailers in bulk</value>
+    <comment>Người bán lẻ số lượng lớn</comment>
+  </data>
+  <data name="String521" xml:space="preserve">
+    <value>Yes (if yes, specify percentage of change and reason):</value>
+    <comment>Có (nếu có, ghi rõ tỉ lệ % biến động và lý do):</comment>
+  </data>
+  <data name="String531" xml:space="preserve">
+    <value>In stock for at least 1 week</value>
+    <comment>đủ hàng cho ít nhất 1 tuần</comment>
+  </data>
+  <data name="String541" xml:space="preserve">
+    <value>limited quantity only for 1-2 days</value>
+    <comment>số lượng hạn chế chỉ đủ cho 1-2 ngày</comment>
+  </data>
+  <data name="String551" xml:space="preserve">
+    <value>In less than 1 week (3-5 days)</value>
+    <comment>đủ hàng cho ít hơn 1 tuần (từ 3-5 ngày)</comment>
+  </data>
+  <data name="String561" xml:space="preserve">
+    <value>no reserve 0-1 days</value>
+    <comment>không có hàng dự trữ 0-1 ngày</comment>
+  </data>
+  <data name="String571" xml:space="preserve">
+    <value>Never</value>
+    <comment>Chưa bao giờ</comment>
+  </data>
+  <data name="String581" xml:space="preserve">
+    <value>a.No (If not, go to question 22)</value>
+    <comment>a.Không (Nếu không ,tiếp câu 22)</comment>
+  </data>
+  <data name="String591" xml:space="preserve">
+    <value>b. Yes (If yes, answer the questions)</value>
+    <comment>b.Có (Nếu có trả lời các câu)</comment>
+  </data>
+  <data name="String601" xml:space="preserve">
+    <value>c. What specific effects and the number of cases is higher than normal?</value>
+    <comment>c.Nêu cụ thể ảnh hưởng gì và số ca mắc cao hơn bình thường là bao nhiêu?</comment>
+  </data>
+  <data name="String610" xml:space="preserve">
+    <value>17. The following functional systems are operating (marking 'v' in the appropriate boxes).</value>
+    <comment>17. Các hệ thống chức năng sau đây có vận hành không(dấu 'v' vào các ô phù hợp)</comment>
+  </data>
+  <data name="String611" xml:space="preserve">
+    <value>What interventions have been or will be implemented?</value>
+    <comment>Các can thiệp nào đã hoặc sẽ thực hiện?</comment>
+  </data>
+  <data name="String621" xml:space="preserve">
+    <value>Who is supported?</value>
+    <comment>Đối tượng nào được hỗ trợ?</comment>
+  </data>
+  <data name="String631" xml:space="preserve">
+    <value>a. No (If not, go to question 23)</value>
+    <comment>a. Không (Nếu không ,tiếp câu 23)</comment>
+  </data>
+  <data name="String641" xml:space="preserve">
+    <value>b. Yes (If yes, go to question 22c)</value>
+    <comment>b. Có (Nếu có trả lời tiếp câu 22c)</comment>
+  </data>
+  <data name="String651" xml:space="preserve">
+    <value>What specific disease?</value>
+    <comment>Nêu cụ thể bệnh gì?</comment>
+  </data>
+  <data name="String661" xml:space="preserve">
+    <value>What interventions have been or will be implemented?</value>
+    <comment>Các can thiệp nào đã hoặc sẽ thực hiện?</comment>
+  </data>
+  <data name="String671" xml:space="preserve">
+    <value>If yes, write more information</value>
+    <comment>Nếu có, ghi thêm thông tin</comment>
+  </data>
+  <data name="String681" xml:space="preserve">
+    <value>Quantily</value>
+    <comment>Số lượng</comment>
+  </data>
+  <data name="String691" xml:space="preserve">
+    <value>Reason</value>
+    <comment>Nguyên nhân</comment>
+  </data>
+  <data name="String701" xml:space="preserve">
+    <value>Houses collapsed completely</value>
+    <comment>Nhà sập đổ hoàn toàn</comment>
+  </data>
+  <data name="String710" xml:space="preserve">
+    <value>a. Health facilities (hospitals, clinics, health stations, stations, first aid points)</value>
+    <comment>a. Cơ sở y tế (bệnh viện, phòng khám, trạm y tế, trạm, điểm sơ cấp cứu)</comment>
+  </data>
+  <data name="String711" xml:space="preserve">
+    <value>The house was washed away</value>
+    <comment>Nhà bị cuốn trôi</comment>
+  </data>
+  <data name="String721" xml:space="preserve">
+    <value>Severely damaged home can not be repaired</value>
+    <comment>Nhà bị hư hỏng nặng không thể sửa chữa</comment>
+  </data>
+  <data name="String731" xml:space="preserve">
+    <value>House roof speed</value>
+    <comment>Nhà bị tốc mái</comment>
+  </data>
+  <data name="String741" xml:space="preserve">
+    <value>At the house of acquaintance</value>
+    <comment>Ở nhờ nhà người quen</comment>
+  </data>
+  <data name="String751" xml:space="preserve">
+    <value>At the evacuation site</value>
+    <comment>Ở nơi sơ tán</comment>
+  </data>
+  <data name="String761" xml:space="preserve">
+    <value>Temporary house for living</value>
+    <comment>Dựng tạm nhà để ở</comment>
+  </data>
+  <data name="String771" xml:space="preserve">
+    <value>Not yet</value>
+    <comment>Chưa</comment>
+  </data>
+  <data name="String781" xml:space="preserve">
+    <value>Yes (If yes, answer question 59c)</value>
+    <comment>Có (Nếu có trả lời câu 59c)</comment>
+  </data>
+  <data name="String791" xml:space="preserve">
+    <value>Specify what intervention ?</value>
+    <comment>Nêu cụ thể can thiệp gì ?</comment>
+  </data>
+  <data name="String801" xml:space="preserve">
+    <value>Yes (If answered in v. 63c)</value>
+    <comment>Có (Nếu có trả lời câu 63c)</comment>
+  </data>
+  <data name="String810" xml:space="preserve">
+    <value>b. Transport</value>
+    <comment>b. Phương tiện giao thông</comment>
+  </data>
+  <data name="String811" xml:space="preserve">
+    <value>g. Other (specify)</value>
+    <comment>g. Khác (Nêu rõ)</comment>
+  </data>
+  <data name="String821" xml:space="preserve">
+    <value>If yes, specify type</value>
+    <comment>If yes, specify type</comment>
+  </data>
+  <data name="String831" xml:space="preserve">
+    <value>Unknown</value>
+    <comment>Unknown</comment>
+  </data>
+  <data name="String841" xml:space="preserve">
+    <value>Other comments</value>
+    <comment>Other comments</comment>
+  </data>
+  <data name="String851" xml:space="preserve">
+    <value>Fullname</value>
+    <comment>Họ tên</comment>
+  </data>
+  <data name="String861" xml:space="preserve">
+    <value>Gender</value>
+    <comment>Giới tính</comment>
+  </data>
+  <data name="String871" xml:space="preserve">
+    <value>Select gender</value>
+    <comment>Chọn giới tính</comment>
+  </data>
+  <data name="String881" xml:space="preserve">
+    <value>Male</value>
+    <comment>Nam</comment>
+  </data>
+  <data name="String891" xml:space="preserve">
+    <value>Female</value>
+    <comment>Nữ</comment>
+  </data>
+  <data name="String901" xml:space="preserve">
+    <value>Other</value>
+    <comment>Khác</comment>
+  </data>
+  <data name="String910" xml:space="preserve">
+    <value>c. Roads (accessibility of affected sites)</value>
+    <comment>c. Đường xá (khả năng tiếp cận địa bàn bị ảnh hưởng)</comment>
+  </data>
+  <data name="String911" xml:space="preserve">
+    <value>Position / Unit</value>
+    <comment>Chức vụ/Đơn vị</comment>
+  </data>
+  <data name="String921" xml:space="preserve">
+    <value>Address</value>
+    <comment>Địa chỉ</comment>
+  </data>
+  <data name="String931" xml:space="preserve">
+    <value>Select Address</value>
+    <comment>Chọn địa chỉ</comment>
+  </data>
+  <data name="String941" xml:space="preserve">
+    <value>Position wanted</value>
+    <comment>Vị trí mong muốn</comment>
+  </data>
+  <data name="String951" xml:space="preserve">
+    <value>Central level management</value>
+    <comment>Quản lý cấp trung ương</comment>
+  </data>
+  <data name="String961" xml:space="preserve">
+    <value>Provincial management</value>
+    <comment>Quản lý cấp tỉnh</comment>
+  </data>
+  <data name="String971" xml:space="preserve">
+    <value>Commune level management</value>
+    <comment>Quản lý cấp xã</comment>
+  </data>
+  <data name="String981" xml:space="preserve">
+    <value>Member</value>
+    <comment>Hội viên</comment>
+  </data>
+  <data name="String991" xml:space="preserve">
+    <value>Birthday</value>
+    <comment>Ngày sinh</comment>
+  </data>
+  <data name="Table11" xml:space="preserve">
+    <value>Additional observations / findings:</value>
+    <comment>Ghi thêm quan sát/phát hiện:</comment>
+  </data>
+  <data name="Table21" xml:space="preserve">
+    <value>Additional information needed:</value>
+    <comment>Các thông tin cần kiểm chứng thêm:</comment>
+  </data>
+  <data name="Table31" xml:space="preserve">
+    <value>Other Notes:</value>
+    <comment>Ghi chú khác:</comment>
+  </data>
+  <data name="Vietnamese1" xml:space="preserve">
+    <value>Vietnamese</value>
+  </data>
+  <data name="VNRC1" xml:space="preserve">
+    <value>Viet Nam Red Cross Society</value>
+  </data>
+  <data name="Yes11" xml:space="preserve">
+    <value>Yes</value>
+    <comment>Có</comment>
+  </data>
+  <data name="String208" xml:space="preserve">
+    <value>Update news</value>
+    <comment>Cập nhật tin tức</comment>
+  </data>
+  <data name="String209" xml:space="preserve">
+    <value>Add new news</value>
+    <comment>Thêm mới tin tức</comment>
+  </data>
+  <data name="String2101" xml:space="preserve">
+    <value>Title</value>
+    <comment>Tiêu đề</comment>
+  </data>
+</root>

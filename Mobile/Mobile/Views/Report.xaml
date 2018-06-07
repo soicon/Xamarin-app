@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobile.Views.Report" >
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="ItemsListView" 
+                      HasUnevenRows="True"
+                VerticalOptions="FillAndExpand"
+                 CachingStrategy="RecycleElement"
+                 ItemSelected="OnItemSelected" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                    <ColumnDefinition Width="50"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Image WidthRequest="50" HeightRequest="50" HorizontalOptions="Start" VerticalOptions="Start" Grid.Row="0" Margin="6" Grid.Column="0" Source="{Binding Icon}"></Image>
+                                <Label Grid.Row="0" VerticalOptions="CenterAndExpand" Grid.Column="1" Text="{Binding Title}" FontSize="Medium"  TextColor="Black"/>
+                                <Image WidthRequest="25" HeightRequest="27" HorizontalOptions="End" VerticalOptions="Center" Grid.Row="0"  Margin="6" Grid.Column="2" Source="Shape75.png"></Image>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

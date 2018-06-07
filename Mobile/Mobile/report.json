@@ -1,0 +1,1016 @@
+[
+  {
+    "title": "Thông Tin Chung",
+    "questions": [
+      {
+        "title": "Tổng số thôn trong xã",
+        "value": "0",
+        "note": "sum"
+      },
+      {
+        "title": "Tổng số hộ gia đình",
+        "value": "0",
+        "note": "sum"
+      },
+      {
+        "title": "Tổng số dân ",
+        "value": "0",
+        "note": "sum"
+      },
+      {
+        "title": "Trong đó Tổng số nữ",
+        "value": "0",
+        "note": "sum"
+      },
+      {
+        "title": "Tổng số hộ nghèo",
+        "value": "0",
+        "note": "sum"
+      },
+      {
+        "title": "Tổng số hộ cận nghèo",
+        "value": "0",
+        "note": "sum"
+      },
+      {
+        "title": "Tổng số thôn bị thiệt hại",
+        "value": "0",
+        "note": "sum"
+      },
+      {
+        "title": "Tổng số hộ gia đình bị thiệt hại nói chung ",
+        "value": "0",
+        "note": "sum"
+      },
+      {
+        "title": "Tổng số hộ nghèo bị thiệt hại",
+        "value": "0",
+        "note": "sum"
+      },
+      {
+        "title": "Tổng số hộ cận ngheo bị thiệt hại ",
+        "value": "0",
+        "note": "sum"
+      },
+      {
+        "title": "Tổng số người chết do thảm họa",
+        "value": "0",
+        "note": "sum"
+      },
+      {
+        "title": "Tổng số người bị thương do thảm họa",
+        "value": "0",
+        "note": "sum"
+      },
+      {
+        "title": "Phụ nữ có thai hoặc cho con bú ",
+        "value": "0",
+        "note": "sum"
+      },
+      {
+        "title": "Trẻ em dưới 5 tuổi",
+        "value": "0",
+        "note": "sum"
+      },
+      {
+        "title": "Nữ là lao động chính trong gia đình hộ (là người nuôi sống gia đình)",
+        "value": "0",
+        "note": "sum"
+      },
+      {
+        "title": "Người khuyết tật và người có bệnh mãn tính",
+        "value": "0",
+        "note": "sum"
+      },
+      {
+        "title": "Người già ",
+        "value": "0",
+        "note": "sum"
+      },
+      {
+        "title": "Người không có năng lực lao động ",
+        "value": "0",
+        "note": "sum"
+      },
+      {
+        "title": "Tỉ lệ % người dân tộc thiểu số ",
+        "value": "0",
+        "note": "average"
+      },
+      {
+        "title": "Tỉ lệ % người biết đọc,biết viết",
+        "value": "0",
+        "note": "average"
+      },
+      {
+        "title": "Các tình trạng dễ bị tổn thương (trước thảm họa) là gì?",
+        "note": ""
+      },
+      {
+        "question": "Các loại hình sinh kế chủ yếu ở địa phương (đánh dấu vào ô thích hợp):",
+        "answer": [
+          {
+            "title": "Nông nghiệp (lúa, hoa màu)",
+            "select": "0",
+            "note": "x"
+          },
+          {
+            "title": "Lâm nghiệp",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Chăn nuôi gia súc gia cầm",
+            "select": 1,
+            "note": ""
+          },
+          {
+            "title": "Nuôi trồng thủy sản (bao gồm cả đánh bắt hải sản)",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Làm thuê",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Kinh doanh",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Khác (nêu rõ)",
+            "select": "0",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "question": "Các hệ thống chức năng sau đây có vận hành không:",
+        "answer": [
+          {
+            "time": "Trước Thảm Họa",
+            "answer": [
+              {
+                "title": "Cơ sở y tế (bệnh viện, phòng khám, trạm y tế, trạm, điểm sơ cấp cứu)",
+                "select": "0",
+                "note": ""
+              },
+              {
+                "title": "Phương tiện giao thông",
+                "select": "0",
+                "note": ""
+              },
+              {
+                "title": "Đường xá (khả năng tiếp cận địa bàn bị ảnh hưởng)",
+                "select": "0",
+                "note": ""
+              }
+            ]
+          },
+          {
+            "time": "Sau Thảm Họa",
+            "answer": [
+              {
+                "title": "Cơ sở y tế (bệnh viện, phòng khám, trạm y tế, trạm, điểm sơ cấp cứu)",
+                "select": "0",
+                "note": "x"
+              },
+              {
+                "title": "Phương tiện giao thông",
+                "select": "0",
+                "note": ""
+              },
+              {
+                "title": "Đường xá (khả năng tiếp cận địa bàn bị ảnh hưởng)",
+                "select": "0",
+                "note": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question": "Các hoạt động ứng phó đã hoặc sẽ diễn ra tại địa phương?",
+        "answer": [
+          {
+            "action": "",
+            "who": "",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "question": "Tình hình an ninh của địa phương như thế nào, có gì đáng lo ngại không? ",
+        "answer": {
+          "select": "0",
+          "note": ""
+        }
+      },
+      {
+        "question": "Bảng",
+        "answer": [
+          {
+            "title": "Ghi thêm quan sát/phát hiện:",
+            "note": ""
+          },
+          {
+            "title": "Các thông tin cần kiểm chứng thêm: ",
+            "note": ""
+          },
+          {
+            "title": "note khác:",
+            "note": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "section": "TÌNH TRẠNG SỨC KHỎE",
+    "questions": [
+      {
+        "question": "Sau thảm họa, cộng đồng bị ảnh hưởng có bị tác động về sức khỏe không? ",
+        "answer": {
+          "select": "0",
+          "detail": [
+            {
+              "title": "Nêu cụ thể ảnh hưởng gì và số ca mắc cao hơn bình thường là bao nhiêu?",
+              "note": " "
+            },
+            {
+              "title": "Các can thiệp nào đã hoặc sẽ thực hiện?",
+              "note": " "
+            },
+            {
+              "title": "Đối tượng nào được hỗ trợ?",
+              "note": ""
+            },
+            {
+              "title": "Do ai thực hiện?",
+              "note": ""
+            }
+          ]
+        }
+      },
+      {
+        "question": "Có bệnh truyền nhiễm nào phát sinh do hậu quả của thảm họa hay không?",
+        "answer": {
+          "select": 1,
+          "detail": ""
+        }
+      },
+      {
+        "question": "Bảng",
+        "answer": [
+          {
+            "title": "Nêu cụ thể bệnh gì?",
+            "note": ""
+          },
+          {
+            "title": "Các can thiệp nào đã hoặc sẽ thực hiện?",
+            "note": ""
+          },
+          {
+            "title": "Do ai thực hiện?",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "question": "Người dân có phải trả tiền thuốc/viện phí không?",
+        "answer": {
+          "select": "0",
+          "detail": ""
+        }
+      },
+      {
+        "question": "Bảng",
+        "answer": [
+          {
+            "title": "Ghi thêm quan sát/phát hiện:",
+            "note": ""
+          },
+          {
+            "title": "Các thông tin cần kiểm chứng thêm: ",
+            "note": ""
+          },
+          {
+            "title": "note khác:",
+            "note": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "section": "NƯỚC SẠCH VÀ VỆ SINH",
+    "questions": [
+      {
+        "question": "Sau thảm họa, người dân hiện có đủ nước sạch (ăn uống, sinh hoạt) không? ",
+        "answer": [
+          {
+            "title": "Không",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Có",
+            "select": "0",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "question": "Hiện nay, mỗi người dân sử dụng bao nhiêu lít nước/ngày?",
+        "answer": "0"
+      },
+      {
+        "question": "Hiện tại, nước sinh hoạt của người dân lấy từ đâu?",
+        "answer": [
+          {
+            "title": "Giếng có nắp che, giếng khoan",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Nước mưa",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Nước ở sông, hồ, ao, đập",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Nước máy",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Khác (nêu rõ)",
+            "select": "0",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "question": "Nguồn nước này có nguy cơ bị nhiễm vi sinh vật hoặc hóa chất không? ",
+        "answer": [
+          {
+            "title": "Không",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Có,(nếu có, ghi rõ nguy cơ)",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Không Biết",
+            "select": "0",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "question": "Có thể sử dụng nguồn nước nào để đủ cung cấp cho người bị ảnh hưởng?",
+        "answer": [
+          {
+            "title": "Nêu rõ nguồn nước",
+            "note": ""
+          },
+          {
+            "title": "Nêu rõ biện pháp cần thiết để xử lý nguồn nước ",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "question": "Người dân có dụng cụ chứa nước an toàn không?",
+        "answer": [
+          {
+            "title": "Có",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "không",
+            "select": "0",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "question": "Hiện tại, người dân phải đi bao xa (tính theo mét) để lấy nước?",
+        "answer": 1
+      },
+      {
+        "question": "Người dân có phải trả tiền mua nước sạch để dùng trong sinh hoạt không?",
+        "answer": [
+          {
+            "title": "Có",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "không",
+            "select": "0",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "question": "Đã hoặc sẽ có hỗ trợ nào về nước sạch chưa?",
+        "answer": [
+          {
+            "title": "Chưa",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Có (nếu có, ghi rõ): ",
+            "select": 1,
+            "detail": [
+              {
+                "title": "Hỗ trợ gì/Đối tượng được hỗ trợ?",
+                "note": ""
+              },
+              {
+                "title": "Đơn vị hỗ trợ",
+                "note": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question": "Sau thảm họa, người dân đại tiện ở đâu?",
+        "answer": [
+          {
+            "title": "Hố xí 2 ngăn/nhà cầu của hộ gia đình",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Nhà vệ sinh/nhà cầu tập thẻ của thôn/ấp",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Hố xí tự hoại/nhà cầu của hộ gia đình",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Ao cá, sông suối",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Ruộng, vườn/bụi cây",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Khác",
+            "select": "0",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "question": "Người dân có nước sạch và xà phòng để rửa tay sau khi đi vệ sinh không?",
+        "answer": [
+          {
+            "title": "Không",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Có",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Khác",
+            "select": "0",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "question": "Loại nhà vệ sinh/nhà cầu thông dụng ở địa phương là gì?",
+        "answer": ""
+      },
+      {
+        "question": "Loại vật liệu thông dụng để xây nhà vệ sinh/nhà cầu ở địa phương là gì?",
+        "answer": ""
+      },
+      {
+        "question": "Đã hoặc sẽ có hỗ trợ nào về nhà vệ sinh/nhà cầu chưa?",
+        "answer": [
+          {
+            "title": "Không",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Có (nếu có, ghi rõ): ",
+            "select": 1,
+            "detail": [
+              {
+                "title": "Hỗ trợ gì/Đối tượng được hỗ trợ?",
+                "note": ""
+              },
+              {
+                "title": "Đơn vị hỗ trợ",
+                "note": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question": "Các hộ dân xử lý rác thải như thế nào?",
+        "answer": [
+          {
+            "title": "Đốt",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Chôn",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Thu rác tập trung",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Hình thức khác (ghi rõ)",
+            "select": "0",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "question": "Bảng",
+        "answer": [
+          {
+            "title": "Ghi thêm quan sát/phát hiện:",
+            "note": ""
+          },
+          {
+            "title": "Các thông tin cần kiểm chứng thêm: ",
+            "note": ""
+          },
+          {
+            "title": "note khác:",
+            "note": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "section": "LƯƠNG THỰC/DINH DƯỠNG",
+    "questions": [
+      {
+        "question": "Sau thảm họa, việc sản xuất lương thực của cộng đồng có bị ảnh hưởng gì không?",
+        "answer": [
+          {
+            "title": "Không",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Có (nếu có, ghi rõ)",
+            "select": "0",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "question": "Lương thực dự trữ của người dân có bị thiệt hại không?",
+        "answer": [
+          {
+            "title": "Không",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Có (nếu có, ghi rõ)",
+            "select": "0",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "question": "Người dân bị ảnh hưởng đã làm gì để ứng phó với thiệt hại này? ",
+        "answer": ""
+      },
+      {
+        "question": "Đã hoặc sẽ có can thiệp về lương thực chưa? ",
+        "answer": [
+          {
+            "title": "Chưa",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Có (nếu có, ghi rõ): ",
+            "select": "0",
+            "detail": [
+              {
+                "title": "Nêu rõ các can thiệp? ",
+                "note": ""
+              },
+              {
+                "title": "Do ai thực hiện?",
+                "note": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question": "Thu nhập của người dân bị ảnh hưởng có bị tác động gì không? ",
+        "answer": [
+          {
+            "title": "Không",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Có (nếu có, ghi rõ)",
+            "select": "0",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "question": "Hiện tại, người dân có tiếp cận được chợ/cửa hàng bán lương thực hay không? ",
+        "answer": [
+          {
+            "title": "Không",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Có(nếu có, xác định loại chợ/cửa hàng người dân có thể mua lương thực) ",
+            "select": "0",
+            "detail": [
+              {
+                "title": "Người bán lẻ value ít",
+                "select": "0",
+                "note": ""
+              },
+              {
+                "title": "Người bán lẻ value lớn",
+                "select": "0",
+                "note": ""
+              },
+              {
+                "title": "Người bán buôn",
+                "select": "0",
+                "note": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question": "Trung bình, người dân đi mất bao lâu (tính bằng phút) để đến được chợ/cửa hàng?",
+        "answer": "0"
+      },
+      {
+        "question": "Sau bão, giá mặt hàng lương thực chính (gạo) có biến động không?",
+        "answer": [
+          {
+            "title": "Không",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Có (nếu có, ghi rõ)",
+            "select": "0",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "question": "Hiện tại, gạo có sẵn trên thị title địa phương không?",
+        "answer": [
+          {
+            "title": "đủ hàng cho ít nhất 1 tuần",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "đủ hàng cho ít hơn 1 tuần (từ 3-5 ngày)",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "value hạn chế chỉ đủ cho 1-2 ngày",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "không có hàng dự trữ 0-1 ngày",
+            "select": "0",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "question": "Giả sử nhu cầu của khách hàng tăng gấp đôi, anh/chị có đủ hàng để bán không? ",
+        "answer": [
+          {
+            "title": "Không",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Có (nếu có, ghi rõ)",
+            "select": "0",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "question": "Đã bao giờ anh/chị không có đủ hàng để bán chưa? ",
+        "answer": [
+          {
+            "title": "Không",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Có (nếu có, ghi rõ)",
+            "select": "0",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "question": "Bảng",
+        "answer": [
+          {
+            "title": "Ghi thêm quan sát/phát hiện:",
+            "note": ""
+          },
+          {
+            "title": "Các thông tin cần kiểm chứng thêm: ",
+            "note": ""
+          },
+          {
+            "title": "note khác:",
+            "note": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "section": "CHỖ Ở VÀ MẶT HÀNG PHI LƯƠNG THỰC",
+    "questions": [
+      {
+        "question": "Các loại hình nhà ở địa phương là gì?",
+        "answer": ""
+      },
+      {
+        "question": "Kết cấu nhà phổ biến ở cộng đồng như thế nào??",
+        "answer": ""
+      },
+      {
+        "question": "Thiệt hại về nhà sau bão (chỉ tính thiệt hại nhà ở chính). Nhà phải đang có người ở ít nhất trong vòng 6 tháng gần đây và trong thời gian xảy ra thảm họa. Nhà tốc mái: tốc/hỏng từ 50% mái nhà chính trở lên",
+        "answer": [
+          {
+            "title": "nhà sập đổ hoàn toàn",
+            "value": "0",
+            "note": "",
+            "reason": ""
+          },
+          {
+            "title": "nhà bị cuốn trôi",
+            "value": "0",
+            "note": "",
+            "reason": ""
+          },
+          {
+            "title": "nhà bị hư hỏng nặng không thể sửa chữa",
+            "value": "0",
+            "note": "",
+            "reason": ""
+          },
+          {
+            "title": "nhà bị tốc mái ",
+            "value": "0",
+            "note": "",
+            "reason": ""
+          }
+        ]
+      },
+      {
+        "question": "Người dân đã ứng phó thế nào với thiệt hại về nhà ",
+        "answer": [
+          {
+            "title": "Ở nhờ nhà người quen",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Ở nơi sơ tán",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Dựng tạm nhà đề ở",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Khác(nêu rõ)",
+            "select": "0",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "question": "Các mặt hàng vật liệu xây dựng (bao gồm cả tấm bạt nhựa…) có bán sẵn ở địa phương hay không? ",
+        "answer": [
+          {
+            "time": "Trước Thảm Họa",
+            "answer": [
+              {
+                "title": "Có",
+                "select": "0",
+                "note": ""
+              },
+              {
+                "title": "Không",
+                "select": "0",
+                "note": ""
+              }
+            ]
+          },
+          {
+            "time": "Sau Thảm Họa",
+            "answer": [
+              {
+                "title": "Có",
+                "select": "0",
+                "note": ""
+              },
+              {
+                "title": "Không",
+                "select": "0",
+                "note": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question": "Sau bão, giá các mặt hàng vật liệu xây dựng có tăng không? ",
+        "answer": [
+          {
+            "title": "Không",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Có (nếu có, ghi rõ tên mặt hàng, tỉ lệ % biến động và lý do)",
+            "select": "0",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "question": "Đã hoặc sẽ có can thiệp liên quan đến nhà ở chưa? ",
+        "answer": [
+          {
+            "title": "Không",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Có (nếu có, ghi rõ)",
+            "select": "0",
+            "detail": [
+              {
+                "title": "Nêu cụ thể can thiệp gì?",
+                "select": "0",
+                "note": ""
+              },
+              {
+                "title": "Do ai thực hiện?",
+                "select": "0",
+                "note": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question": "Người dân có bị ảnh hưởng về đồ dùng gia đình (chăn, màn, dụng cụ nấu ăn)?",
+        "answer": [
+          {
+            "title": "Không",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Có ",
+            "select": "0",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "question": "Những người bị ảnh hưởng hiện có đồ dùng gia đình để sử dụng không?",
+        "answer": [
+          {
+            "title": "Không",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Có",
+            "select": "0",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "question": "Những người bị ảnh hưởng đã ứng phó như thế nào?",
+        "answer": ""
+      },
+      {
+        "question": "Đã hoặc sẽ có can thiệp gì về dụng cụ/đồ dùng gia đình chưa? ",
+        "answer": [
+          {
+            "title": "Không",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Có",
+            "select": 1,
+            "detail": [
+              {
+                "title": "Nêu cụ thể can thiệp gì?",
+                "select": "0",
+                "note": ""
+              },
+              {
+                "title": "Do ai thực hiện?",
+                "select": "0",
+                "note": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "question": "Những người bị ảnh hưởng hiện có đồ dùng gia đình để sử dụng không?",
+        "answer": [
+          {
+            "title": "Không",
+            "select": "0",
+            "note": ""
+          },
+          {
+            "title": "Có",
+            "select": "0",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "question": "Bảng",
+        "answer": [
+          {
+            "title": "Ghi thêm quan sát/phát hiện:",
+            "note": ""
+          },
+          {
+            "title": "Các thông tin cần kiểm chứng thêm: ",
+            "note": ""
+          },
+          {
+            "title": "note khác:",
+            "note": ""
+          }
+        ]
+      }
+    ]
+  }
+]

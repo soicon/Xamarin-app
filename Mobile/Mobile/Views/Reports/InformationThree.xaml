@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              Title="Thông tin chung" BackgroundColor="White"
+              xmlns:m16="clr-namespace:Mobile;assembly=Mobile"
+             xmlns:i18n="clr-namespace:Naxam.I18n.Forms;assembly=Naxam.I18n.Forms"
+    xmlns:converters="clr-namespace:Naxam.I18n.Forms.Converters;assembly=Naxam.I18n.Forms"
+             x:Class="Mobile.Views.Reports.InformationThree">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:TimeAgoConverter x:Key="TimeAgoConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid Margin="20" RowSpacing="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="150"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label VerticalOptions="StartAndExpand" FontSize="Default" TextColor="Black" Grid.ColumnSpan="3" Grid.Column="0" Grid.Row="0" Text="{i18n:Translate String10}" />
+
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Grid.Column="0" Grid.Row="1" Text="{i18n:Translate String11}" />
+                <Entry Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" VerticalOptions="FillAndExpand" x:Name="txtNum18a"
+                       HorizontalOptions="FillAndExpand" TextColor="Black" />
+                <Label FontSize="Default" TextColor="Black" Grid.Column="0" Grid.Row="2" Text="{i18n:Translate String12}" />
+                <Entry HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                       Grid.ColumnSpan="2"  x:Name="txtNum18b" Grid.Row="2" Grid.Column="1" />
+
+                <Label VerticalOptions="StartAndExpand" FontSize="Default" TextColor="Black"
+                       Grid.ColumnSpan="3" Grid.Column="0" Grid.Row="3" 
+                       Text="{i18n:Translate String13}" />
+                <m16:Checkbox VerticalOptions="Center" Grid.Column="0" Grid.Row="4"  Text="{i18n:Translate No1}"
+                               Checked="false" x:Name="txtNum19a"
+                              ></m16:Checkbox>
+                
+                <m16:Checkbox VerticalOptions="Center" Grid.Column="0" Grid.Row="5" Text="{i18n:Translate Yes1}"
+                               Checked="false" x:Name="txtNum19b"
+                              ></m16:Checkbox>
+<!--                <Label Text="{i18n:Translate Yes1}" FontAttributes="Bold" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="5" />
+-->                <Label Text="{i18n:Translate String82}" Grid.Column="1" Grid.Row="5" />
+                <Editor HorizontalOptions="FillAndExpand" HeightRequest="100" Grid.Column="2" x:Name="txtNum19bNote"
+                        Grid.Row="5" Grid.RowSpan="2" />
+
+                <Label Text="20." FontAttributes="Bold" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="6" />
+                <Label VerticalOptions="End" FontAttributes="Bold" Text="{i18n:Translate Table1}"  Grid.Column="0" Grid.Row="7" />
+                <Editor HeightRequest="50" HorizontalOptions="FillAndExpand" x:Name="txtNum20a"
+                        Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="7" />
+                <Label VerticalOptions="End" FontAttributes="Bold" Text="{i18n:Translate Table2}"  Grid.Column="0" Grid.Row="8" />
+                <Editor HeightRequest="50" HorizontalOptions="FillAndExpand" x:Name="txtNum20b"
+                        Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="8" />
+                <Label VerticalOptions="End" FontAttributes="Bold" Text="{i18n:Translate Table3}" Grid.Column="0" Grid.Row="9" />
+                <Editor HeightRequest="50" HorizontalOptions="FillAndExpand" x:Name="txtNum20c"
+                        Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="9" />
+
+                <Button x:Name="btnBack" Image="back.png" HeightRequest="40" TextColor="#FFFFFF" BackgroundColor="#FFFFFF"  Grid.Row="10"  HorizontalOptions="CenterAndExpand" VerticalOptions="End" />
+                <Button x:Name="btnNext" Image="save.png" VerticalOptions="End" HeightRequest="40"  BackgroundColor="#FFFFFF"   Grid.Row="10" Grid.Column="2" HorizontalOptions="Start"  />
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

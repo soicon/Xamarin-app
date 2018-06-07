@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" BackgroundColor="#FFFFFF"
+              xmlns:i18n="clr-namespace:Naxam.I18n.Forms;assembly=Naxam.I18n.Forms"
+	xmlns:converters="clr-namespace:Naxam.I18n.Forms.Converters;assembly=Naxam.I18n.Forms"
+             xmlns:customControls="clr-namespace:Mobile;assembly=Mobile"
+             x:Class="Mobile.Views.CreateAlert">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:TimeAgoConverter x:Key="TimeAgoConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="{i18n:Translate String112}" Clicked="Save_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <ActivityIndicator x:Name="Loading" Color="Red" IsRunning="False" />
+            <Label  FontAttributes="Bold" FontSize="32" FontFamily="Arial Bold,Arial"
+                    TextColor="Black" HorizontalTextAlignment="Center" />
+            <Label FontAttributes="Bold" Style="{DynamicResource ListItemTextStyle}"  FontSize="Medium" Text="{i18n:Translate String166}" />
+            <customControls:CustomPicker Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" Title="{i18n:Translate String167}" 
+                                             HorizontalOptions="FillAndExpand" x:Name="picEvent">
+            </customControls:CustomPicker>
+            <Label FontAttributes="Bold" Style="{DynamicResource ListItemTextStyle}"  FontSize="Medium" Text="{i18n:Translate String210}" />
+            <Entry PlaceholderColor="LightGray" x:Name="txtTitle" Text="{Binding Title}" Placeholder="{i18n:Translate String210}"   
+                           HeightRequest="40"   
+                           TextColor="Black"/>
+            <Label Style="{DynamicResource ListItemTextStyle}"  FontAttributes="Bold" FontSize="Medium" Text="{i18n:Translate String211}" />
+            <!--<Editor x:Name="txtContent" Text="{Binding Content}"
+                           HeightRequest="100"   
+                           TextColor="Black"/>-->
+            <WebView x:Name="txtContent" HeightRequest="500" >
+            </WebView>
+            <Button HeightRequest="40" WidthRequest="100" x:Name="btnEditContent" TextColor="#FFFFFF" BackgroundColor="#da251c"
+                        Text="{i18n:Translate String228}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

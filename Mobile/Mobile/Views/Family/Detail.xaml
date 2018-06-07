@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 xmlns:htmlLabel="clr-namespace:Mobile;assembly=Mobile"
+             x:Class="Mobile.Views.Family.Detail">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Sửa"
+                     Icon="ic_edit.png"
+                     x:Name="btnEdit" />
+        <ToolbarItem Text="Xóa"
+                     Icon="ic_delete.png" x:Name="btnDelete"
+                    />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Orientation="Vertical" Padding="10" Spacing="40">
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Orientation="Vertical" BackgroundColor="#FFFFFF">
+                <Label  FontAttributes="Bold" FontSize="32" FontFamily="Arial Bold,Arial"
+                    TextColor="Black" HorizontalTextAlignment="Center">Chi tiết gia đình</Label>
+                <Label FontAttributes="Bold" FontSize="Medium" Text="Tên hộ gia đình" />
+                <Label x:Name="txtName" TextColor="Black" />
+                <Label FontAttributes="Bold" FontSize="Medium" Text="Risk" />
+                <htmlLabel:HtmlLabel x:Name="txtRisk"
+                                    TextColor="Black" ></htmlLabel:HtmlLabel>
+                <Label FontAttributes="Bold" FontSize="Medium" Text="Vị trí" />
+                <Label x:Name="txtPosition" TextColor="Black" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

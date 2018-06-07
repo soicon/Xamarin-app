@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Chỗ ở và mặt hàng phi lương thực" BackgroundColor="White"
+               xmlns:m16="clr-namespace:Mobile;assembly=Mobile"
+             xmlns:i18n="clr-namespace:Naxam.I18n.Forms;assembly=Naxam.I18n.Forms"
+	xmlns:converters="clr-namespace:Naxam.I18n.Forms.Converters;assembly=Naxam.I18n.Forms"
+             x:Class="Mobile.Views.Reports.Home">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:TimeAgoConverter x:Key="TimeAgoConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid  Margin="20" RowSpacing="20">
+                <Grid.RowDefinitions >
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label VerticalOptions="StartAndExpand" Text="{i18n:Translate home1}" Grid.Column="0" Grid.Row="0"
+                       LineBreakMode="WordWrap" FontAttributes="Bold" Grid.ColumnSpan="2"/>
+                <Entry x:Name="txtNum1" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="0" />
+
+                <Label VerticalOptions="StartAndExpand" Text="{i18n:Translate home2}" Grid.Column="0" Grid.Row="1"
+                       LineBreakMode="WordWrap" FontAttributes="Bold" Grid.ColumnSpan="2"/>
+                <Entry x:Name="txtNum2" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="1" />
+
+                <Label VerticalOptions="StartAndExpand" Text="{i18n:Translate home3}" Grid.Column="0" Grid.Row="2"
+                       Grid.ColumnSpan="3" LineBreakMode="WordWrap" FontAttributes="Bold" />
+                <Label Text="{i18n:Translate home3des}"
+                       Grid.Column="0" Grid.Row="3"
+                       Grid.ColumnSpan="3" LineBreakMode="WordWrap" />
+                <Label Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" Text="{i18n:Translate String68}" />
+                <Label Grid.Row="4" Grid.Column="2" HorizontalOptions="Center" Text="{i18n:Translate String69}" />
+                <m16:Checkbox x:Name="txtNum3a"  Text="{i18n:Translate String70}" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2" />
+                <Entry x:Name="txtNum3aAns" Grid.Column="2" Grid.Row="5" HorizontalOptions="FillAndExpand" />
+                <m16:Checkbox x:Name="txtNum3b"  Text="{i18n:Translate String71}" Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="2" />
+                <Entry x:Name="txtNum3bAns" Grid.Column="2" Grid.Row="6" HorizontalOptions="FillAndExpand" />
+                <m16:Checkbox x:Name="txtNum3c"  Text="{i18n:Translate String72}" Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="2" />
+                <Entry Grid.Column="2" x:Name="txtNum3cAns" Grid.Row="7" HorizontalOptions="FillAndExpand" />
+                <m16:Checkbox x:Name="txtNum3d"  Text="{i18n:Translate String73}" Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="2" />
+                <Entry x:Name="txtNum3dAns" Grid.Column="2" Grid.Row="8" HorizontalOptions="FillAndExpand" />
+
+                <Label VerticalOptions="StartAndExpand" Text="{i18n:Translate home4}"
+                     Grid.Column="0" Grid.Row="9" FontAttributes="Bold"
+                       Grid.ColumnSpan="3" LineBreakMode="WordWrap"  />
+                <m16:Checkbox  x:Name="txtNum4a" Text="{i18n:Translate String74}" Grid.Column="0" Grid.Row="10" Grid.ColumnSpan="3" />
+                <m16:Checkbox x:Name="txtNum4b" Text="{i18n:Translate String75}" Grid.Column="0" Grid.Row="11" Grid.ColumnSpan="3" />
+                <m16:Checkbox x:Name="txtNum4c" Text="{i18n:Translate String76}" Grid.Column="0" Grid.Row="12" Grid.ColumnSpan="3" />
+                <m16:Checkbox x:Name="txtNum4d" Text="{i18n:Translate String20}" Grid.Column="0" Grid.Row="13" Grid.ColumnSpan="2" />
+                <Entry x:Name="txtNum4Note" Grid.Column="2" Grid.Row="13" HorizontalOptions="FillAndExpand" />
+
+                <Label VerticalOptions="StartAndExpand" Text="{i18n:Translate home5}"
+                       Grid.Column="0" Grid.Row="14" LineBreakMode="WordWrap" Grid.RowSpan="2" FontAttributes="Bold"
+                       />
+                <Label Text="{i18n:Translate BeforeDisater}" Grid.Column="1" Grid.Row="14" LineBreakMode="WordWrap" />
+                <Label Text="{i18n:Translate AfterDisater}" Grid.Column="2" Grid.Row="14" LineBreakMode="WordWrap" />
+                <m16:Checkbox x:Name="txtNum5a1" Text="{i18n:Translate No1}" Grid.Column="1" Grid.Row="15"  />
+                <m16:Checkbox x:Name="txtNum5a2"  Text="{i18n:Translate Yes1}" Grid.Column="1" Grid.Row="16"  />
+                <m16:Checkbox x:Name="txtNum5b1"  Text="{i18n:Translate No1}" Grid.Column="2" Grid.Row="15"  />
+                <m16:Checkbox x:Name="txtNum5b2"  Text="{i18n:Translate Yes1}" Grid.Column="2" Grid.Row="16"  />
+
+                <Button x:Name="btnBack" Image="back.png" HeightRequest="40"  BackgroundColor="#FFFFFF"  Grid.Row="17" Grid.Column="0" HorizontalOptions="End" VerticalOptions="End" />
+                <Button x:Name="btnNext" VerticalOptions="End" HeightRequest="40" BackgroundColor="#FFFFFF" Image="next.png" Grid.Row="17" Grid.Column="2" HorizontalOptions="End"  />
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

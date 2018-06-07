@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Thông tin chung" BackgroundColor="White"
+               xmlns:m16="clr-namespace:Mobile;assembly=Mobile"
+             xmlns:i18n="clr-namespace:Naxam.I18n.Forms;assembly=Naxam.I18n.Forms"
+	xmlns:converters="clr-namespace:Naxam.I18n.Forms.Converters;assembly=Naxam.I18n.Forms"
+             x:Class="Mobile.Views.Reports.Information">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:TimeAgoConverter x:Key="TimeAgoConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid Margin="20" RowSpacing="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label VerticalOptions="StartAndExpand" FontSize="Default" FontAttributes="Bold"
+                       TextColor="Black" Grid.Column="0" Grid.Row="0" Text="{i18n:Translate info1}" />
+                <Entry Grid.Column="1" Grid.Row="0" Keyboard="Numeric"  VerticalOptions="Start" x:Name="txtOne"
+                       HorizontalOptions="FillAndExpand" WidthRequest="50" HorizontalTextAlignment="End" 
+                       TextColor="Black" />
+                <Label FontSize="Default" TextColor="Black" Grid.Column="2" FontAttributes="Bold"
+                       Grid.Row="0" Text="{i18n:Translate info7}" />
+                <Entry VerticalOptions="Start" HorizontalOptions="FillAndExpand" Keyboard="Numeric" 
+                       x:Name="txtSevent" Grid.Row="0" Grid.Column="3" />
+
+                <Label VerticalOptions="StartAndExpand" FontSize="Default" FontAttributes="Bold"
+                       TextColor="Black" Grid.Column="0" Grid.Row="1" Text="{i18n:Translate info2}" />
+                <Entry Grid.Column="1" Grid.Row="1" Keyboard="Numeric" VerticalOptions="Start" x:Name="txtTwo"
+                       HorizontalOptions="End" WidthRequest="100" HorizontalTextAlignment="End" TextColor="Black" />
+                <Label FontSize="Default" TextColor="Black" Grid.Column="2" FontAttributes="Bold"
+                       Grid.Row="1" Text="{i18n:Translate info8}" />
+                <Entry VerticalOptions="Start"  HorizontalOptions="FillAndExpand" Keyboard="Numeric"  x:Name="txtEight" Grid.Row="1" Grid.Column="3" />
+
+                <Label VerticalOptions="StartAndExpand" FontSize="Default" FontAttributes="Bold"
+                       TextColor="Black" Grid.Column="0" Grid.Row="2" Text="{i18n:Translate info3}" />
+                <Entry Grid.Column="1" Grid.Row="2" Keyboard="Numeric" VerticalOptions="Start" x:Name="txtThree"
+                       HorizontalOptions="End" WidthRequest="100" HorizontalTextAlignment="End" TextColor="Black" />
+                <Label FontSize="Default" TextColor="Black" Grid.Column="2" FontAttributes="Bold"
+                       Grid.Row="2" Text="{i18n:Translate info9}" />
+                <Entry VerticalOptions="Start"  HorizontalOptions="FillAndExpand" Keyboard="Numeric"  x:Name="txtNine" Grid.Row="2" Grid.Column="3" />
+
+                <Label VerticalOptions="StartAndExpand" FontSize="Default" FontAttributes="Bold"
+                       TextColor="Black" Grid.Column="0" Grid.Row="3" Text="{i18n:Translate info4}" />
+                <Entry Grid.Column="1" Grid.Row="3" Keyboard="Numeric" VerticalOptions="Start" x:Name="txtFour"
+                       HorizontalOptions="End" WidthRequest="100" HorizontalTextAlignment="End" TextColor="Black" />
+                <Label FontSize="Default" TextColor="Black" Grid.Column="2" FontAttributes="Bold"
+                       Grid.Row="3" Text="{i18n:Translate info10}" />
+                <Entry VerticalOptions="Start"  HorizontalOptions="FillAndExpand"  Keyboard="Numeric"
+                       x:Name="txtTen" Grid.Row="3" Grid.Column="3" />
+
+                <Label VerticalOptions="Center" FontSize="Default" FontAttributes="Bold"
+                       TextColor="Black" Grid.Column="0" Grid.Row="4" Text="{i18n:Translate info5}" />
+                <Entry Grid.Column="1" Grid.Row="4" Keyboard="Numeric" VerticalOptions="Start" x:Name="txtFive"
+                       HorizontalOptions="End" WidthRequest="100" HorizontalTextAlignment="End" TextColor="Black" />
+                <Label FontSize="Default" TextColor="Black" Grid.Column="2" FontAttributes="Bold"
+                       Grid.Row="4" Text="{i18n:Translate info11}" />
+                <Entry VerticalOptions="Start"  HorizontalOptions="FillAndExpand" Keyboard="Numeric" x:Name="txtElevent" Grid.Row="4" Grid.Column="3" />
+
+                <Label VerticalOptions="StartAndExpand" FontSize="Default" FontAttributes="Bold"
+                       TextColor="Black" Grid.Column="0" Grid.Row="5" Text="{i18n:Translate info6}" />
+                <Entry Grid.Column="1" Grid.Row="5" Keyboard="Numeric" VerticalOptions="Start" x:Name="txtSix"
+                       HorizontalOptions="End" WidthRequest="100" HorizontalTextAlignment="End" TextColor="Black" />
+                <Label FontSize="Default" TextColor="Black" Grid.Column="2" FontAttributes="Bold"
+                       Grid.Row="5" Text="{i18n:Translate info12}" />
+                <Entry VerticalOptions="Start"  HorizontalOptions="FillAndExpand" Keyboard="Numeric"
+                       x:Name="txtTwelve" Grid.Row="5" Grid.Column="3" />
+
+
+                <Label VerticalOptions="StartAndExpand" FontSize="Default" TextColor="Black" Grid.Column="0"
+                       Grid.ColumnSpan="4" Grid.Row="6" FontAttributes="Bold"
+                       Text="{i18n:Translate info13}" />
+
+                <Label VerticalOptions="StartAndExpand" FontSize="Default" FontAttributes="Bold"
+                       TextColor="Black" Grid.Column="0" Grid.Row="7" Text="{i18n:Translate info13a}" />
+                <Entry Grid.Column="1" Grid.Row="7" Keyboard="Numeric" 
+                       VerticalOptions="Start" HorizontalOptions="End" WidthRequest="100" x:Name="txtAnswerA"
+                       HorizontalTextAlignment="End" TextColor="Black" />
+                <Label VerticalOptions="StartAndExpand" FontSize="Default" TextColor="Black" Grid.Column="2" FontAttributes="Bold"
+                       Grid.Row="7" Text="{i18n:Translate info13d}" />
+                <Entry VerticalOptions="Start"  HorizontalOptions="FillAndExpand" Keyboard="Numeric"
+                       x:Name="txtAnswerD" Grid.Row="7" Grid.Column="3" />
+
+                <Label VerticalOptions="StartAndExpand" FontAttributes="Bold"
+                       FontSize="Default" TextColor="Black" Grid.Column="0" Grid.Row="8" Text="{i18n:Translate info13b}" />
+                <Entry Grid.Column="1" Grid.Row="8" Keyboard="Numeric" VerticalOptions="Start" x:Name="txtAnswerB"
+                       HorizontalOptions="End" WidthRequest="100" HorizontalTextAlignment="End" TextColor="Black" />
+                <Label FontSize="Default" TextColor="Black" Grid.Column="2" FontAttributes="Bold"
+                       Grid.Row="8" Text="{i18n:Translate info13e}" />
+                <Entry VerticalOptions="Start"  HorizontalOptions="FillAndExpand" Keyboard="Numeric"
+                       x:Name="txtAnswerE" Grid.Row="8" Grid.Column="3" />
+
+                <Label VerticalOptions="StartAndExpand" FontSize="Default" FontAttributes="Bold"
+                       TextColor="Black" Grid.Column="0" Grid.Row="9" Text="{i18n:Translate info13c}" />
+                <Entry Grid.Column="1" Grid.Row="9" Keyboard="Numeric" VerticalOptions="Start" x:Name="txtAnswerC"
+                       HorizontalOptions="End" WidthRequest="100" HorizontalTextAlignment="End" TextColor="Black" />
+                <Label VerticalOptions="StartAndExpand"  FontSize="Default" TextColor="Black" Grid.Column="2"  FontAttributes="Bold"
+                       Grid.Row="9" Text="{i18n:Translate info13f}" />
+                <Entry VerticalOptions="Start"  HorizontalOptions="FillAndExpand"
+                        Keyboard="Numeric" x:Name="txtAnswerF" Grid.Row="9" Grid.Column="3" />
+
+                <Button x:Name="btnBack" Image="back.png" HeightRequest="40" TextColor="#FFFFFF" BackgroundColor="#FFFFFF"  Grid.Row="10"  HorizontalOptions="CenterAndExpand" VerticalOptions="End" />
+                <Button x:Name="btnNext" VerticalOptions="Start" HeightRequest="40" TextColor="#FFFFFF" BackgroundColor="#FFFFFF"  Image="next.png" Grid.Row="10" Grid.Column="3" HorizontalOptions="Start"  />
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

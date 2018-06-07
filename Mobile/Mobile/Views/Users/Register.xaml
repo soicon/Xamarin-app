@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:customControls="clr-namespace:Mobile;assembly=Mobile" BackgroundColor="White"
+               xmlns:i18n="clr-namespace:Naxam.I18n.Forms;assembly=Naxam.I18n.Forms"
+	xmlns:converters="clr-namespace:Naxam.I18n.Forms.Converters;assembly=Naxam.I18n.Forms"
+               xmlns:local="clr-namespace:Mobile"
+             xmlns:behavior="clr-namespace:EntryValidationBorder.Behavior"
+             x:Class="Mobile.Views.Register">
+    <ContentPage.Content>
+        <ScrollView BackgroundColor="White">
+            <!--<ActivityIndicator x:Name="Loading" Color="Red" IsRunning="False" />-->
+            <Grid Padding="10" BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="50"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Grid.Column="0" Grid.Row="0" Text="{i18n:Translate String85}" />
+                <local:ExtendedEntry x:Name="txtFullname"
+                                     HeightRequest="40"
+                       ErrorText="{Binding User.Name.NotValidMessageError}"
+                                     BorderErrorColor="Red"
+                                     Text="{Binding User.Name.Name}" IsBorderErrorVisible="{Binding User.Name.IsNotValid, Mode=TwoWay}"
+                       Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" >
+                    <local:ExtendedEntry.Behaviors>
+                        <behavior:EmptyEntryValidatorBehavior />
+                    </local:ExtendedEntry.Behaviors>
+                </local:ExtendedEntry>
+
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Grid.Column="0" Grid.Row="1" Text="{i18n:Translate String86}" />
+                <Picker Grid.Column="1" Grid.Row="1" Title="{i18n:Translate String87}" x:Name="picGender"
+                        ItemsSource="{Binding ListGenderSelect}"   ItemDisplayBinding="{Binding Name}"
+                                SelectedItem="{Binding SelectedGender}"
+                        >
+                    <!--<Picker.Items>
+                        <x:String>Nam</x:String>
+                        <x:String>Nữ</x:String>
+                        <x:String>Khác</x:String>
+                    </Picker.Items>
+                    <Picker.SelectedIndex>
+                        0
+                    </Picker.SelectedIndex>-->
+                </Picker>
+
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Text="{i18n:Translate String91}" Grid.Row="2" Grid.Column="0" />
+                <local:ExtendedEntry x:Name="txtPosition"  HeightRequest="40"
+                        ErrorText="{Binding User.Position.NotValidMessageError}"
+                                     BorderErrorColor="Red"
+                                     Text="{Binding User.Position.Name}" IsBorderErrorVisible="{Binding User.Position.IsNotValid, Mode=TwoWay}"
+                       Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" >
+                    <local:ExtendedEntry.Behaviors>
+                        <behavior:EmptyEntryValidatorBehavior />
+                    </local:ExtendedEntry.Behaviors>
+                </local:ExtendedEntry>
+
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Text="{i18n:Translate String92}" Grid.Row="3" Grid.Column="0" />
+                <!--<customControls:CustomPicker Grid.Column="1" Grid.Row="3" Title="Chọn tỉnh" HorizontalOptions="FillAndExpand" x:Name="picProvince">
+                </customControls:CustomPicker>-->
+                <Picker Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="3" Title="{i18n:Translate String93}" x:Name="picProvince"
+                     ItemsSource="{Binding ListProvince}"   ItemDisplayBinding="{Binding Name}"
+                        SelectedItem="{Binding SelectedProvince, Mode=TwoWay}">
+                </Picker>
+
+                <!--<Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Text="Xã" Grid.Row="3" Grid.Column="2" />
+                <customControls:CustomPicker Grid.Column="3" Grid.Row="3" Title="Chọn Xã" HorizontalOptions="FillAndExpand" x:Name="picWard">
+                </customControls:CustomPicker>-->
+
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Text="{i18n:Translate String94}" Grid.Row="4" Grid.Column="0" />
+                <customControls:CustomPicker Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3"  
+                                             ItemsSource="{Binding ListRole}"   ItemDisplayBinding="{Binding Name}"
+                                SelectedItem="{Binding SelectedRole}"
+                                             Title="{i18n:Translate String95}" HorizontalOptions="FillAndExpand" 
+                                             x:Name="picRole">
+                    <!--<Picker.Items>
+                        <x:String>Tình nguyện viên</x:String>
+                        <x:String>Đội trưởng</x:String>
+                        <x:String>Chủ tịch hội CTĐ</x:String>
+                    </Picker.Items>
+                    <Picker.SelectedIndex>
+                        0
+                    </Picker.SelectedIndex>-->
+                </customControls:CustomPicker>
+
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Text="{i18n:Translate String99}" Grid.Row="5" Grid.Column="0" />
+                <!--<Entry x:Name="txtBirthdate" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3" />-->
+                <customControls:NullableDatePicker Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3"
+                                                  NullableDate="{Binding Datetime, Mode=TwoWay}" x:Name="txtBirthdate" />
+
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Text="{i18n:Translate String100}" Grid.Row="6" Grid.Column="0" />
+                <local:ExtendedEntry x:Name="txtBlood" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="3"
+                       ErrorText="{Binding User.BloodType.NotValidMessageError}"  HeightRequest="40"
+                                     BorderErrorColor="Red"
+                                     Text="{Binding User.BloodType.Name}" IsBorderErrorVisible="{Binding User.BloodType.IsNotValid, Mode=TwoWay}"
+                       >
+                    <local:ExtendedEntry.Behaviors>
+                        <behavior:EmptyEntryValidatorBehavior />
+                    </local:ExtendedEntry.Behaviors>
+                </local:ExtendedEntry>
+
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Text="{i18n:Translate String101}" Grid.Row="7" Grid.Column="0" />
+                <local:ExtendedEntry Keyboard="Numeric" x:Name="txtPhone" Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="3"
+                       ErrorText="{Binding User.CellPhone.NotValidMessageError}"
+                                     BorderErrorColor="Red"  HeightRequest="40"
+                                     Text="{Binding User.CellPhone.Name}" IsBorderErrorVisible="{Binding User.CellPhone.IsNotValid, Mode=TwoWay}"
+                      >
+                    <local:ExtendedEntry.Behaviors>
+                        <behavior:EmptyEntryValidatorBehavior />
+                    </local:ExtendedEntry.Behaviors>
+                </local:ExtendedEntry>
+
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Text="{i18n:Translate String102}" Grid.Row="8" Grid.Column="0" />
+                <local:ExtendedEntry Keyboard="Numeric" x:Name="txtTelephone" Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="3" 
+                        ErrorText="{Binding User.DesktopPhone.NotValidMessageError}"
+                                     BorderErrorColor="Red"  HeightRequest="40"
+                                     Text="{Binding User.DesktopPhone.Name}" IsBorderErrorVisible="{Binding User.DesktopPhone.IsNotValid, Mode=TwoWay}"
+                      >
+                    <local:ExtendedEntry.Behaviors>
+                        <behavior:EmptyEntryValidatorBehavior />
+                    </local:ExtendedEntry.Behaviors>
+                </local:ExtendedEntry>
+
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Text="Email" Grid.Row="9" Grid.Column="0" />
+                <local:ExtendedEntry IsEnabled="{Binding IsEnable}" x:Name="txtEmail" Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="3"
+                       ErrorText="{Binding User.UserId.NotValidMessageError}"
+                                     BorderErrorColor="Red"  HeightRequest="40"
+                                     Text="{Binding User.UserId.Name}" IsBorderErrorVisible="{Binding User.UserId.IsNotValid, Mode=TwoWay}"
+                      >
+                    <local:ExtendedEntry.Behaviors>
+                        <behavior:EmptyEntryValidatorBehavior />
+                    </local:ExtendedEntry.Behaviors>
+                </local:ExtendedEntry>
+
+                <Button x:Name="btnSaveUser" TextColor="#FFFFFF" BackgroundColor="#da251c"  Command="{Binding OnValidationCommand}"
+                        Text="{i18n:Translate String112}" Grid.Row="10" Grid.Column="2" Grid.ColumnSpan="2"
+                        HorizontalOptions="End" />
+                <!--<Button x:Name="btnClose" TextColor="#FFFFFF" BackgroundColor="#169bd5" Text="Hủy bỏ" Grid.Row="10" Grid.Column="3" HorizontalOptions="End" />-->
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              BackgroundColor="White"
+              xmlns:customControls="clr-namespace:Mobile;assembly=Mobile"
+             xmlns:i18n="clr-namespace:Naxam.I18n.Forms;assembly=Naxam.I18n.Forms"
+	xmlns:converters="clr-namespace:Naxam.I18n.Forms.Converters;assembly=Naxam.I18n.Forms"
+             x:Class="Mobile.Views.Reports.Reporter">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:TimeAgoConverter x:Key="TimeAgoConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid Margin="20" RowSpacing="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="100"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="50"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label VerticalOptions="StartAndExpand" FontSize="Default" FontAttributes="Bold"
+                       TextColor="Black" Grid.Column="0" Grid.Row="0" Text="{i18n:Translate String85}" />
+                <Entry HorizontalOptions="FillAndExpand" Margin="0,0,20,0" x:Name="txtFullname" Grid.ColumnSpan="2" Grid.Row="0" Grid.Column="1" />
+
+                <Label VerticalOptions="StartAndExpand" FontSize="Default" FontAttributes="Bold"
+                       TextColor="Black" Grid.Column="0" Grid.Row="1" Text="{i18n:Translate String91}" />
+                <Entry HorizontalOptions="FillAndExpand" Margin="0,0,20,0" 
+                       x:Name="txtPosition" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="1" />
+
+                <Label VerticalOptions="StartAndExpand" FontSize="Default" FontAttributes="Bold"
+                       TextColor="Black" Text="{i18n:Translate String168}" Grid.Row="2" Grid.Column="0" />
+                <!--<customControls:CustomPicker Grid.Column="1" Grid.Row="2" Title="{i18n:Translate String169}" 
+                                             HorizontalOptions="FillAndExpand" x:Name="picProvince">
+                </customControls:CustomPicker>-->
+                <Label x:Name="txtProvince" Grid.Column="1" Grid.Row="2" LineBreakMode="WordWrap" TextColor="Black" />
+
+                <Label VerticalOptions="StartAndExpand" FontSize="Default" FontAttributes="Bold"
+                       TextColor="Black" Text="{i18n:Translate String121}" Grid.Row="3" Grid.Column="0" />
+                <Label x:Name="txtDistrict" Grid.Column="1" Grid.Row="3" LineBreakMode="WordWrap" TextColor="Black" />
+                <!--<customControls:CustomPicker Grid.Column="1" Grid.Row="3" Title="{i18n:Translate String122}"
+                                             HorizontalOptions="FillAndExpand" x:Name="picDistrict">
+                </customControls:CustomPicker>-->
+
+                <Label VerticalOptions="StartAndExpand" FontSize="Default" FontAttributes="Bold"
+                       TextColor="Black" Text="Xã/Phường" Grid.Row="4" Grid.Column="0" />
+                <Label x:Name="txtWard" Grid.Column="1" Grid.Row="4" LineBreakMode="WordWrap" TextColor="Black" />
+                <!--<customControls:CustomPicker Grid.Column="1" Grid.Row="4" Title="Chọn xã" 
+                                             HorizontalOptions="FillAndExpand" x:Name="picWard">
+                </customControls:CustomPicker>-->
+
+                <Label VerticalOptions="StartAndExpand" FontSize="Default" FontAttributes="Bold"
+                       TextColor="Black" Text="{i18n:Translate String166}" Grid.Row="5" Grid.Column="0" />
+                <customControls:CustomPicker Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="5" Title="{i18n:Translate String167}" 
+                                             HorizontalOptions="FillAndExpand" x:Name="picEvent">
+                </customControls:CustomPicker>
+                <Button x:Name="btnBack" BackgroundColor="White" Image="back.png" HeightRequest="40" Grid.Row="6"  Margin="50,0,0,0" />
+                <Button x:Name="btnNext" BackgroundColor="White" Image="send.png" HeightRequest="40"   Grid.Row="6" Grid.Column="2" Margin="0,0,0,0"  />
+
+            </Grid>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

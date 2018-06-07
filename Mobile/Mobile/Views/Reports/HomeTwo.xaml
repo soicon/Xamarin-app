@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Chỗ ở và mặt hàng phi lương thực" BackgroundColor="White"
+               xmlns:m16="clr-namespace:Mobile;assembly=Mobile"
+             xmlns:i18n="clr-namespace:Naxam.I18n.Forms;assembly=Naxam.I18n.Forms"
+	xmlns:converters="clr-namespace:Naxam.I18n.Forms.Converters;assembly=Naxam.I18n.Forms"
+             x:Class="Mobile.Views.Reports.HomeTwo">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:TimeAgoConverter x:Key="TimeAgoConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid  Margin="20" RowSpacing="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="20"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="20"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="20"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="20"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="20"></RowDefinition>
+                    <RowDefinition Height="20"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="120"></ColumnDefinition>
+                    <ColumnDefinition Width="140"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label VerticalOptions="StartAndExpand" Text="{i18n:Translate home6}"
+                       LineBreakMode="WordWrap" Grid.ColumnSpan="3" Grid.Column="0" Grid.Row="0" FontAttributes="Bold" />
+                <m16:Checkbox x:Name="txtNum1a" VerticalOptions="Center"  Text="{i18n:Translate No1}" Grid.ColumnSpan="1" Grid.Column="0" Grid.Row="1" />
+                <Entry x:Name="txtNum1Note" Grid.ColumnSpan="3" Grid.Column="0" Grid.Row="3" HorizontalOptions="FillAndExpand" />
+                <m16:Checkbox x:Name="txtNum1b" VerticalOptions="Center" Grid.ColumnSpan="4"  Text="{i18n:Translate String52}" Grid.Column="0" Grid.Row="2" />
+
+                <Label VerticalOptions="StartAndExpand" Text="{i18n:Translate home7}"
+                    LineBreakMode="WordWrap" Grid.ColumnSpan="3" Grid.Column="0" Grid.Row="4" FontAttributes="Bold"/>
+                <m16:Checkbox x:Name="txtNum2a" VerticalOptions="Center" Grid.ColumnSpan="2"  Text="{i18n:Translate String77}"  Grid.Column="0" Grid.Row="5" />
+                <m16:Checkbox x:Name="txtNum2b" VerticalOptions="Center"  Text="{i18n:Translate String78}" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="6" />
+                <Entry x:Name="txtNum2Note1" Grid.ColumnSpan="2"  Grid.Column="2" Grid.Row="7" HorizontalOptions="FillAndExpand" />
+                <Label Text="{i18n:Translate String79}" Grid.Column="0" Grid.Row="7" LineBreakMode="WordWrap" />
+                <Label Text="{i18n:Translate ByWhomDo}" Grid.Column="0" Grid.Row="8" LineBreakMode="WordWrap" />
+                <Entry x:Name="txtNum2Note2" Grid.ColumnSpan="2" Grid.Column="2" Grid.Row="8" HorizontalOptions="FillAndExpand" />
+
+                <Label VerticalOptions="StartAndExpand" Text="{i18n:Translate home8}"
+                       LineBreakMode="WordWrap" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="9" FontAttributes="Bold"/>
+                <m16:Checkbox x:Name="txtNum3a" Text="{i18n:Translate No1}" Grid.Column="0" Grid.Row="10" />
+                <m16:Checkbox x:Name="txtNum3b" Text="{i18n:Translate Yes1}" Grid.Column="1" Grid.Row="10" />
+
+                <Label VerticalOptions="StartAndExpand" Text="{i18n:Translate home9}" Grid.ColumnSpan="2"
+                       LineBreakMode="WordWrap" Grid.Column="0" Grid.Row="11" FontAttributes="Bold"/>
+                <Entry x:Name="txtNum4" Grid.Column="2" Grid.Row="11" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" />
+
+                <Label VerticalOptions="StartAndExpand" Text="{i18n:Translate home10}"
+                       LineBreakMode="WordWrap" Grid.ColumnSpan="3" Grid.Column="0" Grid.Row="12" FontAttributes="Bold"/>
+                <m16:Checkbox x:Name="txtNum5a" Text="{i18n:Translate No1}" Grid.Column="0" Grid.Row="13" />
+                <m16:Checkbox x:Name="txtNum5b" Text="{i18n:Translate Yes1}" Grid.Column="1" Grid.Row="13" />
+
+                <Label VerticalOptions="StartAndExpand" Text="{i18n:Translate home11}"
+                    LineBreakMode="WordWrap" Grid.ColumnSpan="3" Grid.Column="0" Grid.Row="14" FontAttributes="Bold"/>
+                <m16:Checkbox x:Name="txtNum6a" Text="Chưa" Grid.Column="0" Grid.Row="15" />
+                <m16:Checkbox x:Name="txtNum6b" Text="{i18n:Translate String80}" Grid.Column="0" Grid.Row="16" Grid.ColumnSpan="3"/>
+                <Entry x:Name="txtNum6Note1" Grid.ColumnSpan="2" Grid.Column="2" Grid.Row="17" HorizontalOptions="FillAndExpand" />
+                <Label Text="{i18n:Translate String79}" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="17" LineBreakMode="WordWrap" />
+                <Label Text="{i18n:Translate ByWhomDo}" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="18" LineBreakMode="WordWrap" />
+                <Entry x:Name="txtNum6Note2" Grid.ColumnSpan="2" Grid.Column="2" Grid.Row="18" HorizontalOptions="FillAndExpand" />
+
+                <Label VerticalOptions="StartAndExpand" Text="12."  
+                       LineBreakMode="WordWrap" Grid.ColumnSpan="3" Grid.Column="0" Grid.Row="19" FontAttributes="Bold"/>
+                <Label FontAttributes="Bold" Text="{i18n:Translate Table1}" Grid.ColumnSpan="2"
+                       Grid.Column="0" Grid.Row="20" VerticalOptions="Start" />
+                <Editor x:Name="txtNum7a" HeightRequest="50" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="20" />
+                <Label FontAttributes="Bold" Text="{i18n:Translate Table2}"
+                       Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="21" VerticalOptions="Start" />
+                <Editor x:Name="txtNum7b" HeightRequest="50" HorizontalOptions="FillAndExpand"  Grid.Column="2" Grid.Row="21" />
+                <Label FontAttributes="Bold" Text="{i18n:Translate Table3}" Grid.Column="0" VerticalOptions="Start" Grid.ColumnSpan="2" Grid.Row="22" />
+                <Editor x:Name="txtNum7c" HeightRequest="50" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="22" />
+
+                <Button x:Name="btnBack" Image="back.png" HeightRequest="40"  BackgroundColor="White"  Grid.Row="23" Grid.Column="0" HorizontalOptions="End" VerticalOptions="End" />
+                <Button x:Name="btnNext" Image="save.png" VerticalOptions="End" HeightRequest="40"  BackgroundColor="White" Grid.Row="23" Grid.Column="1" Grid.ColumnSpan="2" HorizontalOptions="End"  />
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

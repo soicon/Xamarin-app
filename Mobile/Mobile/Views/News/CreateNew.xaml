@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:i18n="clr-namespace:Naxam.I18n.Forms;assembly=Naxam.I18n.Forms"
+	xmlns:converters="clr-namespace:Naxam.I18n.Forms.Converters;assembly=Naxam.I18n.Forms"
+             x:Class="Mobile.Views.CreateNew">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:TimeAgoConverter x:Key="TimeAgoConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="{i18n:Translate String112}" Clicked="Save_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#FFFFFF">
+            <ActivityIndicator x:Name="Loading" Color="Red" IsRunning="False" IsEnabled="False" />
+            <Label  x:Name="lblFormStatus" FontAttributes="Bold" FontSize="32" FontFamily="Arial Bold,Arial"
+                    TextColor="White" HorizontalTextAlignment="Center">Thêm mới tin tức</Label>
+            <Label Text="{i18n:Translate String210}" Style="{DynamicResource ListItemTextStyle}"  />
+            <Entry x:Name="txtTitle" Placeholder="{i18n:Translate String210}"   
+                           PlaceholderColor="Black" HeightRequest="40"   
+                           TextColor="Black"/>
+            <Label Style="{DynamicResource ListItemTextStyle}"  Text="{i18n:Translate String211}" />
+            <!--<Editor x:Name="txtContent" HeightRequest="100" TextColor="Black" />-->
+            <WebView x:Name="txtContent" HeightRequest="500" >
+            </WebView>
+            <Button HeightRequest="40" WidthRequest="100" x:Name="btnEditContent" TextColor="#FFFFFF" BackgroundColor="#da251c"
+                        Text="{i18n:Translate String228}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

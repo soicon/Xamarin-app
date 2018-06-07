@@ -1,0 +1,69 @@
+﻿<Properties StartupConfiguration="{556644B3-9ADE-48B3-B543-0F74FCD9E6FE}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Mobile Status">
+    <Files>
+      <File FileName="Mobile/Mobile/Views/Reports/InformationTwo.xaml" Line="141" Column="15" />
+      <File FileName="Mobile/Mobile/Views/Reports/InformationThree.xaml" Line="75" Column="15" />
+      <File FileName="Mobile/Mobile/Views/Reports/InformationTwo.xaml.cs" Line="1" Column="1" />
+      <File FileName="Mobile/Mobile.iOS/Views/Customs/CheckBoxRenderer.cs" Line="57" Column="55" />
+      <File FileName="Mobile/Mobile.iOS/Views/Customs/M13Checkbox.cs" Line="155" Column="38" />
+      <File FileName="Mobile/Mobile.iOS/Views/Customs/ExtendedEntryRenderer.cs" Line="96" Column="4" />
+      <File FileName="Mobile/Mobile.iOS/Views/Customs/DropDownMenuRender_iOS.cs" Line="1" Column="1" />
+      <File FileName="Mobile/Mobile.iOS/Views/Customs/Constants.cs" Line="12" Column="54" />
+      <File FileName="Mobile/Mobile.iOS/Views/Customs/CheckView.cs" Line="14" Column="1" />
+      <File FileName="Mobile/Mobile.iOS/Views/Customs/CheckedChangedEventArgs.cs" Line="1" Column="1" />
+      <File FileName="Mobile/Mobile/Views/Reports/HomeTwo.xaml" Line="103" Column="15" />
+      <File FileName="Mobile/Mobile.iOS/AppDelegate.cs" Line="36" Column="30" />
+      <File FileName="Mobile/Mobile.Android/Views/Customs/CheckboxRenderer.cs" Line="15" Column="70" />
+      <File FileName="Mobile/Mobile/Resources/LocalTexts.en.resx" Line="582" Column="65" />
+      <File FileName="Mobile/Mobile/Resources/LocalTexts.vi.resx" Line="1" Column="1" />
+      <File FileName="Mobile/Mobile/Views/Reports/InformationThree.xaml.cs" Line="1" Column="1" />
+      <File FileName="Mobile/Mobile/Views/Reports/HomeTwo.xaml.cs" Line="1" Column="1" />
+      <File FileName="Mobile/Mobile/Views/Reports/Health.xaml" Line="82" Column="15" />
+      <File FileName="Mobile/Mobile/Views/Reports/Information.xaml" Line="126" Column="15" />
+      <File FileName="Mobile/Mobile/Views/Reports/Health.xaml.cs" Line="18" Column="11" />
+      <File FileName="Mobile/Mobile/Views/Reports/HealthTwo.xaml" Line="57" Column="15" />
+      <File FileName="Mobile/Mobile/Views/Reports/Water.xaml" Line="102" Column="15" />
+      <File FileName="Mobile/Mobile.iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="Mobile/Mobile/Views/Reports/WaterTwo.xaml" Line="114" Column="15" />
+      <File FileName="Mobile/Mobile/Views/Reports/Food.xaml" Line="107" Column="15" />
+      <File FileName="Mobile/Mobile/Views/Reports/FoodTwo.xaml" Line="89" Column="15" />
+      <File FileName="Mobile/Mobile/Views/Reports/Home.xaml" Line="91" Column="15" />
+      <File FileName="Mobile/Mobile/Views/Reports/Reporter.xaml" Line="73" Column="15" />
+      <File FileName="Mobile/Mobile.Android/Views/Customs/CustomPickerRenderer.cs" Line="1" Column="1" />
+      <File FileName="Mobile/Mobile.iOS/Views/Customs/NullableDatePickerRenderer.cs" Line="1" Column="1" />
+      <File FileName="Mobile/Mobile/Views/Reports/Disaster.xaml" Line="227" Column="15" />
+      <File FileName="Mobile/Mobile/Views/Reports/ReportForm.xaml" Line="42" Column="15" />
+      <File FileName="Mobile/Mobile/Behaviors/EmptyEntryValidatorBehavior.cs" Line="36" Column="10" />
+      <File FileName="Mobile/Mobile/Views/Reports/FoodTwo.xaml.cs" Line="1" Column="1" />
+      <File FileName="Mobile/Mobile/App.xaml" Line="117" Column="15" />
+      <File FileName="Mobile/Mobile/App.xaml.cs" Line="150" Column="120" />
+      <File FileName="Mobile/Mobile/Views/Warning/CreateAlert.xaml.cs" Line="13" Column="12" />
+      <File FileName="Mobile/Mobile/Views/Report.xaml.cs" Line="43" Column="25" />
+      <File FileName="Mobile/Mobile/obj/Debug/netstandard2.0/Mobile.Views.Report.xaml.g.cs" Line="14" Column="64" />
+      <File FileName="Mobile/Mobile/Views/Report.xaml" Line="34" Column="15" />
+      <File FileName="Mobile/Mobile/Page1.xaml" Line="21" Column="25" />
+      <File FileName="Mobile/Mobile/Page1.xaml.cs" Line="1" Column="1" />
+      <File FileName="Mobile/Mobile/Repository/TokenRepository.cs" Line="34" Column="34" />
+      <File FileName="Mobile/Mobile/Views/Offline.xaml.cs" Line="13" Column="67" />
+      <File FileName="Mobile/Mobile/Views/Offline.xaml" Line="120" Column="15" />
+      <File FileName="Mobile/Mobile/Views/Setting.xaml.cs" Line="21" Column="1" />
+      <File FileName="Mobile/Mobile/Views/Setting.xaml" Line="100" Column="15" />
+      <File FileName="Mobile/Mobile/Repository/UserRepository.cs" Line="7" Column="18" />
+      <File FileName="Mobile/Mobile/Services/RestClient.cs" Line="21" Column="1" />
+      <File FileName="Mobile/Mobile/Common/CommonConstant.cs" Line="7" Column="9" />
+      <File FileName="Mobile/Mobile/BeforeDisater.json" Line="35" Column="3" />
+      <File FileName="Mobile/Mobile/Common/Ultilities.cs" Line="1" Column="1" />
+      <File FileName="Mobile/Mobile.iOS/Info.plist" />
+      <File FileName="Mobile Status" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/soicon/Projects/Mobile/Mobile/Mobile/Services/RestClient.cs" relfile="Mobile/Mobile/Services/RestClient.cs" line="19" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Mobile.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.CE3F79A1-9DB7-4B14-A84D-42983A6FC855" automaticSigning="False" />
+</Properties>

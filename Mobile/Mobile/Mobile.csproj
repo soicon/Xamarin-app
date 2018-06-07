@@ -1,0 +1,126 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Resources - Copy\**" />
+    <Compile Remove="Views\Sample\**" />
+    <EmbeddedResource Remove="Resources - Copy\**" />
+    <EmbeddedResource Remove="Views\Sample\**" />
+    <None Remove="Resources - Copy\**" />
+    <None Remove="Views\Sample\**" />
+    <None Remove="Resources\ic_audiotrack_black_24dp.xml" />
+    <None Remove="icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Resources\Resource1.Designer.cs" />
+    <Compile Remove="ViewModels\AboutViewModel.cs" />
+    <Compile Remove="ViewModels\BaseViewModel.cs" />
+    <Compile Remove="ViewModels\ItemDetailViewModel.cs" />
+    <Compile Remove="ViewModels\ItemsViewModel.cs" />
+    <Compile Remove="Views\Language.xaml.cs" />
+    <Compile Remove="Views\MainPage.xaml.cs" />
+    <Compile Remove="Views\Page1.xaml.cs" />
+    <Compile Remove="Views\Setting - Copy.xaml.cs" />
+    <Compile Remove="Views\Settings.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Resources\Resource1.resx" />
+    <EmbeddedResource Remove="Views\Language.xaml" />
+    <EmbeddedResource Remove="Views\MainPage.xaml" />
+    <EmbeddedResource Remove="Views\Page1.xaml" />
+    <EmbeddedResource Remove="Views\Setting - Copy.xaml" />
+    <EmbeddedResource Remove="Views\Settings.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="BeforeDisater.json" />
+    <None Remove="report.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="BeforeDisater.json" />
+    <EmbeddedResource Include="report.json" />
+    <EmbeddedResource Include="Resources\ic_audiotrack_black_24dp.xml" />
+    <EmbeddedResource Include="icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.8.2" />
+    <PackageReference Include="Naxam.BottomTabbedPage" Version="0.2.0.3" />
+    <PackageReference Include="Naxam.I18n" Version="1.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.2.2" />
+    <PackageReference Include="Xam.Plugin.Iconize" Version="1.0.10" />
+    <PackageReference Include="Xamarin.Forms" Version="2.5.0.280555" />
+    <PackageReference Include="Xam.Plugin.Connectivity" Version="3.1.1" />
+    <PackageReference Include="PropertyChanged.Fody" Version="2.5.6" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.4.118" />
+    <PackageReference Include="TEditor" Version="1.0.3" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\NewFolder\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Identity.Client.Platform">
+      <HintPath>..\Mobile.Android\bin\Debug\Microsoft.Identity.Client.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Identity.Client">
+      <HintPath>..\..\android\Microsoft.Identity.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Identity.Client.Platform">
+      <HintPath>..\..\android\Microsoft.Identity.Client.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Identity.Client">
+      <HintPath>..\Mobile.Android\bin\Debug\Microsoft.Identity.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Identity.Client.Platform">
+      <HintPath>..\Mobile.Android\bin\Debug\Microsoft.Identity.Client.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Identity.Client">
+      <HintPath>..\Mobile.Android\bin\Debug\Microsoft.Identity.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Identity.Client.Platform">
+      <HintPath>..\Mobile.Android\bin\Debug\Microsoft.Identity.Client.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="eShopOnContainers.Core">
+      <HintPath>..\..\Lib\eShopOnContainers.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="VikingCommonHelper">
+      <HintPath>..\..\Lib\VikingCommonHelper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\Login.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\News\NewDetailTemp.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\News\NewsTemp.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Reports\ReportForm.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Setting.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Warning\WarningTemp.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Warning\WarningTempDetail.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              Title="Tình trạng sức khỏe" BackgroundColor="White"
+               xmlns:m16="clr-namespace:Mobile;assembly=Mobile"
+             xmlns:i18n="clr-namespace:Naxam.I18n.Forms;assembly=Naxam.I18n.Forms"
+	xmlns:converters="clr-namespace:Naxam.I18n.Forms.Converters;assembly=Naxam.I18n.Forms"
+             x:Class="Mobile.Views.Reports.HealthTwo">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:TimeAgoConverter x:Key="TimeAgoConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid  Margin="20" RowSpacing="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="120"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label VerticalOptions="StartAndExpand" Text="{i18n:Translate health3}" Grid.Column="0" Grid.Row="0"
+                       Grid.ColumnSpan="3" FontAttributes="Bold"/>
+                <m16:Checkbox VerticalOptions="Start" Grid.ColumnSpan="1" Text="{i18n:Translate No1}" x:Name="txtNum1a"
+                              Checked="false" Grid.Column="0" Grid.Row="1"/>
+                <m16:Checkbox VerticalOptions="Start" Text="{i18n:Translate Yes1}" Grid.ColumnSpan="1" Checked="false" x:Name="txtNum1b" Grid.Column="0" Grid.Row="2" />
+                <Label Text="{i18n:Translate String67}" Grid.Column="1" Grid.Row="2" />
+                <Editor Grid.Column="2" Grid.Row="2" HorizontalOptions="FillAndExpand" x:Name="txtNumNote" />
+
+                <Label Text="4." Grid.Column="0"
+                       Grid.Row="3" Grid.ColumnSpan="3"/>
+
+                <Label VerticalOptions="End" FontAttributes="Bold" Text="{i18n:Translate Table1}"
+                       Grid.ColumnSpan="1" Grid.Column="0" Grid.Row="4" />
+                <Editor Grid.Column="1" Grid.Row="4" HorizontalOptions="FillAndExpand" x:Name="txt2a" />
+                <Label VerticalOptions="End" FontAttributes="Bold" Text="{i18n:Translate Table2}" 
+                       Grid.ColumnSpan="1" Grid.Column="0" Grid.Row="5" />
+                <Editor HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="5" x:Name="txt2b" />
+                <Label VerticalOptions="End"  Grid.ColumnSpan="1" FontAttributes="Bold" Text="{i18n:Translate Table3}" Grid.Column="0" Grid.Row="6" />
+                <Editor HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="6" x:Name="txt2c" />
+                <Button x:Name="btnBack" Image="back.png" HeightRequest="40"  BackgroundColor="#FFFFFF"  Grid.Row="7" Grid.Column="0" HorizontalOptions="End" VerticalOptions="End" />
+                <Button x:Name="btnNext" VerticalOptions="End" HeightRequest="40"  TextColor="Red" BackgroundColor="#FFFFFF" Image="save.png" Grid.Row="7" Grid.Column="1" HorizontalOptions="End"  />
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

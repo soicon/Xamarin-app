@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              Title="Gia đình"
+              xmlns:htmlLabel="clr-namespace:Mobile;assembly=Mobile" BackgroundColor="#FFFFFF"
+             x:Class="Mobile.Views.Families">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="" Icon="ic_add.png" Clicked="AddItem_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView>
+            <ListView x:Name="ItemsListView"
+              HasUnevenRows="True"  
+                      ItemSelected="OnItemSelected"
+              BackgroundColor="#FFFFFF"
+              SeparatorVisibility="Default"
+                  IsGroupingEnabled="true"
+              HorizontalOptions="FillAndExpand"
+              VerticalOptions="FillAndExpand" Margin="10">
+                <ListView.GroupHeaderTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Label TextColor="White" BackgroundColor="#2196F3" FontSize="Large" FontFamily="Arial"
+                                   FontAttributes="Bold" VerticalOptions="End" Text="{Binding Heading}" />
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.GroupHeaderTemplate>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid RowSpacing="10" Margin="0,10,0,0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"></RowDefinition>
+                                    <RowDefinition Height="Auto"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                    <ColumnDefinition Width="25"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <htmlLabel:HtmlLabel Grid.Row="0" Grid.Column="0" TextColor="#990066" Text="{Binding Name}" FontSize="Medium"></htmlLabel:HtmlLabel>
+                                <htmlLabel:HtmlLabel Grid.Row="1" Grid.RowSpan="2" Grid.Column="0" Text="{Binding Risk}"  FontSize="Medium"  TextColor="Black" />
+                                <Label Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" Text="{Binding CreatedTime, StringFormat='{}{0:\\ HH\\:mm:ss \\- dd\\ MMMM\\ yyyy\\ }'}" Font="Small"  TextColor="Black"/>
+                                <Image HorizontalOptions="Start" VerticalOptions="Start" Grid.Row="0" Grid.RowSpan="2" Margin="6" Grid.Column="2" Source="Shape75.png"></Image>
+                                <!--<Image HorizontalOptions="Start" VerticalOptions="Start" Grid.Row="0" Grid.RowSpan="2" Margin="6" Grid.Column="3" Source="trash.png"></Image>-->
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

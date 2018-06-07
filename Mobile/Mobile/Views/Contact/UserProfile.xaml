@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:i18n="clr-namespace:Naxam.I18n.Forms;assembly=Naxam.I18n.Forms"
+	xmlns:converters="clr-namespace:Naxam.I18n.Forms.Converters;assembly=Naxam.I18n.Forms"
+               xmlns:local="clr-namespace:Mobile"
+             x:Class="Mobile.Views.UserProfile">
+    <ContentPage.ToolbarItems>
+        <local:CustomToolbarItem Text="Active"
+                     Icon="approve.png"
+                     x:Name="btnActive" />
+        <local:CustomToolbarItem Text="Deactive"
+                     Icon="refuse.png"
+                     x:Name="btnDeactive" />
+        <ToolbarItem Text="Sửa"
+                     Icon="ic_edit.png"
+                     x:Name="btnEdit" />
+        <ToolbarItem Text="Xóa"
+                     Icon="ic_delete.png" x:Name="btnDelete"
+                    />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView BackgroundColor="White">
+            <Grid Padding="10" BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="50"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Grid.Column="0" Grid.Row="0" Text="{i18n:Translate String85}" />
+                <Label x:Name="txtFullname" FontSize="Medium" TextColor="Black" LineBreakMode="WordWrap"
+                       Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" />
+
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Grid.Column="0" Grid.Row="1" Text="{i18n:Translate String86}" />
+                <Label x:Name="txtGender" FontSize="Medium" TextColor="Black" LineBreakMode="WordWrap"
+                        Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" />
+
+
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Text="{i18n:Translate String91}" Grid.Row="2" Grid.Column="0" />
+                <Label x:Name="txtPosition" FontSize="Medium" TextColor="Black" LineBreakMode="WordWrap"
+                        Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3" />
+
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Text="{i18n:Translate String92}" Grid.Row="3" Grid.Column="0" />
+                <Label x:Name="txtProvince" FontSize="Medium" TextColor="Black" LineBreakMode="WordWrap"
+                        Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="3" />
+
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Text="{i18n:Translate String94}" Grid.Row="4" Grid.Column="0" />
+                <Label x:Name="txtRole" FontSize="Medium" TextColor="Black" LineBreakMode="WordWrap"
+                        Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="3" />
+
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Text="{i18n:Translate String99}" Grid.Row="5" Grid.Column="0" />
+                <Label x:Name="txtBirthdate" FontSize="Medium" TextColor="Black" LineBreakMode="WordWrap"
+                        Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="3" />
+
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Text="{i18n:Translate String100}" Grid.Row="6" Grid.Column="0" />
+                <Label x:Name="txtBlood" FontSize="Medium" TextColor="Black" LineBreakMode="WordWrap"
+                        Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="3" />
+
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Text="{i18n:Translate String101}" Grid.Row="7" Grid.Column="0" />
+                <Label x:Name="txtCellPhone" FontSize="Medium" TextColor="Black" LineBreakMode="WordWrap"
+                        Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="3" />
+
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Text="{i18n:Translate String102}" Grid.Row="8" Grid.Column="0" />
+                <Label x:Name="txtTelephone" FontSize="Medium" TextColor="Black" LineBreakMode="WordWrap"
+                        Grid.Column="1" Grid.Row="8" Grid.ColumnSpan="3" />
+
+                <Label VerticalOptions="Center" FontSize="Default" TextColor="Black" Text="Email" Grid.Row="9" Grid.Column="0" />
+                <Label x:Name="txtUserId" FontSize="Medium" TextColor="Black" LineBreakMode="WordWrap"
+                        Grid.Column="1" Grid.Row="9" Grid.ColumnSpan="3" />
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

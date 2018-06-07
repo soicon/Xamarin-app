@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:customControls="clr-namespace:Mobile;assembly=Mobile"
+             xmlns:i18n="clr-namespace:Naxam.I18n.Forms;assembly=Naxam.I18n.Forms"
+	xmlns:converters="clr-namespace:Naxam.I18n.Forms.Converters;assembly=Naxam.I18n.Forms"
+             x:Class="Mobile.Views.Reports.Disaster">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:TimeAgoConverter x:Key="TimeAgoConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid Margin="5" RowSpacing="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="60"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="60"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="100"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label VerticalOptions="Center" FontSize="Default" FontAttributes="Bold"
+                       TextColor="Black" Text="{i18n:Translate String166}" Grid.Row="0" Grid.Column="0" />
+                    <customControls:CustomPicker Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" Title="{i18n:Translate String167}" 
+                                             HorizontalOptions="FillAndExpand" x:Name="picEvent">
+                    </customControls:CustomPicker>
+                    <StackLayout Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4"  BackgroundColor="Gray"  >
+                        <Label Margin="10,5,0,5" TextColor="White"  FontSize="Medium"
+                       Text="{i18n:Translate String104}" />
+                    </StackLayout>
+                    <!--<Label BackgroundColor="Gray" TextColor="White" LineBreakMode="WordWrap" FontSize="Medium"
+                   Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Text="{i18n:Translate String104}" />-->
+
+                    <Label Text="{i18n:Translate String165}"  FontSize="Medium" LineBreakMode="WordWrap"
+                 Grid.Row="2" Grid.Column="0"  />
+                    <Label x:Name="txtProvince" 
+                       LineBreakMode="WordWrap" Grid.Column="1" Grid.Row="2"
+                       Style="{DynamicResource ListItemDetailTextStyle}"
+                       FontSize="Medium" />
+                    <!--<customControls:CustomPicker Grid.Column="1" Grid.Row="1" Title="{i18n:Translate String93}" 
+                                             HorizontalOptions="FillAndExpand" x:Name="picProvince">
+                    </customControls:CustomPicker>-->
+                    <Label VerticalOptions="StartAndExpand" FontSize="Medium" 
+                       TextColor="Black" Text="{i18n:Translate String121}" Grid.Row="2" Grid.Column="2" />
+                    <Label x:Name="txtDistrict"  FontSize="Medium"
+                       LineBreakMode="WordWrap" Grid.Column="3" Grid.Row="2"
+                       Style="{DynamicResource ListItemDetailTextStyle}"
+                        />
+                    <!--<customControls:CustomPicker Grid.Column="3" Grid.Row="1" Title="{i18n:Translate String122}"
+                                             HorizontalOptions="FillAndExpand" x:Name="picDistrict">
+                    </customControls:CustomPicker>-->
+                    <Label Text="{i18n:Translate String123}" FontSize="Medium"  LineBreakMode="WordWrap"
+                 Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"  />
+                    <Label x:Name="txtProvider" FontSize="Medium"  Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="2" 
+                           LineBreakMode="WordWrap" TextColor="Black" />
+                    <!--<Entry x:Name="txtProvider" Grid.Column="1" Grid.Row="3" />-->
+                    <!--<Label Text="{i18n:Translate String123}"  LineBreakMode="WordWrap"
+                 Grid.Row="3" Grid.Column="2"  />-->
+                    <!--<Label x:Name="txtProvider2" />-->
+                    <!--<Entry x:Name="txtProvider2" Grid.Column="3" Grid.Row="3" />-->
+                </Grid>
+                <StackLayout Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4"  BackgroundColor="Gray"  >
+                    <Label Margin="10,5,0,5" TextColor="White"  FontSize="Medium"
+                       Text="{i18n:Translate String105}" />
+                </StackLayout>
+
+                <Label LineBreakMode="WordWrap"
+                   Grid.Row="2" FontSize="Medium" Grid.Column="0" Text="{i18n:Translate String125}" />
+                <Entry Keyboard="Numeric" x:Name="txtTotalWard" Grid.Column="1" Grid.Row="2" />
+                <Label LineBreakMode="WordWrap"
+                   Grid.Row="2" FontSize="Medium" Grid.Column="2" Text="{i18n:Translate String126}" />
+                <Entry Keyboard="Numeric" x:Name="txtTotalWard1" Grid.Column="3" Grid.Row="2" />
+
+                <Label LineBreakMode="WordWrap"
+                   Grid.Row="3" FontSize="Medium" Grid.Column="0" Text="{i18n:Translate String127}" />
+                <Entry x:Name="txt2a" Keyboard="Numeric" Grid.Column="1" Grid.Row="3" />
+                <Label LineBreakMode="WordWrap"
+                   Grid.Row="3" FontSize="Medium" Grid.Column="2" Text="{i18n:Translate String128}" />
+                <Entry x:Name="txt6a" Keyboard="Numeric" Grid.Column="3" Grid.Row="3" />
+
+                <Label LineBreakMode="WordWrap"
+                   Grid.Row="4" FontSize="Medium" Grid.Column="0" Text="{i18n:Translate String129}" />
+                <Entry x:Name="txt3a" Keyboard="Numeric" Grid.Column="1" Grid.Row="4" />
+                <Label LineBreakMode="WordWrap"
+                   Grid.Row="4" FontSize="Medium" Grid.Column="2" Text="{i18n:Translate String130}" />
+                <Entry x:Name="txt7a" Keyboard="Numeric" Grid.Column="3"  Grid.Row="4" />
+
+                <Label LineBreakMode="WordWrap"
+                   Grid.Row="5" FontSize="Medium" Grid.Column="0" Text="{i18n:Translate String131}" />
+                <Entry x:Name="txt4a" Keyboard="Numeric" Grid.Column="1" Grid.Row="5" />
+                <Label LineBreakMode="WordWrap"
+                   Grid.Row="5" FontSize="Medium" Grid.Column="2" Text="{i18n:Translate String132}" />
+                <Entry x:Name="txt8a" Keyboard="Numeric"  Grid.Column="3" Grid.Row="5" />
+
+                <Label LineBreakMode="WordWrap"
+                   Grid.Row="6" FontSize="Medium" Grid.Column="0" Text="{i18n:Translate String133}" />
+                <Entry x:Name="txt9a" Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="3" />
+
+                <StackLayout Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="4"  BackgroundColor="Gray"  >
+                    <Label Margin="10,5,0,5" TextColor="White"  FontSize="Medium"
+                       Text="{i18n:Translate String134}" />
+                </StackLayout>
+                <!--<Label  BackgroundColor="Gray" TextColor="White" LineBreakMode="WordWrap"
+                   Grid.Row="7" FontSize="Medium" Grid.Column="0" Grid.ColumnSpan="4" Text="{i18n:Translate String134}" />-->
+
+                <Label Text="{i18n:Translate String135}"  LineBreakMode="WordWrap"
+                  Grid.Row="8" FontSize="Medium" Grid.Column="0" Grid.ColumnSpan="4" />
+                <Label LineBreakMode="WordWrap"
+                   Grid.Row="9" FontSize="Medium" Grid.Column="0" Text="{i18n:Translate String136}" />
+                <Entry x:Name="txtAction" Grid.Column="1" Grid.Row="9" />
+                <Label LineBreakMode="WordWrap"
+                   Grid.Row="9" FontSize="Medium" Grid.Column="2" Text="{i18n:Translate String137}" />
+                <Entry x:Name="txtWhoAction" Grid.Column="3" Grid.Row="9"  />
+
+                <Label LineBreakMode="WordWrap"
+                   Grid.Row="10"  FontSize="Medium" Grid.Column="0" Text="{i18n:Translate String138}" />
+                <Entry x:Name="txt1b" Keyboard="Numeric" Grid.Column="1" Grid.Row="10" />
+                <Label LineBreakMode="WordWrap"
+                   Grid.Row="10" FontSize="Medium" Grid.Column="2" Text="{i18n:Translate String139}" />
+                <Entry x:Name="txt3b" Keyboard="Numeric"  Grid.Column="3" Grid.Row="10" />
+
+                <Label LineBreakMode="WordWrap"
+                   Grid.Row="11" FontSize="Medium" Grid.Column="0" Text="{i18n:Translate String140}" />
+                <Entry x:Name="txt2b" Keyboard="Numeric" Grid.Column="1" Grid.Row="11" />
+                <Label LineBreakMode="WordWrap"
+                   Grid.Row="11" FontSize="Medium" Grid.Column="2" Text="{i18n:Translate String141}" />
+                <Entry x:Name="txt4b" Keyboard="Numeric"  Grid.Column="3" Grid.Row="11" />
+
+                <Label LineBreakMode="WordWrap"
+                   Grid.Row="12" FontSize="Medium" Grid.Column="0" Text="{i18n:Translate String142}" />
+                <Entry x:Name="txt5b" FontSize="Medium" Grid.Column="1" Grid.Row="12" Grid.ColumnSpan="3" />
+
+                <StackLayout Grid.Row="13" Grid.Column="0" Grid.ColumnSpan="4"  BackgroundColor="Gray"  >
+                    <Label Margin="10,5,0,5" TextColor="White"  FontSize="Medium"
+                       Text="{i18n:Translate String143}" />
+                </StackLayout>
+                <!--<Label FontSize="Medium"  BackgroundColor="Gray" TextColor="White" LineBreakMode="WordWrap"
+                   Grid.Row="13" Grid.Column="0" Grid.ColumnSpan="4" Text="{i18n:Translate String143}" />-->
+
+                <Label LineBreakMode="WordWrap"
+                   Grid.Row="14" FontSize="Medium" Grid.Column="0" Text="{i18n:Translate String144}" />
+                <Entry Keyboard="Numeric" x:Name="txt1c" Grid.Column="1" Grid.Row="14"  />
+                <Label LineBreakMode="WordWrap"
+                   Grid.Row="14" FontSize="Medium" Grid.Column="2" Text="{i18n:Translate String145}" />
+                <Entry Keyboard="Numeric" x:Name="txt7c" Grid.Column="3" Grid.Row="14"  />
+
+                <Label LineBreakMode="WordWrap"
+                   Grid.Row="15" FontSize="Medium" Grid.Column="0" Text="{i18n:Translate String146}" />
+                <Entry Keyboard="Numeric" x:Name="txt2c" FontSize="Medium" Grid.Column="1" Grid.Row="15"  />
+                <Label LineBreakMode="WordWrap"
+                   Grid.Row="15" FontSize="Medium" Grid.Column="2" Text="{i18n:Translate String147}" />
+                <Entry Keyboard="Numeric" x:Name="txt8c" Grid.Column="3" Grid.Row="15"  />
+
+                <Label LineBreakMode="WordWrap" FontSize="Medium"
+                   Grid.Row="16" Grid.Column="0" Text="{i18n:Translate String148}" />
+                <Entry Keyboard="Numeric" x:Name="txt3c" Grid.Column="1" Grid.Row="16"  />
+                <Label LineBreakMode="WordWrap" FontSize="Medium"
+                   Grid.Row="16" Grid.Column="2" Text="{i18n:Translate String149}" />
+                <Entry Keyboard="Numeric" x:Name="txt9c" Grid.Column="3" Grid.Row="16" />
+
+                <Label LineBreakMode="WordWrap" FontSize="Medium"
+                   Grid.Row="17" Grid.Column="0" Text="{i18n:Translate String150}" />
+                <Entry Keyboard="Numeric" x:Name="txt4c" Grid.Column="1" Grid.Row="17"  />
+                <Label LineBreakMode="WordWrap" FontSize="Medium"
+                   Grid.Row="17" Grid.Column="2" Text="{i18n:Translate String151}" />
+                <Entry Keyboard="Numeric" x:Name="txt10c" Grid.Column="3" Grid.Row="17"  />
+
+                <Label LineBreakMode="WordWrap" FontSize="Medium"
+                   Grid.Row="18" Grid.Column="0" Text="{i18n:Translate String152}" />
+                <Entry Keyboard="Numeric" x:Name="txt5c" Grid.Column="1" Grid.Row="18"  />
+                <Label LineBreakMode="WordWrap" FontSize="Medium"
+                   Grid.Row="18" Grid.Column="2" Text="{i18n:Translate String153}" />
+                <Entry Keyboard="Numeric" x:Name="txt11c" Grid.Column="3" Grid.Row="18" />
+
+                <Label LineBreakMode="WordWrap" FontSize="Medium"
+                   Grid.Row="19" Grid.Column="0" Text="{i18n:Translate String154}" />
+                <Entry Keyboard="Numeric" x:Name="txt6c" Grid.Column="1" Grid.Row="19" />
+                <Label LineBreakMode="WordWrap" FontSize="Medium"
+                   Grid.Row="19" Grid.Column="2" Text="{i18n:Translate String155}" />
+                <Entry Keyboard="Numeric" x:Name="txt12c" Grid.Column="3" Grid.Row="19" />
+
+                <Label LineBreakMode="WordWrap" FontSize="Medium"
+                   Grid.Row="20" Grid.Column="0" Text="{i18n:Translate String156}" />
+                <Entry x:Name="txt13c" Grid.Column="1" Grid.Row="20" Grid.ColumnSpan="3" />
+
+                <Button x:Name="btnNext" HeightRequest="40" TextColor="#FFFFFF" BackgroundColor="#da251c" Text="{i18n:Translate String113}" Grid.Column="1" Grid.Row="21" Grid.ColumnSpan="3"  />
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

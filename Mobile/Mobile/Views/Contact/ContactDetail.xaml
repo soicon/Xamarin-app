@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+              xmlns:control="clr-namespace:Mobile;assembly=Mobile"
+             x:Class="Mobile.Views.ContactDetail">
+    <ContentPage.ToolbarItems>
+        <control:CustomToolbarItem Text="Active"
+                     Icon="approve.png"
+                     x:Name="btnActive" />
+        <control:CustomToolbarItem Text="Deactive"
+                     Icon="refuse.png"
+                     x:Name="btnDeactive" />
+        <ToolbarItem Text="Sửa"
+                     Icon="ic_edit.png"
+                     x:Name="btnEdit" />
+        <ToolbarItem Text="Xóa"
+                     Icon="ic_delete.png" x:Name="btnDelete"
+                    />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ListView HasUnevenRows="True" RowHeight="30" BackgroundColor="#FFFFFF" x:Name="listViewContact"
+                  CachingStrategy="RecycleElement">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid BackgroundColor="#FFFFFF">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20"></RowDefinition>
+                                <RowDefinition Height="20"></RowDefinition>
+                                <RowDefinition Height="20"></RowDefinition>
+                                <RowDefinition Height="20"></RowDefinition>
+                                <RowDefinition Height="60"></RowDefinition>
+                                <RowDefinition Height="40"></RowDefinition>
+                                <RowDefinition Height="40"></RowDefinition>
+                                <RowDefinition Height="40"></RowDefinition>
+                                <RowDefinition Height="40"></RowDefinition>
+                                <RowDefinition Height="40"></RowDefinition>
+                                <RowDefinition Height="60"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100"></ColumnDefinition>
+                                <ColumnDefinition Width="20"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Image WidthRequest="100" HeightRequest="91" HorizontalOptions="Center" Aspect="AspectFit" VerticalOptions="Fill" Grid.RowSpan="3" Grid.Row="1" Grid.Column="0" Source="u783.png"></Image>
+                            <Label VerticalOptions="Fill" LineBreakMode="CharacterWrap" Grid.ColumnSpan="3" FontFamily="Arial" Grid.Row="1" Grid.Column="1" Text="{Binding Name}" FontSize="Medium" TextColor="Black" />
+                            <Label LineBreakMode="CharacterWrap" Grid.ColumnSpan="3" FontFamily="Arial" Grid.Row="2" Grid.Column="1" Text="{Binding CellPhone}" FontSize="Medium" TextColor="Black" />
+                            <Image Grid.Row="3" WidthRequest="20" HeightRequest="20" HorizontalOptions="Start" Grid.Column="1" Source="u690.png"></Image>
+                            <Image Grid.Row="3" Margin="5,0,0,0" WidthRequest="20" HeightRequest="20" HorizontalOptions="Start" Grid.Column="2" Source="u692.png"></Image>
+
+                            <Label Text="Email: " Grid.Column="0" Grid.Row="4" Margin="5" FontAttributes="Bold" FontSize="Medium" />
+                            <Label Text="{Binding UserId}"
+                               Margin="5" Grid.Row="4" Grid.ColumnSpan="3" Grid.Column="1"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+                            <Image WidthRequest="31" HeightRequest="24" HorizontalOptions="Center" Aspect="AspectFit" 
+                                   VerticalOptions="Fill" Grid.Row="4" Grid.Column="4" 
+                                   Source="u791.png"></Image>
+
+                            <Label Text="Địa chỉ: " Margin="5" Grid.Column="0" Grid.Row="5" FontAttributes="Bold" FontSize="Medium" />
+                            <Label Text="Hà Nội" Margin="5" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="5" FontAttributes="Bold" FontSize="Medium" />
+
+                            <Label Text="Số nhà: " Margin="5" Grid.Column="0" Grid.Row="6" FontAttributes="Bold" FontSize="Medium" />
+                            <Label Text="Hà Nội" Margin="5" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="6" FontAttributes="Bold" FontSize="Medium" />
+
+                            <Label Text="Xã: " Margin="5" Grid.Column="0" Grid.Row="7" FontAttributes="Bold" FontSize="Medium" />
+                            <Label Text="Hà Nội" Margin="5" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="7" FontAttributes="Bold" FontSize="Medium" />
+
+                            <Label Text="Huyện: " Margin="5" Grid.Column="0" Grid.Row="8" FontAttributes="Bold" FontSize="Medium" />
+                            <Label Text="Hà Nội" Margin="5" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="8" FontAttributes="Bold" FontSize="Medium" />
+
+                            <Label Text="Tỉnh: " Margin="5" Grid.Column="0" Grid.Row="9" FontAttributes="Bold" FontSize="Medium" />
+                            <Label Text="Hà Nội" Margin="5" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="9" FontAttributes="Bold" FontSize="Medium" />
+
+                            <Label Text="Đăng ký làm: " Margin="5" Grid.Column="0" Grid.Row="10" FontAttributes="Bold" FontSize="Medium" />
+                            <Label Text="{Binding Position}" Margin="5" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="10" FontAttributes="Bold" FontSize="Medium" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>

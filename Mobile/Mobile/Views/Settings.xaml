@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:i18n="clr-namespace:Naxam.I18n.Forms;assembly=Naxam.I18n.Forms"
+             x:Class="Mobile.Views.Settings">
+    <Grid RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+
+        <!--  row background colors  -->
+        <BoxView Grid.Row="0" Color="#3A444D" />
+        <BoxView Grid.Row="1" Color="#F1F2F2" />
+        <BoxView Grid.Row="2" Color="#3A444D" />
+        <ActivityIndicator Color="Red" x:Name="Loading" IsVisible="False" />
+        <!--  title  -->
+        <Label FontSize="Large" HorizontalOptions="Center" Text=""
+               TextColor="White" VerticalOptions="Center" />
+
+        <!--  inner grid for button layouts  -->
+        <Grid Grid.Row="1" ColumnSpacing="30" HorizontalOptions="Center"
+              RowSpacing="30" VerticalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <!--<RowDefinition Height="*" />-->
+                <!--<RowDefinition Height="*" />-->
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <!--  button images  -->
+            <Image x:Name="Profile" Grid.Row="0" Grid.Column="0" Source="profile_login.png">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="ProfileTapped" NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image x:Name="Family" Grid.Row="0" Grid.Column="1" Source="family_15577.png" >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="FamilyTapped" NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image x:Name="Login" Grid.Row="1" Grid.Column="0" Source="Login_128.png" >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="LoginTapped" NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image x:Name="Language" Grid.Row="1" Grid.Column="1" Source="Language_Setting.png" >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="LanguageTapped" NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+        </Grid>
+    </Grid>
+</ContentPage>

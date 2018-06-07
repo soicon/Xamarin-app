@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               Title="Tình trạng sức khỏe" BackgroundColor="White"
+               xmlns:m16="clr-namespace:Mobile;assembly=Mobile"
+             xmlns:i18n="clr-namespace:Naxam.I18n.Forms;assembly=Naxam.I18n.Forms"
+	xmlns:converters="clr-namespace:Naxam.I18n.Forms.Converters;assembly=Naxam.I18n.Forms"
+             x:Class="Mobile.Views.Reports.Health">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:TimeAgoConverter x:Key="TimeAgoConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid  Margin="20" RowSpacing="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="180"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label LineBreakMode="WordWrap" FontAttributes="Bold" VerticalOptions="StartAndExpand" 
+                       Text="{i18n:Translate health1}" Grid.Column="0" Grid.Row="0"
+                       Grid.ColumnSpan="2"/>
+                <m16:Checkbox VerticalOptions="Center" Grid.ColumnSpan="3" Text="{i18n:Translate String58}"
+                          x:Name="txtNum1a"    Checked="false" Grid.Column="0" Grid.Row="1"></m16:Checkbox>
+                <m16:Checkbox VerticalOptions="Center" Grid.ColumnSpan="2" Text="{i18n:Translate String59}"
+                          x:Name="txtNum1b"    Checked="false" Grid.Column="0" Grid.Row="2"></m16:Checkbox>
+                <Label LineBreakMode="WordWrap" Text="{i18n:Translate String60}"
+                       Grid.Column="0" Grid.Row="3"/>
+                <Editor HorizontalOptions="FillAndExpand" Text="" Grid.Column="1" Grid.Row="3" x:Name="txtNum11" />
+                <Label LineBreakMode="WordWrap" Text="{i18n:Translate String61}" Grid.Column="0"
+                       Grid.Row="4"/>
+                <Editor HorizontalOptions="FillAndExpand" Text="" Grid.Column="1" Grid.Row="4" x:Name="txtNum12" />
+                <Label LineBreakMode="WordWrap" Text="{i18n:Translate ByWhomDo}" Grid.Column="0"
+                       Grid.Row="5"/>
+                <Editor HorizontalOptions="FillAndExpand" Text="" Grid.Column="1" Grid.Row="5" x:Name="txtNum13" />
+                <Label LineBreakMode="WordWrap" Text="{i18n:Translate String62}" Grid.Column="0"
+                       Grid.Row="6"/>
+                <Editor HorizontalOptions="FillAndExpand" Text="" Grid.Column="1" Grid.Row="6" x:Name="txtNum14" />
+
+                <Label LineBreakMode="WordWrap" FontAttributes="Bold"  VerticalOptions="StartAndExpand" 
+                       Text="{i18n:Translate health2}" Grid.Column="0"
+                       Grid.Row="7" Grid.ColumnSpan="3"/>
+
+                <m16:Checkbox VerticalOptions="Center" Grid.ColumnSpan="3" x:Name="txt2a"
+                              Text="{i18n:Translate String63}" Checked="false" Grid.Column="0" Grid.Row="8" />
+                <m16:Checkbox VerticalOptions="Center" Grid.ColumnSpan="2" x:Name="txt2b"
+                              Text="{i18n:Translate String64}" Checked="false" Grid.Column="0" Grid.Row="9" />
+
+                <Label LineBreakMode="WordWrap" Text="{i18n:Translate String65}" Grid.Column="0"
+                       Grid.Row="10"/>
+                <Editor HorizontalOptions="FillAndExpand" Text="" Grid.Column="1" x:Name="txt21" Grid.Row="10" />
+                <Label LineBreakMode="WordWrap" Text="{i18n:Translate String66}" Grid.Column="0"
+                       Grid.Row="11"/>
+                <Editor HorizontalOptions="Fill" Text="" Grid.Column="1" x:Name="txt22" Grid.Row="11" />
+                <Label LineBreakMode="WordWrap" Text="{i18n:Translate ByWhomDo}" Grid.Column="0"
+                       Grid.Row="12"/>
+                <Editor HorizontalOptions="Fill" Text="" Grid.Column="1" x:Name="txt23" Grid.Row="12" />
+
+                <Button x:Name="btnBack" HorizontalOptions="CenterAndExpand"  HeightRequest="40" VerticalOptions="End" Image="back.png"  BackgroundColor="#FFFFFF"  Grid.Row="13" Grid.Column="0"  />
+                <Button x:Name="btnNext" HorizontalOptions="CenterAndExpand"  HeightRequest="40" VerticalOptions="End" BackgroundColor="#FFFFFF" Image="next.png" Grid.Row="13" Grid.Column="1"  />
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" BackgroundColor="White" Title="Setting"
+              xmlns:i18n="clr-namespace:Naxam.I18n.Forms;assembly=Naxam.I18n.Forms"
+	xmlns:converters="clr-namespace:Naxam.I18n.Forms.Converters;assembly=Naxam.I18n.Forms"
+             x:Class="Mobile.Views.Setting">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:TimeAgoConverter x:Key="TimeAgoConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid RowSpacing="10" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="70"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="50"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Image BackgroundColor="White" Source="u2561.png" Grid.Row="0" Grid.Column="0" />
+                <Label LineBreakMode="WordWrap" x:Name="txtUserName" BackgroundColor="White" Margin="10,0,0,0" FontSize="Medium" TextColor="Black" Text="" Grid.Column="1" Grid.Row="0" HorizontalOptions="StartAndExpand" HorizontalTextAlignment="Start" />
+                <Image BackgroundColor="White" Source="if_edit.png" Grid.Row="0" Grid.Column="2" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ProfileTapped" NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Label Margin="10,10,0,10" TextColor="Black" FontAttributes="Bold"  FontSize="Medium"
+                       BackgroundColor="LightGray" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Text="Chức năng" />
+
+                <Label BackgroundColor="White" Margin="10,0,0,0" Grid.Column="0" TextColor="Black" FontSize="Medium"
+                       Grid.Row="2" Grid.ColumnSpan="2" Text="Hiển thị thông báo" HorizontalTextAlignment="Start" />
+                <Switch BackgroundColor="White" Grid.Column="2" Grid.Row="2" />
+
+                <Grid Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="100"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label BackgroundColor="White" FontSize="Medium" Margin="10,0,0,0" Text="Lựa chọn ngôn ngữ" TextColor="Black"
+                       Grid.Column="0" Grid.Row="0" HorizontalTextAlignment="Start" />
+                    <Label x:Name="txtLanguage" BackgroundColor="White" Margin="10,0,0,0" 
+                        FontSize="Medium" TextColor="Red" Grid.Column="1" Grid.Row="0" Text="">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="LanguageTapped" NumberOfTapsRequired="1" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Grid>
+
+
+                <Label Margin="10,10,0,10" BackgroundColor="LightGray" Grid.Column="0" TextColor="Black" FontAttributes="Bold"
+                       FontSize="Medium"
+                       Grid.Row="4" Grid.ColumnSpan="3" Text="Chức năng khác" />
+
+                <Label BackgroundColor="White" Margin="10,0,0,0"  FontSize="Medium"
+                       Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2" Text="Kiểm tra phiên bản mới" />
+                <Label BackgroundColor="White" Margin="10,0,0,0"  FontSize="Medium"
+                       TextColor="Red" Grid.Column="2" Grid.Row="5" Text="1.1.x" />
+
+                <Label  BackgroundColor="White" Margin="10,0,0,0" Grid.Column="0" FontSize="Medium"
+                        Grid.Row="6" Grid.ColumnSpan="2" Text="Điều khoản sử dụng" />
+
+                <Label Margin="10,10,0,10" BackgroundColor="LightGray" Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="3" Text="" />
+
+                <Label BackgroundColor="White" Margin="10,0,0,0" x:Name="btnLogout"
+                        FontSize="Medium" TextColor="Red" Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="3" Text="Đăng xuất" >
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="LogoutTapped" NumberOfTapsRequired="1" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
